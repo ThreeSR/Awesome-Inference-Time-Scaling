@@ -21,3 +21,7 @@ Paper List of Inference/Test Time Scaling/Computing
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/yourrepo.svg)
 
+Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
+
+Tree Search for Language Model Agents
+
