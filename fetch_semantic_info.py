@@ -58,7 +58,11 @@ def format_paper_info(paper):
 - 👤 **Authors:** {authors}
 - 🗓️ **Date:** {publication_date}
 - 📑 **Publisher:** {publisher}
-- 📝 **Abstract:** {abstract}
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    {abstract}
+    </details>
 """
 
 # # Search papers from June 2023 to January 2024
@@ -100,19 +104,19 @@ def write_to_readme_at_section(papers, filename="README.md", section_title="## �
 
 # Query for the latest papers on "Inference Time Scaling"
 QUERY = "Inference-Time Scaling" # or title
-QUERY = """
-Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
+# QUERY = """
+# Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
 
-Tree Search for Language Model Agents
+# Tree Search for Language Model Agents
 
-Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models
+# Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models
 
-CodeMonkeys: Scaling Test-Time Compute for Software Engineering
+# CodeMonkeys: Scaling Test-Time Compute for Software Engineering
 
-SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer
+# SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer
 
-O1 Replication Journey -- Part 3: Inference-time Scaling for Medical Reasoning
-"""
+# O1 Replication Journey -- Part 3: Inference-time Scaling for Medical Reasoning
+# """
 query_list = [line.strip() for line in QUERY.strip().split("\n") if line.strip()]
 LIMIT = 1  # Get the latest X papers
 
@@ -126,4 +130,4 @@ for query in query_list:
 
     # Write to README.md at the specific section
     write_to_readme_at_section(papers)
-    time.sleep(10)
+    # time.sleep(10)
