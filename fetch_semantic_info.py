@@ -1,18 +1,14 @@
 import requests
-
+import time
 # Semantic Scholar API endpoint
 BASE_URL = "https://api.semanticscholar.org/graph/v1/"
 
 # Fields to extract
 FIELDS = "title,authors,venue,year,publicationDate,fieldsOfStudy,url"
 
-# Query for the latest papers on "Inference Time Scaling"
-QUERY = "Inference Time Scaling"
-LIMIT = 50  # Get the latest X papers
-
 def search_papers(query, limit=5):
     """Fetch relevant papers from Semantic Scholar API"""
-    url = f"{BASE_URL}paper/search?query={query}&fields={FIELDS}&limit={limit}&sortBy=submittedDate&sortOrder=descending"
+    url = f"{BASE_URL}paper/search?query={query}&fields={FIELDS}&limit={limit}&sort=year"
     response = requests.get(url)
 
     if response.status_code != 200:
@@ -50,7 +46,7 @@ def format_paper_info(paper):
     publication_date = paper.get("publicationDate", "Unknown Date")
     publisher = paper.get("venue", "Unknown Publisher")
     if publisher == '':
-        publisher = "ArXiv"
+        publisher = "arXiv.org"
     url = paper.get("url", "#")
     arxiv_abs_url = f"https://arxiv.org/abs/{arxivId}"
     arxiv_pdf_url = f"https://arxiv.org/pdf/{arxivId}"
@@ -58,7 +54,7 @@ def format_paper_info(paper):
 
     return f"""
 🔹 [{title}]({arxiv_abs_url})
-- 🔗 **ArXiv PDF Link:** [Paper Link]({arxiv_pdf_url})
+- 🔗 **arXiv PDF Link:** [Paper Link]({arxiv_pdf_url})
 - 👤 **Authors:** {authors}
 - 🗓️ **Date:** {publication_date}
 - 📑 **Publisher:** {publisher}
@@ -102,12 +98,32 @@ def write_to_readme_at_section(papers, filename="README.md", section_title="## �
     with open(filename, "w") as file:
         file.writelines(content)
 
-# Get the latest papers
-papers = search_papers(QUERY, LIMIT)
+# Query for the latest papers on "Inference Time Scaling"
+QUERY = "Inference-Time Scaling" # or title
+QUERY = """
+Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
 
-# Output the formatted paper information
-# for paper in papers:
-#     print(format_paper_info(paper))
+Tree Search for Language Model Agents
 
-# Write to README.md at the specific section
-write_to_readme_at_section(papers)
+Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models
+
+CodeMonkeys: Scaling Test-Time Compute for Software Engineering
+
+SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer
+
+O1 Replication Journey -- Part 3: Inference-time Scaling for Medical Reasoning
+"""
+query_list = [line.strip() for line in QUERY.strip().split("\n") if line.strip()]
+LIMIT = 1  # Get the latest X papers
+
+for query in query_list:
+    # Get the latest papers
+    papers = search_papers(query, LIMIT)
+
+    # Output the formatted paper information
+    # for paper in papers:
+    #     print(format_paper_info(paper))
+
+    # Write to README.md at the specific section
+    write_to_readme_at_section(papers)
+    time.sleep(10)
