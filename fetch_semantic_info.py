@@ -1,10 +1,18 @@
 import requests
 import time
+import argparse
 # Semantic Scholar API endpoint
 BASE_URL = "https://api.semanticscholar.org/graph/v1/"
 
 # Fields to extract
 FIELDS = "title,authors,venue,year,publicationDate,fieldsOfStudy,url"
+
+def config() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(
+        description="Fetch Paper Data"
+    )
+
+    parser.add_argument("--paper_name", type=str, default="Inference-Time Scaling")
 
 def search_papers(query, limit=5):
     """Fetch relevant papers from Semantic Scholar API"""
@@ -102,32 +110,35 @@ def write_to_readme_at_section(papers, filename="README.md", section_title="## ð
     with open(filename, "w") as file:
         file.writelines(content)
 
-# Query for the latest papers on "Inference Time Scaling"
-QUERY = "Inference-Time Scaling" # or title
-# QUERY = """
-# Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
+if __name__ == "__main__":
+    args = config()
+    # Query for the latest papers on "Inference Time Scaling"
+    # QUERY = "Inference-Time Scaling" # or title
+    QUERY = args.paper_name
+    # QUERY = """
+    # Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
 
-# Tree Search for Language Model Agents
+    # Tree Search for Language Model Agents
 
-# Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models
+    # Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models
 
-# CodeMonkeys: Scaling Test-Time Compute for Software Engineering
+    # CodeMonkeys: Scaling Test-Time Compute for Software Engineering
 
-# SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer
+    # SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer
 
-# O1 Replication Journey -- Part 3: Inference-time Scaling for Medical Reasoning
-# """
-query_list = [line.strip() for line in QUERY.strip().split("\n") if line.strip()]
-LIMIT = 1  # Get the latest X papers
+    # O1 Replication Journey -- Part 3: Inference-time Scaling for Medical Reasoning
+    # """
+    query_list = [line.strip() for line in QUERY.strip().split("\n") if line.strip()]
+    LIMIT = 1  # Get the latest X papers
 
-for query in query_list:
-    # Get the latest papers
-    papers = search_papers(query, LIMIT)
+    for query in query_list:
+        # Get the latest papers
+        papers = search_papers(query, LIMIT)
 
-    # Output the formatted paper information
-    # for paper in papers:
-    #     print(format_paper_info(paper))
+        # Output the formatted paper information
+        # for paper in papers:
+        #     print(format_paper_info(paper))
 
-    # Write to README.md at the specific section
-    write_to_readme_at_section(papers)
-    # time.sleep(10)
+        # Write to README.md at the specific section
+        write_to_readme_at_section(papers)
+        # time.sleep(10)
