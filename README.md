@@ -25,3 +25,9 @@ Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model
 
 Tree Search for Language Model Agents
 
+Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models
+
+CodeMonkeys: Scaling Test-Time Compute for Software Engineering
+
+SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer
+
