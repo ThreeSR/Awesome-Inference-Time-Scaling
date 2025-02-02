@@ -11,8 +11,11 @@ def config() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Fetch Paper Data"
     )
-
     parser.add_argument("--paper_name", type=str, default="Inference-Time Scaling")
+
+    args = parser.parse_args()
+
+    return args
 
 def search_papers(query, limit=5):
     """Fetch relevant papers from Semantic Scholar API"""
@@ -114,20 +117,11 @@ if __name__ == "__main__":
     args = config()
     # Query for the latest papers on "Inference Time Scaling"
     # QUERY = "Inference-Time Scaling" # or title
-    QUERY = args.paper_name
-    # QUERY = """
-    # Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
-
-    # Tree Search for Language Model Agents
-
-    # Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models
-
-    # CodeMonkeys: Scaling Test-Time Compute for Software Engineering
-
-    # SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer
-
-    # O1 Replication Journey -- Part 3: Inference-time Scaling for Medical Reasoning
-    # """
+    # QUERY = args.paper_name
+    # print(args.paper_name)
+    QUERY = f"""
+    {args.paper_name}
+    """
     query_list = [line.strip() for line in QUERY.strip().split("\n") if line.strip()]
     LIMIT = 1  # Get the latest X papers
 
