@@ -1,7 +1,7 @@
 # Awesome-Inference-Time-Scaling
 **Paper List of Inference/Test Time Scaling/Computing**
 
-## 📖 Paper List
+## 📖 Paper List (Listed in Time Order)
 
 Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters
 
