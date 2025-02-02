@@ -45,6 +45,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [CodeMonkeys: Scaling Test-Time Compute for Software Engineering](https://arxiv.org/abs/2501.14723)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.14723)
 - 👤 **Authors:** Ryan Ehrlich, Bradley Brown, Jordan Juravsky, Ronald Clark, Christopher R'e, Azalia Mirhoseini
@@ -55,6 +56,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Scaling test-time compute is a promising axis for improving LLM capabilities. However, test-time compute can be scaled in a variety of ways, and effectively combining different approaches remains an active area of research. Here, we explore this problem in the context of solving real-world GitHub issues from the SWE-bench dataset. Our system, named CodeMonkeys, allows models to iteratively edit a codebase by jointly generating and running a testing script alongside their draft edit. We sample many of these multi-turn trajectories for every issue to generate a collection of candidate edits. This approach lets us scale"serial"test-time compute by increasing the number of iterations per trajectory and"parallel"test-time compute by increasing the number of trajectories per problem. With parallel scaling, we can amortize up-front costs across multiple downstream samples, allowing us to identify relevant codebase context using the simple method of letting an LLM read every file. In order to select between candidate edits, we combine voting using model-generated tests with a final multi-turn trajectory dedicated to selection. Overall, CodeMonkeys resolves 57.4% of issues from SWE-bench Verified using a budget of approximately 2300 USD. Our selection method can also be used to combine candidates from different sources. Selecting over an ensemble of edits from existing top SWE-bench Verified submissions obtains a score of 66.2% and outperforms the best member of the ensemble on its own. We fully release our code and data at https://scalingintelligence.stanford.edu/pubs/codemonkeys.
     </details>
+
 
 
 
@@ -83,6 +85,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [A General Framework for Inference-time Scaling and Steering of Diffusion Models](https://arxiv.org/abs/2501.06848)
 - 🔗 **ArXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.06848)
 - 👤 **Authors:** Raghav Singhal, Zachary Horvitz, Ryan Teehan, Mengye Ren, Zhou Yu, Kathleen McKeown, Rajesh Ranganath
@@ -93,6 +96,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Diffusion models produce impressive results in modalities ranging from images and video to protein design and text. However, generating samples with user-specified properties remains a challenge. Recent research proposes fine-tuning models to maximize rewards that capture desired properties, but these methods require expensive training and are prone to mode collapse. In this work, we propose Feynman Kac (FK) steering, an inference-time framework for steering diffusion models with reward functions. FK steering works by sampling a system of multiple interacting diffusion processes, called particles, and resampling particles at intermediate steps based on scores computed using functions called potentials. Potentials are defined using rewards for intermediate states and are selected such that a high value indicates that the particle will yield a high-reward sample. We explore various choices of potentials, intermediate rewards, and samplers. We evaluate FK steering on text-to-image and text diffusion models. For steering text-to-image models with a human preference reward, we find that FK steering a 0.8B parameter model outperforms a 2.6B parameter fine-tuned model on prompt fidelity, with faster sampling and no training. For steering text diffusion models with rewards for text quality and specific text attributes, we find that FK steering generates lower perplexity, more linguistically acceptable outputs and enables gradient-free control of attributes like toxicity. Our results demonstrate that inference-time scaling and steering of diffusion models, even with off-the-shelf rewards, can provide significant sample quality gains and controllability benefits. Code is available at https://github.com/zacharyhorvitz/Fk-Diffusion-Steering.
     </details>
+
 
 
 
@@ -121,6 +125,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [rStar-Math: Small LLMs Can Master Math Reasoning with Self-Evolved Deep Thinking](https://arxiv.org/abs/2501.04519)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.04519)
 - 👤 **Authors:** Xinyu Guan, L. Zhang, Yifei Liu, Ning Shang, Youran Sun, Yi Zhu, Fan Yang, Mao Yang
@@ -130,6 +135,18 @@ If you find our code useful when you would like to organize your own repo, feel 
     <details>
     <summary>Expand</summary>
     We present rStar-Math to demonstrate that small language models (SLMs) can rival or even surpass the math reasoning capability of OpenAI o1, without distillation from superior models. rStar-Math achieves this by exercising"deep thinking"through Monte Carlo Tree Search (MCTS), where a math policy SLM performs test-time search guided by an SLM-based process reward model. rStar-Math introduces three innovations to tackle the challenges in training the two SLMs: (1) a novel code-augmented CoT data sythesis method, which performs extensive MCTS rollouts to generate step-by-step verified reasoning trajectories used to train the policy SLM; (2) a novel process reward model training method that avoids na\"ive step-level score annotation, yielding a more effective process preference model (PPM); (3) a self-evolution recipe in which the policy SLM and PPM are built from scratch and iteratively evolved to improve reasoning capabilities. Through 4 rounds of self-evolution with millions of synthesized solutions for 747k math problems, rStar-Math boosts SLMs' math reasoning to state-of-the-art levels. On the MATH benchmark, it improves Qwen2.5-Math-7B from 58.8% to 90.0% and Phi3-mini-3.8B from 41.4% to 86.4%, surpassing o1-preview by +4.5% and +0.9%. On the USA Math Olympiad (AIME), rStar-Math solves an average of 53.3% (8/15) of problems, ranking among the top 20% the brightest high school math students. Code and data will be available at https://github.com/microsoft/rStar.
+    </details>
+
+
+🔹 [Towards System 2 Reasoning in LLMs: Learning How to Think With Meta Chain-of-Though](https://arxiv.org/abs/2501.04682)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.04682)
+- 👤 **Authors:** Violet Xiang, Charlie Snell, Kanishk Gandhi, Alon Albalak, Anikait Singh, Chase Blagden, Duy Phung, Rafael Rafailov, nathan lile, Dakota Mahan, Louis Castricato, Jan-Philipp Franken, Nick Haber, Chelsea Finn
+- 🗓️ **Date:** 2025-01-08
+- 📑 **Publisher:** arXiv.org
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    We propose a novel framework, Meta Chain-of-Thought (Meta-CoT), which extends traditional Chain-of-Thought (CoT) by explicitly modeling the underlying reasoning required to arrive at a particular CoT. We present empirical evidence from state-of-the-art models exhibiting behaviors consistent with in-context search, and explore methods for producing Meta-CoT via process supervision, synthetic data generation, and search algorithms. Finally, we outline a concrete pipeline for training a model to produce Meta-CoTs, incorporating instruction tuning with linearized search traces and reinforcement learning post-training. Finally, we discuss open research questions, including scaling laws, verifier roles, and the potential for discovering novel reasoning algorithms. This work provides a theoretical and practical roadmap to enable Meta-CoT in LLMs, paving the way for more powerful and human-like reasoning in artificial intelligence.
     </details>
 
 🔹 [Scaling Inference-Time Search with Vision Value Model for Improved Visual Comprehension](https://arxiv.org/abs/2412.03704)
@@ -144,6 +161,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     </details>
 
 
+
 🔹 [LLaVA-CoT: Let Vision Language Models Reason Step-by-Step](https://arxiv.org/abs/2411.10440)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2411.10440)
 - 👤 **Authors:** Guowei Xu, Peng Jin, Hao Li, Yibing Song, Lichao Sun, Li Yuan
@@ -154,6 +172,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Large language models have demonstrated substantial advancements in reasoning capabilities, particularly through inference-time scaling, as illustrated by models such as OpenAI's o1. However, current Vision-Language Models (VLMs) often struggle to perform systematic and structured reasoning, especially when handling complex visual question-answering tasks. In this work, we introduce LLaVA-CoT, a novel VLM designed to conduct autonomous multistage reasoning. Unlike chain-of-thought prompting, LLaVA-CoT independently engages in sequential stages of summarization, visual interpretation, logical reasoning, and conclusion generation. This structured approach enables LLaVA-CoT to achieve marked improvements in precision on reasoning-intensive tasks. To accomplish this, we compile the LLaVA-CoT-100k dataset, integrating samples from various visual question answering sources and providing structured reasoning annotations. Besides, we propose an inference-time stage-level beam search method, which enables effective inference-time scaling. Remarkably, with only 100k training samples and a simple yet effective inference time scaling method, LLaVA-CoT not only outperforms its base model by 7.4% on a wide range of multimodal reasoning benchmarks, but also surpasses the performance of larger and even closed-source models, such as Gemini-1.5-pro, GPT-4o-mini, and Llama-3.2-90B-Vision-Instruct.
     </details>
+
 
 
 
@@ -174,6 +193,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning](https://arxiv.org/abs/2410.02052)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2410.02052)
 - 👤 **Authors:** Xiao Yu, Baolin Peng, Vineeth Vajipey, Hao Cheng, Michel Galley, Jianfeng Gao, Zhou Yu
@@ -184,6 +204,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Autonomous agents have demonstrated significant potential in automating complex multistep decision-making tasks. However, even state-of-the-art vision-language models (VLMs), such as GPT-4o, still fall short of human-level performance, particularly in intricate web environments and long-horizon tasks. To address these limitations, we present ExACT, an approach to combine test-time search and self-learning to build o1-like models for agentic applications. We first introduce Reflective Monte Carlo Tree Search (R-MCTS), a novel test time algorithm designed to enhance AI agents' ability to explore decision space on the fly. R-MCTS extends traditional MCTS by 1) incorporating contrastive reflection, allowing agents to learn from past interactions and dynamically improve their search efficiency; and 2) using multi-agent debate for reliable state evaluation. Next, we introduce Exploratory Learning, a novel learning strategy to teach agents to search at inference time without relying on any external search algorithms. On the challenging VisualWebArena benchmark, our GPT-4o based R-MCTS agent achieves a 6% to 30% relative improvement across various tasks compared to the previous state-of-the-art. Additionally, we show that the knowledge and experience gained from test-time search can be effectively transferred back to GPT-4o via fine-tuning. After Exploratory Learning, GPT-4o 1) demonstrates the ability to explore the environment, evaluate a state, and backtrack to viable ones when it detects that the current state cannot lead to success, and 2) matches 87% of R-MCTS's performance while using significantly less compute. Notably, our work demonstrates the compute scaling properties in both training - data collection with R-MCTS - and testing time. These results suggest a promising research direction to enhance VLMs' capabilities for agentic applications via test-time search and self-learning.
     </details>
+
 
 
 
@@ -209,6 +230,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](https://arxiv.org/abs/2408.03314)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2408.03314)
 - 👤 **Authors:** Charlie Snell, Jaehoon Lee, Kelvin Xu, Aviral Kumar
@@ -219,6 +241,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering the question: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt? Answering this question has implications not only on the achievable performance of LLMs, but also on the future of LLM pretraining and how one should tradeoff inference-time and pre-training compute. Despite its importance, little research attempted to understand the scaling behaviors of various test-time inference methods. Moreover, current work largely provides negative results for a number of these strategies. In this work, we analyze two primary mechanisms to scale test-time computation: (1) searching against dense, process-based verifier reward models; and (2) updating the model's distribution over a response adaptively, given the prompt at test time. We find that in both cases, the effectiveness of different approaches to scaling test-time compute critically varies depending on the difficulty of the prompt. This observation motivates applying a"compute-optimal"scaling strategy, which acts to most effectively allocate test-time compute adaptively per prompt. Using this compute-optimal strategy, we can improve the efficiency of test-time compute scaling by more than 4x compared to a best-of-N baseline. Additionally, in a FLOPs-matched evaluation, we find that on problems where a smaller base model attains somewhat non-trivial success rates, test-time compute can be used to outperform a 14x larger model.
     </details>
+
 
 
 
@@ -247,6 +270,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](https://arxiv.org/abs/2407.21787)
 - 🔗 **ArXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2407.21787)
 - 👤 **Authors:** Bradley Brown, Jordan Juravsky, Ryan Ehrlich, Ronald Clark, Quoc V. Le, Christopher R'e, Azalia Mirhoseini
@@ -257,6 +281,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Scaling the amount of compute used to train language models has dramatically improved their capabilities. However, when it comes to inference, we often limit models to making only one attempt at a problem. Here, we explore inference compute as another axis for scaling, using the simple technique of repeatedly sampling candidate solutions from a model. Across multiple tasks and models, we observe that coverage -- the fraction of problems that are solved by any generated sample -- scales with the number of samples over four orders of magnitude. Interestingly, the relationship between coverage and the number of samples is often log-linear and can be modelled with an exponentiated power law, suggesting the existence of inference-time scaling laws. In domains like coding and formal proofs, where answers can be automatically verified, these increases in coverage directly translate into improved performance. When we apply repeated sampling to SWE-bench Lite, the fraction of issues solved with DeepSeek-Coder-V2-Instruct increases from 15.9% with one sample to 56% with 250 samples, outperforming the single-sample state-of-the-art of 43%. In domains without automatic verifiers, we find that common methods for picking from a sample collection (majority voting and reward models) plateau beyond several hundred samples and fail to fully scale with the sample budget.
     </details>
+
 
 
 
@@ -285,6 +310,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [From Decoding to Meta-Generation: Inference-time Algorithms for Large Language Models](https://arxiv.org/abs/2406.16838)
 - 🔗 **ArXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2406.16838)
 - 👤 **Authors:** S. Welleck, Amanda Bertsch, Matthew Finlayson, Hailey Schoelkopf, Alex Xie, Graham Neubig, Ilia Kulikov, Zaid Harchaoui
@@ -295,6 +321,9 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     One of the most striking findings in modern research on large language models (LLMs) is that scaling up compute during training leads to better results. However, less attention has been given to the benefits of scaling compute during inference. This survey focuses on these inference-time approaches. We explore three areas under a unified mathematical formalism: token-level generation algorithms, meta-generation algorithms, and efficient generation. Token-level generation algorithms, often called decoding algorithms, operate by sampling a single token at a time or constructing a token-level search space and then selecting an output. These methods typically assume access to a language model's logits, next-token distributions, or probability scores. Meta-generation algorithms work on partial or full sequences, incorporating domain knowledge, enabling backtracking, and integrating external information. Efficient generation methods aim to reduce token costs and improve the speed of generation. Our survey unifies perspectives from three research communities: traditional natural language processing, modern LLMs, and machine learning systems.
     </details>
+
+
+
 
 
 
