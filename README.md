@@ -37,6 +37,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     Multimodal large language models (MLLMs) exhibit impressive capabilities but still face challenges in complex visual reasoning. While recent efforts attempt to enhance MLLMs' reasoning by incorporating OpenAI o1-like structured thinking through explicit search structures or teacher-guided distillation, they often struggle to balance performance and efficiency. A critical limitation is their heavy reliance on extensive data and search spaces, resulting in low-efficiency implicit insight extraction and data utilization. To address this, we propose AStar, an Automated Structured thinking paradigm for multimodal reasoning via Monte Carlo Tree Search (MCTS). AStar automatically derives high-level cognitive reasoning patterns from limited data using MCTS-powered hierarchical structures. Building on these explicit patterns, we design a unified reasoning framework that seamlessly integrates models' internal reasoning capabilities and external reasoning guidelines, enabling efficient inference with minimal tree iterations. This novel paradigm strikes a compelling balance between performance and efficiency. Extensive experiments demonstrate AStar's effectiveness, achieving superior accuracy (54.0$\%$) on the MathVerse benchmark with a 7B backbone, surpassing GPT-4o (50.2$\%$) while maintaining substantial data and computational efficiency.
     </details>
 
+
 🔹 [ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning](https://arxiv.org/abs/2502.01100)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.01100)
 - 👤 **Authors:** Bill Yuchen Lin, R. L. Bras, Kyle Richardson, Ashish Sabharwal, Radha Poovendran, Peter Clark, Yejin Choi
@@ -49,6 +50,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     </details>
 
 
+
 🔹 [s1: Simple test-time scaling](https://arxiv.org/abs/2501.19393)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.19393)
 - 👤 **Authors:** Niklas Muennighoff, Zitong Yang, Weijia Shi, Xiang Lisa Li, Fei-Fei Li, Hanna Hajishirzi, Luke S. Zettlemoyer, Percy Liang, Emmanuel J. Candes, Tatsunori Hashimoto
@@ -59,6 +61,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Test-time scaling is a promising new approach to language modeling that uses extra test-time compute to improve performance. Recently, OpenAI's o1 model showed this capability but did not publicly share its methodology, leading to many replication efforts. We seek the simplest approach to achieve test-time scaling and strong reasoning performance. First, we curate a small dataset s1K of 1,000 questions paired with reasoning traces relying on three criteria we validate through ablations: difficulty, diversity, and quality. Second, we develop budget forcing to control test-time compute by forcefully terminating the model's thinking process or lengthening it by appending"Wait"multiple times to the model's generation when it tries to end. This can lead the model to double-check its answer, often fixing incorrect reasoning steps. After supervised finetuning the Qwen2.5-32B-Instruct language model on s1K and equipping it with budget forcing, our model s1 exceeds o1-preview on competition math questions by up to 27% (MATH and AIME24). Further, scaling s1 with budget forcing allows extrapolating beyond its performance without test-time intervention: from 50% to 57% on AIME24. Our model, data, and code are open-source at https://github.com/simplescaling/s1.
     </details>
+
 
 
 
@@ -78,6 +81,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [SETS: Leveraging Self-Verification and Self-Correction for Improved Test-Time Scaling](https://arxiv.org/abs/2501.19306)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.19306)
 - 👤 **Authors:** Jiefeng Chen, Jie Ren, Xinyun Chen, Chengrun Yang, Ruoxi Sun, Sercan Ö. Arik
@@ -91,6 +95,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer](https://arxiv.org/abs/2501.18427)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.18427)
 - 👤 **Authors:** Enze Xie, Junsong Chen, Yuyang Zhao, Jincheng Yu, Ligeng Zhu, Yujun Lin, Zhekai Zhang, Muyang Li, Junyu Chen, Han Cai, Bingchen Liu, Daquan Zhou, Song Han
@@ -101,6 +106,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     This paper presents SANA-1.5, a linear Diffusion Transformer for efficient scaling in text-to-image generation. Building upon SANA-1.0, we introduce three key innovations: (1) Efficient Training Scaling: A depth-growth paradigm that enables scaling from 1.6B to 4.8B parameters with significantly reduced computational resources, combined with a memory-efficient 8-bit optimizer. (2) Model Depth Pruning: A block importance analysis technique for efficient model compression to arbitrary sizes with minimal quality loss. (3) Inference-time Scaling: A repeated sampling strategy that trades computation for model capacity, enabling smaller models to match larger model quality at inference time. Through these strategies, SANA-1.5 achieves a text-image alignment score of 0.72 on GenEval, which can be further improved to 0.80 through inference scaling, establishing a new SoTA on GenEval benchmark. These innovations enable efficient model scaling across different compute budgets while maintaining high quality, making high-quality image generation more accessible.
     </details>
+
 
 
 
@@ -147,6 +153,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps](https://arxiv.org/abs/2501.09732)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.09732)
 - 👤 **Authors:** Nanye Ma, Shangyuan Tong, Haolin Jia, Hexiang Hu, Yu-Chuan Su, Mingda Zhang, Xuan Yang, Yandong Li, T. Jaakkola, Xuhui Jia, Saining Xie
@@ -157,6 +164,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Generative models have made significant impacts across various domains, largely due to their ability to scale during training by increasing data, computational resources, and model size, a phenomenon characterized by the scaling laws. Recent research has begun to explore inference-time scaling behavior in Large Language Models (LLMs), revealing how performance can further improve with additional computation during inference. Unlike LLMs, diffusion models inherently possess the flexibility to adjust inference-time computation via the number of denoising steps, although the performance gains typically flatten after a few dozen. In this work, we explore the inference-time scaling behavior of diffusion models beyond increasing denoising steps and investigate how the generation performance can further improve with increased computation. Specifically, we consider a search problem aimed at identifying better noises for the diffusion sampling process. We structure the design space along two axes: the verifiers used to provide feedback, and the algorithms used to find better noise candidates. Through extensive experiments on class-conditioned and text-conditioned image generation benchmarks, our findings reveal that increasing inference-time compute leads to substantial improvements in the quality of samples generated by diffusion models, and with the complicated nature of images, combinations of the components in the framework can be specifically chosen to conform with different application scenario.
     </details>
+
 
 
 
@@ -203,6 +211,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [O1 Replication Journey -- Part 3: Inference-time Scaling for Medical Reasoning](https://arxiv.org/abs/2501.06458)
 - 🔗 **ArXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.06458)
 - 👤 **Authors:** Zhongzhen Huang, Gui Geng, Shengyi Hua, Zhen Huang, Haoyang Zou, Shaoting Zhang, Pengfei Liu, Xiaofan Zhang
@@ -213,6 +222,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Building upon our previous investigations of O1 replication (Part 1: Journey Learning [Qin et al., 2024] and Part 2: Distillation [Huang et al., 2024]), this work explores the potential of inference-time scaling in large language models (LLMs) for medical reasoning tasks, ranging from diagnostic decision-making to treatment planning. Through extensive experiments on medical benchmarks of varying complexity (MedQA, Medbullets, and JAMA Clinical Challenges), our investigation reveals several key insights: (1) Increasing inference time does lead to improved performance. With a modest training set of 500 samples, our model yields substantial performance improvements of 6%-11%. (2) Task complexity directly correlates with the required length of reasoning chains, confirming the necessity of extended thought processes for challenging problems. (3) The differential diagnoses generated by our model adhere to the principles of the hypothetico-deductive method, producing a list of potential conditions that may explain a patient's symptoms and systematically narrowing these possibilities by evaluating the evidence. These findings demonstrate the promising synergy between inference-time scaling and journey learning in advancing LLMs' real-world clinical reasoning capabilities.
     </details>
+
 
 
 
@@ -251,6 +261,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Towards System 2 Reasoning in LLMs: Learning How to Think With Meta Chain-of-Though](https://arxiv.org/abs/2501.04682)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.04682)
 - 👤 **Authors:** Violet Xiang, Charlie Snell, Kanishk Gandhi, Alon Albalak, Anikait Singh, Chase Blagden, Duy Phung, Rafael Rafailov, nathan lile, Dakota Mahan, Louis Castricato, Jan-Philipp Franken, Nick Haber, Chelsea Finn
@@ -270,6 +281,18 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
+🔹 [Test-time Computing: from System-1 Thinking to System-2 Thinking](https://arxiv.org/abs/2501.02497)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.02497)
+- 👤 **Authors:** Yixin Ji, Juntao Li, Hai Ye, Kaixin Wu, Jia Xu, Linjian Mo, Min Zhang
+- 🗓️ **Date:** 2025-01-05
+- 📑 **Publisher:** arXiv.org
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    The remarkable performance of the o1 model in complex reasoning demonstrates that test-time computing scaling can further unlock the model's potential, enabling powerful System-2 thinking. However, there is still a lack of comprehensive surveys for test-time computing scaling. We trace the concept of test-time computing back to System-1 models. In System-1 models, test-time computing addresses distribution shifts and improves robustness and generalization through parameter updating, input modification, representation editing, and output calibration. In System-2 models, it enhances the model's reasoning ability to solve complex problems through repeated sampling, self-correction, and tree search. We organize this survey according to the trend of System-1 to System-2 thinking, highlighting the key role of test-time computing in the transition from System-1 models to weak System-2 models, and then to strong System-2 models. We also point out a few possible future directions.
+    </details>
+
 🔹 [Scaling Inference-Time Search with Vision Value Model for Improved Visual Comprehension](https://arxiv.org/abs/2412.03704)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2412.03704)
 - 👤 **Authors:** Wang Xiyao, Zhengyuan Yang, Linjie Li, Hongjin Lu, Yuancheng Xu, Lin Chung-Ching Lin, Lin Kevin, Furong Huang, Lijuan Wang
@@ -280,6 +303,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Despite significant advancements in vision-language models (VLMs), there lacks effective approaches to enhance response quality by scaling inference-time computation. This capability is known to be a core step towards the self-improving models in recent large language model studies. In this paper, we present Vision Value Model (VisVM) that can guide VLM inference-time search to generate responses with better visual comprehension. Specifically, VisVM not only evaluates the generated sentence quality in the current search step, but also anticipates the quality of subsequent sentences that may result from the current step, thus providing a long-term value. In this way, VisVM steers VLMs away from generating sentences prone to hallucinations or insufficient detail, thereby producing higher quality responses. Experimental results demonstrate that VisVM-guided search significantly enhances VLMs' ability to generate descriptive captions with richer visual details and fewer hallucinations, compared with greedy decoding and search methods with other visual reward signals. Furthermore, we find that self-training the model with the VisVM-guided captions improve VLM's performance across a wide range of multimodal benchmarks, indicating the potential for developing self-improving VLMs. Our value model and code are available at https://github.com/si0wang/VisVM.
     </details>
+
 
 
 
@@ -307,6 +331,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [LLaVA-CoT: Let Vision Language Models Reason Step-by-Step](https://arxiv.org/abs/2411.10440)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2411.10440)
 - 👤 **Authors:** Guowei Xu, Peng Jin, Hao Li, Yibing Song, Lichao Sun, Li Yuan
@@ -317,6 +342,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Large language models have demonstrated substantial advancements in reasoning capabilities, particularly through inference-time scaling, as illustrated by models such as OpenAI's o1. However, current Vision-Language Models (VLMs) often struggle to perform systematic and structured reasoning, especially when handling complex visual question-answering tasks. In this work, we introduce LLaVA-CoT, a novel VLM designed to conduct autonomous multistage reasoning. Unlike chain-of-thought prompting, LLaVA-CoT independently engages in sequential stages of summarization, visual interpretation, logical reasoning, and conclusion generation. This structured approach enables LLaVA-CoT to achieve marked improvements in precision on reasoning-intensive tasks. To accomplish this, we compile the LLaVA-CoT-100k dataset, integrating samples from various visual question answering sources and providing structured reasoning annotations. Besides, we propose an inference-time stage-level beam search method, which enables effective inference-time scaling. Remarkably, with only 100k training samples and a simple yet effective inference time scaling method, LLaVA-CoT not only outperforms its base model by 7.4% on a wide range of multimodal reasoning benchmarks, but also surpasses the performance of larger and even closed-source models, such as Gemini-1.5-pro, GPT-4o-mini, and Llama-3.2-90B-Vision-Instruct.
     </details>
+
 
 
 
@@ -355,6 +381,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Improve Vision Language Model Chain-of-thought Reasoning](https://arxiv.org/abs/2410.16198)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2410.16198)
 - 👤 **Authors:** Ruohong Zhang, Bowen Zhang, Yanghao Li, Haotian Zhang, Zhiqing Sun, Zhe Gan, Yinfei Yang, Ruoming Pang, Yiming Yang
@@ -373,6 +400,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [ExACT: Teaching AI Agents to Explore with Reflective-MCTS and Exploratory Learning](https://arxiv.org/abs/2410.02052)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2410.02052)
 - 👤 **Authors:** Xiao Yu, Baolin Peng, Vineeth Vajipey, Hao Cheng, Michel Galley, Jianfeng Gao, Zhou Yu
@@ -383,6 +411,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Autonomous agents have demonstrated significant potential in automating complex multistep decision-making tasks. However, even state-of-the-art vision-language models (VLMs), such as GPT-4o, still fall short of human-level performance, particularly in intricate web environments and long-horizon tasks. To address these limitations, we present ExACT, an approach to combine test-time search and self-learning to build o1-like models for agentic applications. We first introduce Reflective Monte Carlo Tree Search (R-MCTS), a novel test time algorithm designed to enhance AI agents' ability to explore decision space on the fly. R-MCTS extends traditional MCTS by 1) incorporating contrastive reflection, allowing agents to learn from past interactions and dynamically improve their search efficiency; and 2) using multi-agent debate for reliable state evaluation. Next, we introduce Exploratory Learning, a novel learning strategy to teach agents to search at inference time without relying on any external search algorithms. On the challenging VisualWebArena benchmark, our GPT-4o based R-MCTS agent achieves a 6% to 30% relative improvement across various tasks compared to the previous state-of-the-art. Additionally, we show that the knowledge and experience gained from test-time search can be effectively transferred back to GPT-4o via fine-tuning. After Exploratory Learning, GPT-4o 1) demonstrates the ability to explore the environment, evaluate a state, and backtrack to viable ones when it detects that the current state cannot lead to success, and 2) matches 87% of R-MCTS's performance while using significantly less compute. Notably, our work demonstrates the compute scaling properties in both training - data collection with R-MCTS - and testing time. These results suggest a promising research direction to enhance VLMs' capabilities for agentic applications via test-time search and self-learning.
     </details>
+
 
 
 
@@ -426,6 +455,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](https://arxiv.org/abs/2408.03314)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2408.03314)
 - 👤 **Authors:** Charlie Snell, Jaehoon Lee, Kelvin Xu, Aviral Kumar
@@ -436,6 +466,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering the question: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt? Answering this question has implications not only on the achievable performance of LLMs, but also on the future of LLM pretraining and how one should tradeoff inference-time and pre-training compute. Despite its importance, little research attempted to understand the scaling behaviors of various test-time inference methods. Moreover, current work largely provides negative results for a number of these strategies. In this work, we analyze two primary mechanisms to scale test-time computation: (1) searching against dense, process-based verifier reward models; and (2) updating the model's distribution over a response adaptively, given the prompt at test time. We find that in both cases, the effectiveness of different approaches to scaling test-time compute critically varies depending on the difficulty of the prompt. This observation motivates applying a"compute-optimal"scaling strategy, which acts to most effectively allocate test-time compute adaptively per prompt. Using this compute-optimal strategy, we can improve the efficiency of test-time compute scaling by more than 4x compared to a best-of-N baseline. Additionally, in a FLOPs-matched evaluation, we find that on problems where a smaller base model attains somewhat non-trivial success rates, test-time compute can be used to outperform a 14x larger model.
     </details>
+
 
 
 
@@ -482,6 +513,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](https://arxiv.org/abs/2407.21787)
 - 🔗 **ArXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2407.21787)
 - 👤 **Authors:** Bradley Brown, Jordan Juravsky, Ryan Ehrlich, Ronald Clark, Quoc V. Le, Christopher R'e, Azalia Mirhoseini
@@ -510,6 +542,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Tree Search for Language Model Agents](https://arxiv.org/abs/2407.01476)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2407.01476)
 - 👤 **Authors:** Jing Yu Koh, Stephen McAleer, Daniel Fried, Ruslan Salakhutdinov
@@ -520,6 +553,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Autonomous agents powered by language models (LMs) have demonstrated promise in their ability to perform decision-making tasks such as web automation. However, a key limitation remains: LMs, primarily optimized for natural language understanding and generation, struggle with multi-step reasoning, planning, and using environmental feedback when attempting to solve realistic computer tasks. Towards addressing this, we propose an inference-time search algorithm for LM agents to explicitly perform exploration and multi-step planning in interactive web environments. Our approach is a form of best-first tree search that operates within the actual environment space, and is complementary with most existing state-of-the-art agents. It is the first tree search algorithm for LM agents that shows effectiveness on realistic web tasks. On the challenging VisualWebArena benchmark, applying our search algorithm on top of a GPT-4o agent yields a 39.7% relative increase in success rate compared to the same baseline without search, setting a state-of-the-art success rate of 26.4%. On WebArena, search also yields a 28.0% relative improvement over a baseline agent, setting a competitive success rate of 19.2%. Our experiments highlight the effectiveness of search for web agents, and we demonstrate that performance scales with increased test-time compute. We conduct a thorough analysis of our results to highlight improvements from search, limitations, and promising directions for future work. Our code and models are publicly released at https://jykoh.com/search-agents.
     </details>
+
 
 
 
@@ -590,6 +624,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Reasoning with Language Model is Planning with World Model](https://arxiv.org/abs/2305.14992)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2305.14992)
 - 👤 **Authors:** Shibo Hao, Yi Gu, Haodi Ma, Joshua Jiahua Hong, Zhen Wang, D. Wang, Zhiting Hu
@@ -600,6 +635,9 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Large language models (LLMs) have shown remarkable reasoning capabilities, especially when prompted to generate intermediate reasoning steps (e.g., Chain-of-Thought, CoT). However, LLMs can still struggle with problems that are easy for humans, such as generating action plans for executing tasks in a given environment, or performing complex math, logical, and commonsense reasoning. The deficiency stems from the key fact that LLMs lack an internal $\textit{world model}$ to predict the world $\textit{state}$ (e.g., environment status, intermediate variable values) and simulate long-term outcomes of actions. This prevents LLMs from performing deliberate planning akin to human brains, which involves exploring alternative reasoning paths, anticipating future states and rewards, and iteratively refining existing reasoning steps. To overcome the limitations, we propose a new LLM reasoning framework, $\underline{R}$easoning vi$\underline{a}$ $\underline{P}$lanning $\textbf{(RAP)}$. RAP repurposes the LLM as both a world model and a reasoning agent, and incorporates a principled planning algorithm (based on Monto Carlo Tree Search) for strategic exploration in the vast reasoning space. During reasoning, the LLM (as agent) incrementally builds a reasoning tree under the guidance of the LLM (as world model) and task-specific rewards, and obtains a high-reward reasoning path efficiently with a proper balance between exploration $\textit{vs.}$ exploitation. We apply RAP to a variety of challenging reasoning problems including plan generation, math reasoning, and logical inference. Empirical results on these tasks demonstrate the superiority of RAP over various strong baselines, including CoT and least-to-most prompting with self-consistency. RAP on LLAMA-33B surpasses CoT on GPT-4 with 33% relative improvement in a plan generation setting.
     </details>
+
+
+
 
 
 
