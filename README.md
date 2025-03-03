@@ -26,7 +26,7 @@ python fetch_semantic_info.py --paper_name "Paper Name or Key Word of the name"
 ```
 Example:
 ```
-python fetch_semantic_info.py --paper_name "ARMAP"
+python fetch_semantic_info.py --paper_name "Scaling Autonomous Agents via Automatic Reward Modeling And Planning"
 ```
 
 If you find our code useful when you would like to organize your own repo, feel free to use. Also, thanks for the free use of [Semantic Scholar API](https://www.semanticscholar.org/product/api).
