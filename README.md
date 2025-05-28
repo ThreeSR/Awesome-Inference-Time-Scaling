@@ -42,7 +42,6 @@ If you find our code useful when you would like to organize your own repo, feel 
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.20325)
 - 👤 **Authors:** Amirhosein Ghasemabadi, Keith G. Mills, Baochun Li, Di Niu
 - 🗓️ **Date:** 2025-05-23
->>>>>>> d80373e (Update)
 - 📑 **Publisher:** arXiv.org
 - 📝 **Abstract:** 
     <details>
@@ -51,11 +50,19 @@ If you find our code useful when you would like to organize your own repo, feel 
     </details>
 
 
+
 🔹 [Rethinking Optimal Verification Granularity for Compute-Efficient Test-Time Scaling](https://arxiv.org/abs/2505.11730)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.11730)
 - 👤 **Authors:** Hao Chen, Guanxi Lu, Yasuyuki Okoshi, Zhiwen Mo, Masato Motomura, Hongxiang Fan
 - 🗓️ **Date:** 2025-05-16
-=======
+- 📑 **Publisher:** arXiv.org
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    Test-time scaling (TTS) has proven effective in enhancing the reasoning capabilities of large language models (LLMs). Verification plays a key role in TTS, simultaneously influencing (1) reasoning performance and (2) compute efficiency, due to the quality and computational cost of verification. In this work, we challenge the conventional paradigms of verification, and make the first attempt toward systematically investigating the impact of verification granularity-that is, how frequently the verifier is invoked during generation, beyond verifying only the final output or individual generation steps. To this end, we introduce Variable Granularity Search (VG-Search), a unified algorithm that generalizes beam search and Best-of-N sampling via a tunable granularity parameter g. Extensive experiments with VG-Search under varying compute budgets, generator-verifier configurations, and task attributes reveal that dynamically selecting g can improve the compute efficiency and scaling behavior. Building on these findings, we propose adaptive VG-Search strategies that achieve accuracy gains of up to 3.1\% over Beam Search and 3.6\% over Best-of-N, while reducing FLOPs by over 52\%. We will open-source the code to support future research.
+    </details>
+
+
 
 🔹 [Crosslingual Reasoning through Test-Time Scaling](https://arxiv.org/abs/2505.05408)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.05408)
