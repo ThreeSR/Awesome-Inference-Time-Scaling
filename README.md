@@ -38,6 +38,18 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 ## 📖 Paper List (Listed in Time Order)
 
+🔹 [DTS: Enhancing Large Reasoning Models via Decoding Tree Sketching](https://arxiv.org/pdf/2511.00640)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2511.00640)
+- 👤 **Authors:** Zicheng Xu, Xiuyi Lou, Guanchu Wang, Yu-Neng Chuang, Feng Luo, Guangyao Zheng, Alexander S. Szalay, Zirui Liu, Vladimir Braverman
+- 🗓️ **Date:** 2026-02-04
+- 📑 **Publisher:** arXiv.org
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    No abstract available.
+    </details>
+
+    
 🔹 [On the Power of (Approximate) Reward Models for Inference-Time Scaling](https://arxiv.org/abs/N/A)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
 - 👤 **Authors:** Youheng Zhu, Yiping Lu
