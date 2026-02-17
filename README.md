@@ -38,6 +38,18 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 ## 📖 Paper List (Listed in Time Order)
 
+🔹 [Efficient Test-Time Scaling for Small Vision-Language Models](https://arxiv.org/abs/2510.03574)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2510.03574)
+- 👤 **Authors:** Mehmet Onurcan Kaya, Desmond Elliott, Dim P. Papadopoulos
+- 🗓️ **Date:** 2026-02-16
+- 📑 **Publisher:** International Conference on Learning Representations
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    Small Vision-Language Models (VLMs) provide a computationally efficient alternative to larger models, at the cost of weaker generalization abilities and downstream task performance. These shortcomings could be addressed by test-time scaling techniques, but existing methods are typically computationally demanding, contradicting the resource-efficient design goals of small models. To address these limitations, we propose two novel and efficient test-time scaling strategies that leverage the model-internal features rather than external supervision: (i) Test-Time Augmentation (TTAug), which generates multiple augmented inputs and aggregates outputs at the token level without parameter updates, and (ii) Test-Time Adaptation (TTAdapt), which adapts model parameters during inference using consensus-based pseudolabels from TTAug. Through extensive experiments across nine benchmarks, we demonstrate consistent performance improvements while maintaining computational efficiency suitable for resource-constrained environments. The generality of our approach is demonstrated both within models at different scales and across different VLMs without additional tuning.
+    </details>
+
+
 🔹 [DTS: Enhancing Large Reasoning Models via Decoding Tree Sketching](https://arxiv.org/pdf/2511.00640)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2511.00640)
 - 👤 **Authors:** Zicheng Xu, Xiuyi Lou, Guanchu Wang, Yu-Neng Chuang, Feng Luo, Guangyao Zheng, Alexander S. Szalay, Zirui Liu, Vladimir Braverman
