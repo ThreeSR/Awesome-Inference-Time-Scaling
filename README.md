@@ -1,6 +1,8 @@
 # Awesome-Inference-Time-Scaling
 **Paper List of Inference/Test Time Scaling/Computing**
 
+Maintained by [Rui Sun](https://threesr.github.io/)
+
 If you think our paper list is helpful, please Star⭐. Thanks! We will continue to update.
 
 <!-- ![Scaling](./fig/Scaling.webp) -->
