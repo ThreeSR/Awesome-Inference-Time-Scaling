@@ -193,6 +193,20 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+🔹 [Robust Inference-Time Steering of Protein Diffusion Models via Embedding Optimization](https://arxiv.org/abs/2602.05285)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.05285)
+- 👤 **Authors:** Minhuan Li, Jiequn Han, Pilar Cossio, Luhuan Wu
+- 🗓️ **Date:** 2026-02-05
+- 📑 **Publisher:** arXiv.org
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    In many biophysical inverse problems, the goal is to generate biomolecular conformations that are both physically plausible and consistent with experimental measurements. As recent sequence-to-structure diffusion models provide powerful data-driven priors, posterior sampling has emerged as a popular framework by guiding atomic coordinates to target conformations using experimental likelihoods. However, when the target lies in a low-density region of the prior, posterior sampling requires aggressive and brittle weighting of the likelihood guidance. Motivated by this limitation, we propose EmbedOpt, an alternative inference-time approach for steering diffusion models to optimize experimental likelihoods in the conditional embedding space. As this space encodes rich sequence and coevolutionary signals, optimizing over it effectively shifts the diffusion prior to align with experimental constraints. We validate EmbedOpt on two benchmarks simulating cryo-electron microscopy map fitting and experimental distance constraints. We show that EmbedOpt outperforms the coordinate-based posterior sampling method in map fitting tasks, matches performance on distance constraint tasks, and exhibits superior engineering robustness across hyperparameters spanning two orders of magnitude. Moreover, its smooth optimization behavior enables a significant reduction in the number of diffusion steps required for inference, leading to better efficiency.
+    </details>
+
+
+
+
 
 
 
@@ -273,6 +287,20 @@ If you find our code useful when you would like to organize your own repo, feel 
     <details>
     <summary>Expand</summary>
     No abstract available.
+    </details>
+
+
+
+
+🔹 [Test-time Generalization for Physics through Neural Operator Splitting](https://arxiv.org/abs/2602.00884)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.00884)
+- 👤 **Authors:** Louis Serrano, Jiequn Han, Edouard Oyallon, Shirley Ho, Rudy Morel
+- 🗓️ **Date:** 2026-01-31
+- 📑 **Publisher:** International Conference on Machine Learning
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    Neural operators have shown promise in learning solution maps of partial differential equations (PDEs), but they often struggle to generalize when test inputs lie outside the training distribution, such as novel initial conditions, unseen PDE coefficients or unseen physics. Prior works address this limitation with large-scale multiple physics pretraining followed by fine-tuning, but this still requires examples from the new dynamics, falling short of true zero-shot generalization. In this work, we propose a method to enhance generalization at test time, i.e., without modifying pretrained weights. Building on DISCO, which provides a dictionary of neural operators trained across different dynamics, we introduce a neural operator splitting strategy that, at test time, searches over compositions of training operators to approximate unseen dynamics. On challenging out-of-distribution tasks including parameter extrapolation and novel combinations of physics phenomena, our approach achieves state-of-the-art zero-shot generalization results, while being able to recover the underlying PDE parameters. These results underscore test-time computation as a key avenue for building flexible, compositional, and generalizable neural operators.
     </details>
 
 
@@ -698,15 +726,15 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [DriftLite: Lightweight Drift Control for Inference-Time Scaling of Diffusion Models](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [DriftLite: Lightweight Drift Control for Inference-Time Scaling of Diffusion Models](https://arxiv.org/abs/2509.21655)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.21655)
 - 👤 **Authors:** Yinuo Ren, Wenhao Gao, Lexing Ying, Grant M. Rotskoff, Jiequn Han
 - 🗓️ **Date:** 2025-09-25
-- 📑 **Publisher:** arXiv.org
+- 📑 **Publisher:** International Conference on Learning Representations
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
-    No abstract available.
+    We study inference-time scaling for diffusion models, where the goal is to adapt a pre-trained model to new target distributions without retraining. Existing guidance-based methods are simple but introduce bias, while particle-based corrections suffer from weight degeneracy and high computational cost. We introduce DriftLite, a lightweight, training-free particle-based approach that steers the inference dynamics on the fly with provably optimal stability control. DriftLite exploits a previously unexplored degree of freedom in the Fokker-Planck equation between the drift and particle potential, and yields two practical instantiations: Variance- and Energy-Controlling Guidance (VCG/ECG) for approximating the optimal drift with minimal overhead. Across Gaussian mixture models, particle systems, and large-scale protein-ligand co-folding problems, DriftLite consistently reduces variance and improves sample quality over pure guidance and sequential Monte Carlo baselines. These results highlight a principled, efficient route toward scalable inference-time adaptation of diffusion models. Our source code is publicly available at https://github.com/yinuoren/DriftLite.
     </details>
 
 
