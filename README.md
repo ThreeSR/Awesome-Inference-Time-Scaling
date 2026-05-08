@@ -40,8 +40,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 ## 📖 Paper List (Listed in Time Order)
 
-🔹 [TEMPO: Scaling Test-time Training for Large Reasoning Models](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [TEMPO: Scaling Test-time Training for Large Reasoning Models](https://arxiv.org/abs/2604.19295)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2604.19295)
 - 👤 **Authors:** Qingyang Zhang, Xinke Kong, Haitao Wu, Qinghua Hu, Minghao Wu, Baosong Yang, Yu Cheng, Yun Luo, Ganqu Cui, Changqing Zhang
 - 🗓️ **Date:** 2026-04-21
 - 📑 **Publisher:** arXiv.org
@@ -52,8 +52,8 @@ If you find our code useful when you would like to organize your own repo, feel 
     </details>
 
 
-🔹 [Scaling Test-Time Compute for Agentic Coding](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Scaling Test-Time Compute for Agentic Coding](https://arxiv.org/abs/2604.16529)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2604.16529)
 - 👤 **Authors:** Joongwon Kim, Wannan Yang, Kelvin Niu, Hongming Zhang, Yun Zhu, Eryk Helenowski, Ruan Silva, Zhengxing Chen, Srinivasan Iyer, M. Zaheer, Daniel Fried, Hanna Hajishirzi, Sanjeev Arora, Gabriel Synnaeve, Ruslan Salakhutdinov, Anirudh Goyal
 - 🗓️ **Date:** 2026-04-16
 - 📑 **Publisher:** arXiv.org
@@ -65,8 +65,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [(1D) Ordered Tokens Enable Efficient Test-Time Search](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [(1D) Ordered Tokens Enable Efficient Test-Time Search](https://arxiv.org/abs/2604.15453)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2604.15453)
 - 👤 **Authors:** Zhitong Gao, Parham Rezaei, Ali Cy, Mingqiao Ye, Natavsa Jovanovi'c, Jesse Allardice, Afshin Dehghan, Amir Zamir, Roman Bachmann, Ouguzhan Fatih Kar
 - 🗓️ **Date:** 2026-04-16
 - 📑 **Publisher:** arXiv.org
@@ -76,8 +76,8 @@ If you find our code useful when you would like to organize your own repo, feel 
     No abstract available.
     </details>
 
-🔹 [Test-Time Scaling Makes Overtraining Compute-Optimal](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Test-Time Scaling Makes Overtraining Compute-Optimal](https://arxiv.org/abs/2604.01411)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2604.01411)
 - 👤 **Authors:** Nicholas Roberts, Sung-Dae Cho, Zhiqi Gao, Tzu-Heng Huang, Albert Wu, Gabriel Orlanski, Avi Trost, Kelly A. Buchanan, Aws Albarghouthi, Frederic Sala
 - 🗓️ **Date:** 2026-04-01
 - 📑 **Publisher:** arXiv.org
@@ -101,8 +101,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Learning from Trials and Errors: Reflective Test-Time Planning for Embodied LLMs](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Learning from Trials and Errors: Reflective Test-Time Planning for Embodied LLMs](https://arxiv.org/abs/2602.21198)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.21198)
 - 👤 **Authors:** Yining Hong, Huang Huang, Manling Li, Fei-Fei Li, Jiajun Wu, Yejin Choi
 - 🗓️ **Date:** 2026-02-24
 - 📑 **Publisher:** arXiv.org
@@ -128,8 +128,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Benchmark Test-Time Scaling of General LLM Agents](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Benchmark Test-Time Scaling of General LLM Agents](https://arxiv.org/abs/2602.18998)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.18998)
 - 👤 **Authors:** Xiaochuan Li, Ryan Ming, P. Setlur, Abhijay Paladugu, Andy Tang, Hao Kang, Shuai Shao, Rong Jin, Chenyan Xiong
 - 🗓️ **Date:** 2026-02-22
 - 📑 **Publisher:** arXiv.org
@@ -179,8 +179,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Agentic Test-Time Scaling for WebAgents](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Agentic Test-Time Scaling for WebAgents](https://arxiv.org/abs/2602.12276)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.12276)
 - 👤 **Authors:** Nicholas Lee, Lutfi Eren Erdogan, C. John, Surya Krishnapillai, Michael W. Mahoney, Kurt Keutzer, Amir Gholami
 - 🗓️ **Date:** 2026-02-12
 - 📑 **Publisher:** arXiv.org
@@ -247,8 +247,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [FS-Researcher: Test-Time Scaling for Long-Horizon Research Tasks with File-System-Based Agents](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [FS-Researcher: Test-Time Scaling for Long-Horizon Research Tasks with File-System-Based Agents](https://arxiv.org/abs/2602.01566)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.01566)
 - 👤 **Authors:** Chiwei Zhu, Benfeng Xu, Mingxuan Du, Shaohan Wang, Xiaorui Wang, Zhendong Mao, Yongdong Zhang
 - 🗓️ **Date:** 2026-02-02
 - 📑 **Publisher:** arXiv.org
@@ -278,8 +278,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [On the Power of (Approximate) Reward Models for Inference-Time Scaling](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [On the Power of (Approximate) Reward Models for Inference-Time Scaling](https://arxiv.org/abs/2602.01381)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.01381)
 - 👤 **Authors:** Youheng Zhu, Yiping Lu
 - 🗓️ **Date:** 2026-02-01
 - 📑 **Publisher:** arXiv.org
@@ -345,8 +345,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Policy of Thoughts: Scaling LLM Reasoning via Test-time Policy Evolution](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Policy of Thoughts: Scaling LLM Reasoning via Test-time Policy Evolution](https://arxiv.org/abs/2601.20379)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2601.20379)
 - 👤 **Authors:** Zhengbo Jiao, Hongyu Xian, QING-LONG Wang, Yunpu Ma, Zhebo Wang, Zifan Zhang, Dezhang Kong, Meng Han
 - 🗓️ **Date:** 2026-01-28
 - 📑 **Publisher:** arXiv.org
@@ -385,8 +385,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Aligning Agentic World Models via Knowledgeable Experience Learning](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Aligning Agentic World Models via Knowledgeable Experience Learning](https://arxiv.org/abs/2601.13247)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2601.13247)
 - 👤 **Authors:** Baochang Ren, Yunzhi Yao, Rui Sun, Shuofei Qiao, Ningyu Zhang, Huajun Chen
 - 🗓️ **Date:** 2026-01-19
 - 📑 **Publisher:** arXiv.org
@@ -413,8 +413,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Beyond Model Scaling: Test-Time Intervention for Efficient Deep Reasoning](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Beyond Model Scaling: Test-Time Intervention for Efficient Deep Reasoning](https://arxiv.org/abs/2601.11252)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2601.11252)
 - 👤 **Authors:** Qianyue Wang, Jinwu Hu, Yufeng Wang, Huanxiang Lin, Bolin Chen, Z. Wen, Yaofo Chen, Mingkui Tan
 - 🗓️ **Date:** 2026-01-16
 - 📑 **Publisher:** arXiv.org
@@ -452,8 +452,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Demystifying LLM-as-a-Judge: Analytically Tractable Model for Inference-Time Scaling](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Demystifying LLM-as-a-Judge: Analytically Tractable Model for Inference-Time Scaling](https://arxiv.org/abs/2512.19905)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2512.19905)
 - 👤 **Authors:** Indranil Halder, Cengiz Pehlevan
 - 🗓️ **Date:** 2025-12-22
 - 📑 **Publisher:** arXiv.org
@@ -488,8 +488,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [The Art of Scaling Test-Time Compute for Large Language Models](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [The Art of Scaling Test-Time Compute for Large Language Models](https://arxiv.org/abs/2512.02008)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2512.02008)
 - 👤 **Authors:** Aradhye Agarwal, Ayan Sengupta, Tanmoy Chakraborty
 - 🗓️ **Date:** 2025-12-01
 - 📑 **Publisher:** arXiv.org
@@ -542,8 +542,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Budget-Aware Tool-Use Enables Effective Agent Scaling](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Budget-Aware Tool-Use Enables Effective Agent Scaling](https://arxiv.org/abs/2511.17006)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2511.17006)
 - 👤 **Authors:** Tengxiao Liu, Zifeng Wang, Jin Miao, I-Hung Hsu, Jun Yan, Jiefeng Chen, Rujun Han, Fangyuan Xu, Yanfei Chen, Ke Jiang, Samira Daruki, Yi Liang, William Yang Wang, Tomas Pfister, Chen-Yu Lee
 - 🗓️ **Date:** 2025-11-21
 - 📑 **Publisher:** arXiv.org
@@ -563,8 +563,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Efficient Test-Time Scaling of Multi-Step Reasoning by Probing Internal States of Large Language Models](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Efficient Test-Time Scaling of Multi-Step Reasoning by Probing Internal States of Large Language Models](https://arxiv.org/abs/2511.06209)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2511.06209)
 - 👤 **Authors:** Jingwei Ni, Ekaterina Fadeeva, Tianyi Wu, Mubashara Akhtar, Jiaheng Zhang, Elliott Ash, Markus Leippold, Timothy Baldwin, S. Ng, Artem Shelmanov, Mrinmaya Sachan
 - 🗓️ **Date:** 2025-11-09
 - 📑 **Publisher:** arXiv.org
@@ -606,8 +606,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Test-time Scaling of LLMs: A Survey from A Subproblem Structure Perspective](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Test-time Scaling of LLMs: A Survey from A Subproblem Structure Perspective](https://arxiv.org/abs/2511.14772)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2511.14772)
 - 👤 **Authors:** Zhuoyi Yang, Xu Guo, Tong Zhang, Huijuan Xu, Boyang Li
 - 🗓️ **Date:** 2025-11-01
 - 📑 **Publisher:** arXiv.org
@@ -661,8 +661,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [TUMIX: Multi-Agent Test-Time Scaling with Tool-Use Mixture](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [TUMIX: Multi-Agent Test-Time Scaling with Tool-Use Mixture](https://arxiv.org/abs/2510.01279)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2510.01279)
 - 👤 **Authors:** Yongchao Chen, Jiefeng Chen, Rui Meng, Jiye Yin, Na Li, Chuchu Fan, Chi Wang, Tomas Pfister, Jinsung Yoon
 - 🗓️ **Date:** 2025-09-30
 - 📑 **Publisher:** arXiv.org
@@ -675,8 +675,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [SecInfer: Preventing Prompt Injection via Inference-time Scaling](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [SecInfer: Preventing Prompt Injection via Inference-time Scaling](https://arxiv.org/abs/2509.24967)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.24967)
 - 👤 **Authors:** Yupei Liu, Yanting Wang, Yuqi Jia, Jinyuan Jia, N. Gong
 - 🗓️ **Date:** 2025-09-29
 - 📑 **Publisher:** arXiv.org
@@ -709,8 +709,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory](https://arxiv.org/abs/2509.25140)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.25140)
 - 👤 **Authors:** Siru Ouyang, Jun Yan, I-Hung Hsu, Yanfei Chen, Ke Jiang, Zifeng Wang, Rujun Han, Long T. Le, Samira Daruki, Xiangru Tang, Vishy Tirumalashetty, George Lee, Mahsan Rofouei, Hangfei Lin, Jiawei Han, Chen-Yu Lee, Tomas Pfister
 - 🗓️ **Date:** 2025-09-29
 - 📑 **Publisher:** arXiv.org
@@ -773,8 +773,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Test-Time Scaling in Reasoning Models Is Not Effective for Knowledge-Intensive Tasks Yet](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Test-Time Scaling in Reasoning Models Is Not Effective for Knowledge-Intensive Tasks Yet](https://arxiv.org/abs/2509.06861)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.06861)
 - 👤 **Authors:** James Xu Zhao, Bryan Hooi, S. Ng
 - 🗓️ **Date:** 2025-09-08
 - 📑 **Publisher:** arXiv.org
@@ -810,8 +810,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Scaling Up, Speeding Up: A Benchmark of Speculative Decoding for Efficient LLM Test-Time Scaling](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Scaling Up, Speeding Up: A Benchmark of Speculative Decoding for Efficient LLM Test-Time Scaling](https://arxiv.org/abs/2509.04474)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.04474)
 - 👤 **Authors:** Shengyin Sun, Yiming Li, Xing Li, Yingzhao Lian, Weizhe Lin, Hui-Ling Zhen, Zhiyuan Yang, Chen Chen, Xianzhi Yu, Mingxuan Yuan, Chen Ma
 - 🗓️ **Date:** 2025-08-30
 - 📑 **Publisher:** arXiv.org
@@ -860,8 +860,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [FastTTS: Accelerating Test-Time Scaling for Edge LLM Reasoning](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [FastTTS: Accelerating Test-Time Scaling for Edge LLM Reasoning](https://arxiv.org/abs/2509.00195)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.00195)
 - 👤 **Authors:** H. Chen, Zhiwen Mo, Guanxi Lu, Shuang Liang, Lingxiao Ma, Wayne Luk, Hongxiang Fan
 - 🗓️ **Date:** 2025-08-29
 - 📑 **Publisher:** arXiv.org
@@ -895,8 +895,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Logical Reasoning with Outcome Reward Models for Test-Time Scaling](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Logical Reasoning with Outcome Reward Models for Test-Time Scaling](https://arxiv.org/abs/2508.19903)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2508.19903)
 - 👤 **Authors:** Ramya Keerthy Thatikonda, W. Buntine, Ehsan Shareghi
 - 🗓️ **Date:** 2025-08-27
 - 📑 **Publisher:** Conference on Empirical Methods in Natural Language Processing
@@ -927,8 +927,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Thinking Before You Speak: A Proactive Test-time Scaling Approach](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Thinking Before You Speak: A Proactive Test-time Scaling Approach](https://arxiv.org/abs/2508.18648)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2508.18648)
 - 👤 **Authors:** Cong Liu, Wenchang Chai, Hejun Wu, Yan Pan, Pengxu Wei, Liang Lin
 - 🗓️ **Date:** 2025-08-26
 - 📑 **Publisher:** Conference on Empirical Methods in Natural Language Processing
@@ -972,8 +972,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Test-Time Scaling Strategies for Generative Retrieval in Multimodal Conversational Recommendations](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Test-Time Scaling Strategies for Generative Retrieval in Multimodal Conversational Recommendations](https://arxiv.org/abs/2508.18132)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2508.18132)
 - 👤 **Authors:** Hung-Chun Hsu, Yuan-Ching Kuo, C. Yang, Szu-Wei Fu, Hanrong Ye, Hongxu Yin, Yu-Chiang Frank Wang, Ming-Feng Tsai, Chuan-Ju Wang
 - 🗓️ **Date:** 2025-08-25
 - 📑 **Publisher:** arXiv.org
@@ -1016,8 +1016,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Test-Time Reinforcement Learning for GUI Grounding via Region Consistency](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Test-Time Reinforcement Learning for GUI Grounding via Region Consistency](https://arxiv.org/abs/2508.05615)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2508.05615)
 - 👤 **Authors:** Yong Du, Yuchen Yan, Fei Tang, Zhengxi Lu, Chang Zong, Weiming Lu, Shengpei Jiang, Yongliang Shen
 - 🗓️ **Date:** 2025-08-07
 - 📑 **Publisher:** arXiv.org
@@ -1074,8 +1074,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [CTTS: Collective Test-Time Scaling](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [CTTS: Collective Test-Time Scaling](https://arxiv.org/abs/2508.03333)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2508.03333)
 - 👤 **Authors:** Zhende Song, Shengji Tang, Peng Ye, Jiayuan Fan, Tao Chen
 - 🗓️ **Date:** 2025-08-05
 - 📑 **Publisher:** arXiv.org
@@ -1120,8 +1120,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling](https://arxiv.org/abs/2507.23370)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2507.23370)
 - 👤 **Authors:** Pengfei Gao, Zhao Tian, Xiangxin Meng, Xinchen Wang, Ruida Hu, Yuanan Xiao, Yizhou Liu, Zhao Zhang, Junjie Chen, Cuiyun Gao, Yun Lin, Yingfei Xiong, Chao Peng, Xia Liu
 - 🗓️ **Date:** 2025-07-31
 - 📑 **Publisher:** arXiv.org
@@ -1135,8 +1135,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [GTA1: GUI Test-time Scaling Agent](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [GTA1: GUI Test-time Scaling Agent](https://arxiv.org/abs/2507.05791)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2507.05791)
 - 👤 **Authors:** Yan Yang, Dongxu Li, Yutong Dai, Yuhao Yang, Ziyang Luo, Zirui Zhao, Zhiyuan Hu, Junzhe Huang, Amrita Saha, Zeyuan Chen, Ran Xu, Liyuan Pan, Caiming Xiong, Junnan Li
 - 🗓️ **Date:** 2025-07-08
 - 📑 **Publisher:** arXiv.org
@@ -1192,8 +1192,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Probabilistic Optimality for Inference-time Scaling](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Probabilistic Optimality for Inference-time Scaling](https://arxiv.org/abs/2506.22376)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2506.22376)
 - 👤 **Authors:** Youkang Wang, Jian Wang, Rubing Chen, Xiao-Yong Wei, Qing Li
 - 🗓️ **Date:** 2025-06-27
 - 📑 **Publisher:** arXiv.org
@@ -1289,8 +1289,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Strategic Scaling of Test-Time Compute: A Bandit Learning Approach](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Strategic Scaling of Test-Time Compute: A Bandit Learning Approach](https://arxiv.org/abs/2506.12721)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2506.12721)
 - 👤 **Authors:** Bowen Zuo, Yinglun Zhu
 - 🗓️ **Date:** 2025-06-15
 - 📑 **Publisher:** arXiv.org
@@ -1345,8 +1345,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Scaling Test-time Compute for LLM Agents](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Scaling Test-time Compute for LLM Agents](https://arxiv.org/abs/2506.12928)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2506.12928)
 - 👤 **Authors:** King Zhu, Hanhao Li, Siwei Wu, Tianshun Xing, Dehua Ma, Xiangru Tang, Minghao Liu, Jian Yang, Jiaheng Liu, Y. Jiang, Changwang Zhang, Chenghua Lin, Jun Wang, Ge Zhang, Wangchunshu Zhou
 - 🗓️ **Date:** 2025-06-15
 - 📑 **Publisher:** arXiv.org
@@ -2006,8 +2006,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Rethinking the Role of Prompting Strategies in LLM Test-Time Scaling: A Perspective of Probability Theory](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Rethinking the Role of Prompting Strategies in LLM Test-Time Scaling: A Perspective of Probability Theory](https://arxiv.org/abs/2505.10981)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.10981)
 - 👤 **Authors:** Yexiang Liu, Zekun Li, Zhi Fang, Nan Xu, Ran He, Tieniu Tan
 - 🗓️ **Date:** 2025-05-16
 - 📑 **Publisher:** Annual Meeting of the Association for Computational Linguistics
@@ -2291,8 +2291,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Visual Test-time Scaling for GUI Agent Grounding](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Visual Test-time Scaling for GUI Agent Grounding](https://arxiv.org/abs/2505.00684)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.00684)
 - 👤 **Authors:** Tiange Luo, Lajanugen Logeswaran, Justin Johnson, Honglak Lee
 - 🗓️ **Date:** 2025-05-01
 - 📑 **Publisher:** arXiv.org
@@ -3664,8 +3664,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling Test-Time Compute](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling Test-Time Compute](https://arxiv.org/abs/2503.23803)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2503.23803)
 - 👤 **Authors:** Yingwei Ma, Binhua Li, Yihong Dong, Xue Jiang, Rongyu Cao, Jue Chen, Fei Huang, Yongbin Li
 - 🗓️ **Date:** 2025-03-31
 - 📑 **Publisher:** International Conference on Automated Software Engineering
@@ -4219,8 +4219,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Optimizing Test-Time Compute via Meta Reinforcement Fine-Tuning](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Optimizing Test-Time Compute via Meta Reinforcement Fine-Tuning](https://arxiv.org/abs/2503.07572)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2503.07572)
 - 👤 **Authors:** Yuxiao Qu, Matthew Y. R. Yang, Amrith Rajagopal Setlur, Lewis Tunstall, E. Beeching, Ruslan Salakhutdinov, Aviral Kumar
 - 🗓️ **Date:** 2025-03-10
 - 📑 **Publisher:** arXiv.org
@@ -4890,8 +4890,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Multi-Agent Verification: Scaling Test-Time Compute with Multiple Verifiers](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Multi-Agent Verification: Scaling Test-Time Compute with Multiple Verifiers](https://arxiv.org/abs/2502.20379)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.20379)
 - 👤 **Authors:** Shalev Lifshitz, Sheila A. McIlraith, Yilun Du
 - 🗓️ **Date:** 2025-02-27
 - 📑 **Publisher:** arXiv.org
@@ -4908,8 +4908,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [TestNUC: Enhancing Test-Time Computing Approaches and Scaling through Neighboring Unlabeled Data Consistency](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [TestNUC: Enhancing Test-Time Computing Approaches and Scaling through Neighboring Unlabeled Data Consistency](https://arxiv.org/abs/2502.19163)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.19163)
 - 👤 **Authors:** Henry Peng Zou, Zhengyao Gu, Yue Zhou, Yankai Chen, Weizhi Zhang, Liancheng Fang, Yibo Wang, Yangning Li, Kay Liu, Philip S. Yu
 - 🗓️ **Date:** 2025-02-26
 - 📑 **Publisher:** Annual Meeting of the Association for Computational Linguistics
@@ -5949,8 +5949,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Atom of Thoughts for Markov LLM Test-Time Scaling](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Atom of Thoughts for Markov LLM Test-Time Scaling](https://arxiv.org/abs/2502.12018)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.12018)
 - 👤 **Authors:** Fengwei Teng, Zhaoyang Yu, Quan Shi, Jiayi Zhang, Chenglin Wu, Yuyu Luo, Zhijiang Guo
 - 🗓️ **Date:** 2025-02-17
 - 📑 **Publisher:** arXiv.org
@@ -7670,8 +7670,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Rollout Roulette: A Probabilistic Inference Approach to Inference-Time Scaling of LLMs using Particle-Based Monte Carlo Methods](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Rollout Roulette: A Probabilistic Inference Approach to Inference-Time Scaling of LLMs using Particle-Based Monte Carlo Methods](https://arxiv.org/abs/2502.01618)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.01618)
 - 👤 **Authors:** Isha Puri, Shivchander Sudalairaj, Guangxuan Xu, Kai Xu, Akash Srivastava
 - 🗓️ **Date:** 2025-02-03
 - 📑 **Publisher:** arXiv.org
@@ -9557,8 +9557,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Efficiently Scaling LLM Reasoning with Certaindex](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Efficiently Scaling LLM Reasoning with Certaindex](https://arxiv.org/abs/2412.20993)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2412.20993)
 - 👤 **Authors:** Yichao Fu, Junda Chen, Siqi Zhu, Zheyu Fu, Zhongdongming Dai, Yonghao Zhuang, Yian Ma, Aurick Qiao, Tajana Rosing, Ion Stoica, Hao Zhang
 - 🗓️ **Date:** 2024-12-30
 - 📑 **Publisher:** arXiv.org
@@ -15229,8 +15229,8 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Deep Researcher with Test-Time Diffusion](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [Deep Researcher with Test-Time Diffusion](https://arxiv.org/abs/2507.16075)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2507.16075)
 - 👤 **Authors:** Rujun Han, Yanfei Chen, Zoey CuiZhu, Lesly Miculicich, Guan Sun, Yuanjun Bi, Weimin Wen, Hui Wan, Chunfeng Wen, Solène Maître, George Lee, Vishwanadh Tirumalashetty, Emily Xue, Zizhao Zhang, S. Haykal, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
 - 🗓️ **Date:** None
 - 📑 **Publisher:** arXiv.org

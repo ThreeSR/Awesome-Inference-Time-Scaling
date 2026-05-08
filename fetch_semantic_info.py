@@ -47,23 +47,25 @@ def get_paper_info(paper_id):
 
 def format_paper_info(paper):
     """Format paper information into markdown text"""
-    title = paper.get("title", "N/A")
+    title = paper.get("title") or "N/A"
     authors = ", ".join([author["name"] for author in paper.get("authors", [])])
-    paperId = paper.get("paperId", "N/A")
+    paperId = paper.get("paperId") or "N/A"
     paperInfo = get_paper_info(paperId)
-    arxivId = paperInfo.get('arxivId', "N/A")
-    abstract = paperInfo.get('abstract', "No abstract available.")
-    publication_date = paper.get("publicationDate", "Unknown Date")
-    publisher = paper.get("venue", "Unknown Publisher")
-    if publisher == '':
-        publisher = "arXiv.org"
-    # Construct arXiv links
-    arxiv_abs_url = f"https://arxiv.org/abs/{arxivId}"
-    arxiv_pdf_url = f"https://arxiv.org/pdf/{arxivId}"
-    
-    md = f"""🔹 [{title}]({arxiv_abs_url})
-- 🔗 **arXiv PDF Link:** [Paper Link]({arxiv_pdf_url})
-- 👤 **Authors:** {authors}
+    arxivId = paperInfo.get('arxivId') or None
+    ss_url = paperInfo.get('url') or paper.get('url') or ''
+    abstract = paperInfo.get('abstract') or "No abstract available."
+    publication_date = paper.get("publicationDate") or "Unknown Date"
+    publisher = paper.get("venue") or "arXiv.org"
+
+    if arxivId:
+        title_url = f"https://arxiv.org/abs/{arxivId}"
+        pdf_line = f"- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/{arxivId})\n"
+    else:
+        title_url = ss_url or "https://www.semanticscholar.org/"
+        pdf_line = ""
+
+    md = f"""🔹 [{title}]({title_url})
+{pdf_line}- 👤 **Authors:** {authors}
 - 🗓️ **Date:** {publication_date}
 - 📑 **Publisher:** {publisher}
 - 📝 **Abstract:** 
