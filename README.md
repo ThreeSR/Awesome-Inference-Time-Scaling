@@ -8135,7 +8135,16 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-
+🔹 [Inference-Time Text-to-Video Alignment with Diffusion Latent Beam Search](https://arxiv.org/abs/2501.19252)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.19252)
+- 👤 **Authors:** Yuta Oshima, Masahiro Suzuki, Yutaka Matsuo, Hiroki Furuta
+- 🗓️ **Date:** 2025-01-31
+- 📑 **Publisher:** arXiv.org
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    The remarkable progress in text-to-video diffusion models enables the generation of photorealistic videos, although the content of these generated videos often includes unnatural movement or deformation, reverse playback, and motionless scenes. Recently, an alignment problem has attracted huge attention, where we steer the output of diffusion models based on some measure of the content's goodness. Because there is a large room for improvement of perceptual quality along the frame direction, we should address which metrics we should optimize and how we can optimize them in the video generation. In this paper, we propose diffusion latent beam search with lookahead estimator, which can select a better diffusion latent to maximize a given alignment reward at inference time. We then point out that improving perceptual video quality with respect to alignment to prompts requires reward calibration by weighting existing metrics. This is because when humans or vision language models evaluate outputs, many previous metrics to quantify the naturalness of video do not always correlate with the evaluation. We demonstrate that our method improves the perceptual quality evaluated on the calibrated reward, VLMs, and human assessment, without model parameter update, and outputs the best generation compared to greedy search and best-of-N sampling under much more efficient computational cost. The experiments highlight that our method is beneficial to many capable generative models, and provide a practical guideline: we should prioritize the inference-time compute allocation into enabling the lookahead estimator and increasing the search budget, rather than expanding the denoising steps.
+    </details>
 
 
 
