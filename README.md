@@ -698,15 +698,15 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [DriftLite: Lightweight Drift Control for Inference-Time Scaling of Diffusion Models](https://arxiv.org/abs/N/A)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/N/A)
+🔹 [DriftLite: Lightweight Drift Control for Inference-Time Scaling of Diffusion Models](https://arxiv.org/abs/2509.21655)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.21655)
 - 👤 **Authors:** Yinuo Ren, Wenhao Gao, Lexing Ying, Grant M. Rotskoff, Jiequn Han
 - 🗓️ **Date:** 2025-09-25
-- 📑 **Publisher:** arXiv.org
+- 📑 **Publisher:** International Conference on Learning Representations
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
-    No abstract available.
+    We study inference-time scaling for diffusion models, where the goal is to adapt a pre-trained model to new target distributions without retraining. Existing guidance-based methods are simple but introduce bias, while particle-based corrections suffer from weight degeneracy and high computational cost. We introduce DriftLite, a lightweight, training-free particle-based approach that steers the inference dynamics on the fly with provably optimal stability control. DriftLite exploits a previously unexplored degree of freedom in the Fokker-Planck equation between the drift and particle potential, and yields two practical instantiations: Variance- and Energy-Controlling Guidance (VCG/ECG) for approximating the optimal drift with minimal overhead. Across Gaussian mixture models, particle systems, and large-scale protein-ligand co-folding problems, DriftLite consistently reduces variance and improves sample quality over pure guidance and sequential Monte Carlo baselines. These results highlight a principled, efficient route toward scalable inference-time adaptation of diffusion models. Our source code is publicly available at https://github.com/yinuoren/DriftLite.
     </details>
 
 
