@@ -292,6 +292,20 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+🔹 [Test-time Generalization for Physics through Neural Operator Splitting](https://arxiv.org/abs/2602.00884)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.00884)
+- 👤 **Authors:** Louis Serrano, Jiequn Han, Edouard Oyallon, Shirley Ho, Rudy Morel
+- 🗓️ **Date:** 2026-01-31
+- 📑 **Publisher:** International Conference on Machine Learning
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    Neural operators have shown promise in learning solution maps of partial differential equations (PDEs), but they often struggle to generalize when test inputs lie outside the training distribution, such as novel initial conditions, unseen PDE coefficients or unseen physics. Prior works address this limitation with large-scale multiple physics pretraining followed by fine-tuning, but this still requires examples from the new dynamics, falling short of true zero-shot generalization. In this work, we propose a method to enhance generalization at test time, i.e., without modifying pretrained weights. Building on DISCO, which provides a dictionary of neural operators trained across different dynamics, we introduce a neural operator splitting strategy that, at test time, searches over compositions of training operators to approximate unseen dynamics. On challenging out-of-distribution tasks including parameter extrapolation and novel combinations of physics phenomena, our approach achieves state-of-the-art zero-shot generalization results, while being able to recover the underlying PDE parameters. These results underscore test-time computation as a key avenue for building flexible, compositional, and generalizable neural operators.
+    </details>
+
+
+
+
 
 
 
