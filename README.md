@@ -46,7 +46,7 @@ If you find this paper list useful for your research, please consider citing it:
 
 ```bibtex
 @misc{sun2025awesomeinferencetimescaling,
-  author       = {Rui Sun},
+  author       = {Rui Sun and others},
   title        = {Awesome-Inference-Time-Scaling: Paper List of Inference/Test-Time Scaling/Computing},
   year         = {2025},
   publisher    = {GitHub},

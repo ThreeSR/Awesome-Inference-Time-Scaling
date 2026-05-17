@@ -4,6 +4,7 @@ type: software
 authors:
   - family-names: Sun
     given-names: Rui
+  - name: "Awesome-Inference-Time-Scaling Contributors"
 title: "Awesome-Inference-Time-Scaling: Paper List of Inference/Test-Time Scaling/Computing"
 version: "1.0.0"
 doi: "10.5281/zenodo.20262169"
