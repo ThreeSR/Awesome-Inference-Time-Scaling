@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you find this paper list useful for your research, please cite it as below."
+type: software
+authors:
+  - family-names: Sun
+    given-names: Rui
+title: "Awesome-Inference-Time-Scaling: Paper List of Inference/Test-Time Scaling/Computing"
+date-released: 2025-01-28
+url: "https://github.com/ThreeSR/Awesome-Inference-Time-Scaling"
+repository-code: "https://github.com/ThreeSR/Awesome-Inference-Time-Scaling"

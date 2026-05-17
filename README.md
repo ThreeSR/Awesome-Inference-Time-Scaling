@@ -38,6 +38,21 @@ python fetch_semantic_info.py --paper_name "Scaling Autonomous Agents via Automa
 If you find our code useful when you would like to organize your own repo, feel free to use. Also, thanks for the free use of [Semantic Scholar API](https://www.semanticscholar.org/product/api).
 
 
+## Citation
+
+If you find this paper list useful for your research, please consider citing it:
+
+```bibtex
+@misc{sun2025awesomeinferencetimescaling,
+  author       = {Rui Sun},
+  title        = {Awesome-Inference-Time-Scaling: Paper List of Inference/Test-Time Scaling/Computing},
+  year         = {2025},
+  publisher    = {GitHub},
+  howpublished = {\url{https://github.com/ThreeSR/Awesome-Inference-Time-Scaling}}
+}
+```
+
+
 ## 📖 Paper List (Listed in Time Order)
 
 🔹 [Test-Time Learning with an Evolving Library](https://arxiv.org/abs/2605.14477)
