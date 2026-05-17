@@ -42,7 +42,10 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 ## Citation
 
-If you find this paper list useful for your research, please consider citing it:
+🤝 **This is a community-curated list.** The citation is intentionally credited to **"Rui Sun and others"** — every contributor (via PRs, issues, or paper suggestions) becomes part of the *and others*. If this list is useful to your work, please consider doing both:
+
+- 🌱 **Contribute** — open a PR or issue with a paper you think belongs here. The more we grow this together, the more useful it becomes for the whole community.
+- 📌 **Cite** — sharing this single citation across the community amplifies its visibility on Google Scholar and helps sustain the project. Every citation is a citation we all share.
 
 ```bibtex
 @misc{sun2025awesomeinferencetimescaling,
