@@ -40,14 +40,15 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 ## 📖 Paper List (Listed in Time Order)
 
-🔹 [Test-Time Learning with an Evolving Library](https://www.semanticscholar.org/paper/4c1d38961eea513656f790197d7a039e087a80dc)
+🔹 [Test-Time Learning with an Evolving Library](https://arxiv.org/abs/2605.14477)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2605.14477)
 - 👤 **Authors:** Weijia Xu, Alessandro Sordoni, C. Singh, Zelalem Gero, Michel Galley, Xingdi Yuan, Jianfeng Gao
 - 🗓️ **Date:** 2026-05-14
 - 📑 **Publisher:** arXiv.org
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
-    No abstract available.
+    We introduce EvoLib, a test-time learning framework that enables large language models to accumulate, reuse, and evolve knowledge across problem instances without parameter updates or external supervision. Instead of adapting model parameters, our approach maintains a shared library of knowledge abstractions, including modular skills and reflective insights, automatically extracted from the model's own inference trajectories. To support continual improvement, we introduce a principled weighting and consolidation mechanism that jointly optimizes for immediate utility and long-term value. This allows simple, instance-specific abstractions to evolve into more general and reusable ones over time. Across challenging benchmarks in mathematical reasoning, code generation, and multi-turn agentic environments, EvoLib improves substantially over the top test-time scaling and learning methods without ground-truth feedback.
     </details>
 
 🔹 [TEMPO: Scaling Test-time Training for Large Reasoning Models](https://arxiv.org/abs/2604.19295)
