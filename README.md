@@ -466,14 +466,15 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
-🔹 [Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic](https://www.semanticscholar.org/paper/652862cc93541fd3898da271466c21df7c179d97)
+🔹 [Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic](https://arxiv.org/abs/2601.16486)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2601.16486)
 - 👤 **Authors:** Yichuan Ma, Linyang Li, Yongkang Chen, Peiji Li, Xiaozhe Li, Qipeng Guo, Dahua Lin, Kai Chen
 - 🗓️ **Date:** 2026-01-23
 - 📑 **Publisher:** arXiv.org
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
-    No abstract available.
+    As large language models (LLMs) increasingly tackle complex reasoning tasks, test-time scaling has become critical for enhancing capabilities. However, in agentic scenarios with frequent tool calls, the traditional generation-length-based definition breaks down: tool latency decouples inference time from generation length. We propose Timely Machine, redefining test-time as wall-clock time, where models dynamically adjust strategies based on time budgets. We introduce Timely-Eval, a benchmark spanning high-frequency tool calls, low-frequency tool calls, and time-constrained reasoning. By varying tool latency, we find smaller models excel with fast feedback through more interactions, while larger models dominate high-latency settings via superior interaction quality. Moreover, existing models fail to adapt reasoning to time budgets. We propose Timely-RL to address this gap. After cold-start supervised fine-tuning, we use reinforcement learning to enhance temporal planning. Timely-RL improves time budget awareness and consistently boosts performance across Timely-Eval. We hope our work offers a new perspective on test-time scaling for the agentic era.
     </details>
 
 
@@ -9303,10 +9304,10 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 🔹 [A General Framework for Inference-time Scaling and Steering of Diffusion Models](https://arxiv.org/abs/2501.06848)
-- 🔗 **ArXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.06848)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.06848)
 - 👤 **Authors:** Raghav Singhal, Zachary Horvitz, Ryan Teehan, Mengye Ren, Zhou Yu, Kathleen McKeown, Rajesh Ranganath
 - 🗓️ **Date:** 2025-01-12
-- 📑 **Publisher:** ArXiv
+- 📑 **Publisher:** arXiv.org
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -9482,10 +9483,10 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 🔹 [O1 Replication Journey -- Part 3: Inference-time Scaling for Medical Reasoning](https://arxiv.org/abs/2501.06458)
-- 🔗 **ArXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.06458)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.06458)
 - 👤 **Authors:** Zhongzhen Huang, Gui Geng, Shengyi Hua, Zhen Huang, Haoyang Zou, Shaoting Zhang, Pengfei Liu, Xiaofan Zhang
 - 🗓️ **Date:** 2025-01-11
-- 📑 **Publisher:** ArXiv
+- 📑 **Publisher:** arXiv.org
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -13922,10 +13923,10 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 🔹 [Inference Scaling Laws: An Empirical Analysis of Compute-Optimal Inference for Problem-Solving with Language Models](https://arxiv.org/abs/2408.00724)
-- 🔗 **ArXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2408.00724)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2408.00724)
 - 👤 **Authors:** Yangzhen Wu, Zhiqing Sun, Shanda Li, S. Welleck, Yiming Yang
 - 🗓️ **Date:** 2024-08-01
-- 📑 **Publisher:** ArXiv
+- 📑 **Publisher:** arXiv.org
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -14101,7 +14102,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 🔹 [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](https://arxiv.org/abs/2407.21787)
-- 🔗 **ArXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2407.21787)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2407.21787)
 - 👤 **Authors:** Bradley Brown, Jordan Juravsky, Ryan Ehrlich, Ronald Clark, Quoc V. Le, Christopher R'e, Azalia Mirhoseini
 - 🗓️ **Date:** 2024-07-31
 - 📑 **Publisher:** arXiv.org
@@ -14530,7 +14531,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 🔹 [From Decoding to Meta-Generation: Inference-time Algorithms for Large Language Models](https://arxiv.org/abs/2406.16838)
-- 🔗 **ArXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2406.16838)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2406.16838)
 - 👤 **Authors:** S. Welleck, Amanda Bertsch, Matthew Finlayson, Hailey Schoelkopf, Alex Xie, Graham Neubig, Ilia Kulikov, Zaid Harchaoui
 - 🗓️ **Date:** 2024-06-24
 - 📑 **Publisher:** arXiv.org
@@ -16054,12 +16055,12 @@ If you find our code useful when you would like to organize your own repo, feel 
 🔹 [Deep Researcher with Test-Time Diffusion](https://arxiv.org/abs/2507.16075)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2507.16075)
 - 👤 **Authors:** Rujun Han, Yanfei Chen, Zoey CuiZhu, Lesly Miculicich, Guan Sun, Yuanjun Bi, Weimin Wen, Hui Wan, Chunfeng Wen, Solène Maître, George Lee, Vishwanadh Tirumalashetty, Emily Xue, Zizhao Zhang, S. Haykal, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
-- 🗓️ **Date:** None
+- 🗓️ **Date:** 2025-07-21
 - 📑 **Publisher:** arXiv.org
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
-    No abstract available.
+    Deep research agents, powered by Large Language Models (LLMs), are rapidly advancing; yet, their performance often plateaus when generating complex, long-form research reports using generic test-time scaling algorithms. Drawing inspiration from the iterative nature of human research, which involves cycles of searching, reasoning, and revision, we propose the Test-Time Diffusion Deep Researcher (TTD-DR). This novel framework conceptualizes research report generation as a diffusion process. TTD-DR initiates this process with a preliminary draft, an updatable skeleton that serves as an evolving foundation to guide the research direction. The draft is then iteratively refined through a "denoising" process, which is dynamically informed by a retrieval mechanism that incorporates external information at each step. The core process is further enhanced by a self-evolutionary algorithm applied to each component of the agentic workflow, ensuring the generation of high-quality context for the diffusion process. This draft-centric design makes the report writing process more timely and coherent while reducing information loss during the iterative search process. We demonstrate that our TTD-DR achieves state-of-the-art results on a wide array of benchmarks that require intensive search and multi-hop reasoning, significantly outperforming existing deep research agents.
     </details>
 
 
