@@ -5,6 +5,8 @@ authors:
   - family-names: Sun
     given-names: Rui
 title: "Awesome-Inference-Time-Scaling: Paper List of Inference/Test-Time Scaling/Computing"
-date-released: 2025-01-28
+version: "1.0.0"
+doi: "10.5281/zenodo.20262169"
+date-released: "2026-05-17"
 url: "https://github.com/ThreeSR/Awesome-Inference-Time-Scaling"
 repository-code: "https://github.com/ThreeSR/Awesome-Inference-Time-Scaling"

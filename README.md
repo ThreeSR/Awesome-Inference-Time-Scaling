@@ -1,6 +1,8 @@
 # Awesome-Inference-Time-Scaling
 **Paper List of Inference/Test Time Scaling/Computing**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20262169.svg)](https://doi.org/10.5281/zenodo.20262169)
+
 Maintained by [Rui Sun](https://threesr.github.io/)
 
 If you think our paper list is helpful, please Star⭐. Thanks! We will continue to update.
@@ -48,7 +50,8 @@ If you find this paper list useful for your research, please consider citing it:
   title        = {Awesome-Inference-Time-Scaling: Paper List of Inference/Test-Time Scaling/Computing},
   year         = {2025},
   publisher    = {GitHub},
-  howpublished = {\url{https://github.com/ThreeSR/Awesome-Inference-Time-Scaling}}
+  howpublished = {\url{https://github.com/ThreeSR/Awesome-Inference-Time-Scaling}},
+  doi          = {10.5281/zenodo.20262169}
 }
 ```
 
