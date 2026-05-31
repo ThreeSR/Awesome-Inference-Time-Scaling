@@ -61,6 +61,48 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 ## 📖 Paper List (Listed in Time Order)
 
+🔹 [Share More, Search Less: Collaborative Parallel Thinking for Efficient Test-Time Scaling](https://www.semanticscholar.org/paper/422f73abb856a8e3be96f0694e38b5bf490c5f76)
+- 👤 **Authors:** Xinglin Wang, Haobin Lin, Shaoxiong Feng, Peiwen Yuan, Yiwei Li, Jiayi Shi, Yueqi Zhang, Chuyi Tan, Ji Zhang, Boyuan Pan, Yao Hu, Kan Li
+- 🗓️ **Date:** 2026-05-26
+- 📑 **Publisher:** arXiv.org
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    No abstract available.
+    </details>
+
+🔹 [Stop When Reasoning Converges: Semantic-Preserving Early Exit for Reasoning Models](https://arxiv.org/abs/2605.17672)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2605.17672)
+- 👤 **Authors:** Dehai Min, Giovanni Vaccarino, Huiyi Chen, Yongliang Wu, Gal Yona, Lu Cheng
+- 🗓️ **Date:** 2026-05-17
+- 📑 **Publisher:** arXiv.org
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    Large Reasoning Models (LRMs) achieve strong performance by generating long chains of thought (CoT), but often overthink, continuing to reason after a solution has already stabilized and thereby wasting tokens and increasing latency. Existing inference-time early-exit methods rely primarily on answer-level signals, such as confidence or trial-answer consistency, to decide when to stop. However, these signals mainly reflect answer readiness rather than reasoning convergence: they may trigger before the model has finished exploring or self-correcting, causing premature exits that can degrade final-answer accuracy and leave the retained reasoning chain semantically incomplete. We identify reasoning-level semantic redundancy as a complementary signal for semantic-preserving early exit: when successive steps no longer add novel progress and instead revisit established conclusions, the reasoning trajectory has likely converged. Building on this insight, we propose PUMA, a plug-and-play framework that combines a lightweight Redundancy Detector with answer-level verification. The detector flags semantically redundant candidate exits, while verification confirms whether stopping is safe, allowing PUMA to remove redundant continuation while preserving both answer accuracy and a coherent reasoning prefix. Across five LRMs and five challenging reasoning benchmarks, PUMA achieves 26.2% average token reduction while preserving accuracy and retained CoT quality. Additional experiments on code generation, zero-shot vision-language reasoning, and learned stopping-policy internalization further demonstrate that reasoning-level semantic redundancy is a robust, transferable, and learnable signal for efficient reasoning. Code at https://github.com/giovanni-vaccarino/PUMA.
+    </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 🔹 [Test-Time Learning with an Evolving Library](https://arxiv.org/abs/2605.14477)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2605.14477)
 - 👤 **Authors:** Weijia Xu, Alessandro Sordoni, C. Singh, Zelalem Gero, Michel Galley, Xingdi Yuan, Jianfeng Gao
@@ -72,6 +114,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     We introduce EvoLib, a test-time learning framework that enables large language models to accumulate, reuse, and evolve knowledge across problem instances without parameter updates or external supervision. Instead of adapting model parameters, our approach maintains a shared library of knowledge abstractions, including modular skills and reflective insights, automatically extracted from the model's own inference trajectories. To support continual improvement, we introduce a principled weighting and consolidation mechanism that jointly optimizes for immediate utility and long-term value. This allows simple, instance-specific abstractions to evolve into more general and reusable ones over time. Across challenging benchmarks in mathematical reasoning, code generation, and multi-turn agentic environments, EvoLib improves substantially over the top test-time scaling and learning methods without ground-truth feedback.
     </details>
 
+
 🔹 [TEMPO: Scaling Test-time Training for Large Reasoning Models](https://arxiv.org/abs/2604.19295)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2604.19295)
 - 👤 **Authors:** Qingyang Zhang, Xinke Kong, Haitao Wu, Qinghua Hu, Minghao Wu, Baosong Yang, Yu Cheng, Yun Luo, Ganqu Cui, Changqing Zhang
@@ -82,6 +125,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Test-time training (TTT) adapts model parameters on unlabeled test instances during inference time, which continuously extends capabilities beyond the reach of offline training. Despite initial gains, existing TTT methods for LRMs plateau quickly and do not benefit from additional test-time compute. Without external calibration, the self-generated reward signal increasingly drifts as the policy model evolves, leading to both performance plateaus and diversity collapse. We propose TEMPO, a TTT framework that interleaves policy refinement on unlabeled questions with periodic critic recalibration on a labeled dataset. By formalizing this alternating procedure through the Expectation-Maximization (EM) algorithm, we reveal that prior methods can be interpreted as incomplete variants that omit the crucial recalibration step. Reintroducing this step tightens the evidence lower bound (ELBO) and enables sustained improvement. Across diverse model families (Qwen3 and OLMO3) and reasoning tasks, TEMPO improves OLMO3-7B on AIME 2024 from 33.0% to 51.1% and Qwen3-14B from 42.3% to 65.8%, while maintaining high diversity.
     </details>
+
 
 
 
@@ -107,6 +151,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [(1D) Ordered Tokens Enable Efficient Test-Time Search](https://arxiv.org/abs/2604.15453)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2604.15453)
 - 👤 **Authors:** Zhitong Gao, Parham Rezaei, Ali Cy, Mingqiao Ye, Natavsa Jovanovi'c, Jesse Allardice, Afshin Dehghan, Amir Zamir, Roman Bachmann, Ouguzhan Fatih Kar
@@ -123,6 +168,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Test-Time Scaling Makes Overtraining Compute-Optimal](https://arxiv.org/abs/2604.01411)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2604.01411)
 - 👤 **Authors:** Nicholas Roberts, Sung-Dae Cho, Zhiqi Gao, Tzu-Heng Huang, Albert Wu, Gabriel Orlanski, Avi Trost, Kelly A. Buchanan, Aws Albarghouthi, Frederic Sala
@@ -133,6 +179,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Modern LLMs scale at test-time, e.g. via repeated sampling, where inference cost grows with model size and the number of samples. This creates a trade-off that pretraining scaling laws, such as Chinchilla, do not address. We present Train-to-Test ($T^2$) scaling laws that jointly optimize model size, training tokens, and number of inference samples under fixed end-to-end budgets. $T^2$ modernizes pretraining scaling laws with pass@$k$ modeling used for test-time scaling, then jointly optimizes pretraining and test-time decisions. Forecasts from $T^2$ are robust over distinct modeling approaches: measuring joint scaling effect on the task loss and modeling impact on task accuracy. Across eight downstream tasks, we find that when accounting for inference cost, optimal pretraining decisions shift radically into the overtraining regime, well-outside of the range of standard pretraining scaling suites. We validate our results by pretraining heavily overtrained models in the optimal region that $T^2$ scaling forecasts, confirming their substantially stronger performance compared to pretraining scaling alone. Finally, as frontier LLMs are post-trained, we show that our findings survive the post-training stage, making $T^2$ scaling meaningful in modern deployments.
     </details>
+
 
 
 
@@ -185,6 +232,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Benchmark Test-Time Scaling of General LLM Agents](https://arxiv.org/abs/2602.18998)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.18998)
 - 👤 **Authors:** Xiaochuan Li, Ryan Ming, P. Setlur, Abhijay Paladugu, Andy Tang, Hao Kang, Shuai Shao, Rong Jin, Chenyan Xiong
@@ -195,6 +243,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     LLM agents are increasingly expected to function as general-purpose systems capable of resolving open-ended user requests. While existing benchmarks focus on domain-aware environments for developing specialized agents, evaluating general-purpose agents requires more realistic settings that challenge them to operate across multiple skills and tools within a unified environment. We introduce General AgentBench, a benchmark that provides such a unified framework for evaluating general LLM agents across search, coding, reasoning, and tool-use domains. Using General AgentBench, we systematically study test-time scaling behaviors under sequential scaling (iterative interaction) and parallel scaling (sampling multiple trajectories). Evaluation of ten leading LLM agents reveals a substantial performance degradation when moving from domain-specific evaluations to this general-agent setting. Moreover, we find that neither scaling methodology yields effective performance improvements in practice, due to two fundamental limitations: context ceiling in sequential scaling and verification gap in parallel scaling. Code is publicly available at https://github.com/cxcscmu/General-AgentBench.
     </details>
+
 
 
 
@@ -246,6 +295,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Agentic Test-Time Scaling for WebAgents](https://arxiv.org/abs/2602.12276)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.12276)
 - 👤 **Authors:** Nicholas Lee, Lutfi Eren Erdogan, C. John, Surya Krishnapillai, Michael W. Mahoney, Kurt Keutzer, Amir Gholami
@@ -256,6 +306,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Test-time scaling has become a standard way to improve performance and boost reliability of neural network models. However, its behavior on agentic, multi-step tasks remains less well-understood: small per-step errors can compound over long horizons; and we find that naive policies that uniformly increase sampling show diminishing returns. In this work, we present CATTS, a simple technique for dynamically allocating compute for multi-step agents. We first conduct an empirical study of inference-time scaling for web agents. We find that uniformly increasing per-step compute quickly saturates in long-horizon environments. We then investigate stronger aggregation strategies, including an LLM-based Arbiter that can outperform naive voting, but that can overrule high-consensus decisions. We show that uncertainty statistics derived from the agent's own vote distribution (entropy and top-1/top-2 margin) correlate with downstream success and provide a practical signal for dynamic compute allocation. Based on these findings, we introduce Confidence-Aware Test-Time Scaling (CATTS), which uses vote-derived uncertainty to allocate compute only when decisions are genuinely contentious. CATTS improves performance on WebArena-Lite and GoBrowse by up to 9.1% over React while using up to 2.3x fewer tokens than uniform scaling, providing both efficiency gains and an interpretable decision rule.
     </details>
+
 
 
 
@@ -293,6 +344,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [DTS: Enhancing Large Reasoning Models via Decoding Tree Sketching](https://arxiv.org/abs/2511.00640)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2511.00640)
 - 👤 **Authors:** Zicheng Xu, Xiuyi Lou, Guanchu Wang, Yu-Neng Chuang, Feng Luo, Guangyao Zheng, Alexander S. Szalay, Zirui Liu, Vladimir Braverman
@@ -305,6 +357,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     </details>
 
     
+
 
 
 
@@ -365,6 +418,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [On the Power of (Approximate) Reward Models for Inference-Time Scaling](https://arxiv.org/abs/2602.01381)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.01381)
 - 👤 **Authors:** Youheng Zhu, Yiping Lu
@@ -384,6 +438,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Test-time Generalization for Physics through Neural Operator Splitting](https://arxiv.org/abs/2602.00884)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.00884)
 - 👤 **Authors:** Louis Serrano, Jiequn Han, Edouard Oyallon, Shirley Ho, Rudy Morel
@@ -394,6 +449,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Neural operators have shown promise in learning solution maps of partial differential equations (PDEs), but they often struggle to generalize when test inputs lie outside the training distribution, such as novel initial conditions, unseen PDE coefficients or unseen physics. Prior works address this limitation with large-scale multiple physics pretraining followed by fine-tuning, but this still requires examples from the new dynamics, falling short of true zero-shot generalization. In this work, we propose a method to enhance generalization at test time, i.e., without modifying pretrained weights. Building on DISCO, which provides a dictionary of neural operators trained across different dynamics, we introduce a neural operator splitting strategy that, at test time, searches over compositions of training operators to approximate unseen dynamics. On challenging out-of-distribution tasks including parameter extrapolation and novel combinations of physics phenomena, our approach achieves state-of-the-art zero-shot generalization results, while being able to recover the underlying PDE parameters. These results underscore test-time computation as a key avenue for building flexible, compositional, and generalizable neural operators.
     </details>
+
 
 
 
@@ -487,6 +543,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic](https://arxiv.org/abs/2601.16486)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2601.16486)
 - 👤 **Authors:** Yichuan Ma, Linyang Li, Yongkang Chen, Peiji Li, Xiaozhe Li, Qipeng Guo, Dahua Lin, Kai Chen
@@ -502,6 +559,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Aligning Agentic World Models via Knowledgeable Experience Learning](https://arxiv.org/abs/2601.13247)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2601.13247)
 - 👤 **Authors:** Baochang Ren, Yunzhi Yao, Rui Sun, Shuofei Qiao, Ningyu Zhang, Huajun Chen
@@ -512,6 +570,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Current Large Language Models (LLMs) exhibit a critical modal disconnect: they possess vast semantic knowledge but lack the procedural grounding to respect the immutable laws of the physical world. Consequently, while these agents implicitly function as world models, their simulations often suffer from physical hallucinations-generating plans that are logically sound but physically unexecutable. Existing alignment strategies predominantly rely on resource-intensive training or fine-tuning, which attempt to compress dynamic environmental rules into static model parameters. However, such parametric encapsulation is inherently rigid, struggling to adapt to the open-ended variability of physical dynamics without continuous, costly retraining. To bridge this gap, we introduce WorldMind, a framework that autonomously constructs a symbolic World Knowledge Repository by synthesizing environmental feedback. Specifically, it unifies Process Experience to enforce physical feasibility via prediction errors and Goal Experience to guide task optimality through successful trajectories. Experiments on EB-ALFRED and EB-Habitat demonstrate that WorldMind achieves superior performance compared to baselines with remarkable cross-model and cross-environment transferability.
     </details>
+
 
 
 
@@ -579,6 +638,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Demystifying LLM-as-a-Judge: Analytically Tractable Model for Inference-Time Scaling](https://arxiv.org/abs/2512.19905)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2512.19905)
 - 👤 **Authors:** Indranil Halder, Cengiz Pehlevan
@@ -589,6 +649,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Recent developments in large language models have shown advantages in reallocating a notable share of computational resource from training time to inference time. However, the principles behind inference time scaling are not well understood. In this paper, we introduce an analytically tractable model of inference-time scaling: Bayesian linear regression with a reward-weighted sampler, where the reward is determined from a linear model, modeling LLM-as-a-judge scenario. We study this problem in the high-dimensional regime, where the deterministic equivalents dictate a closed-form expression for the posterior predictive mean and variance. We analyze the generalization error when training data are sampled from a teacher model. We draw $k$ inference-time samples and select via softmax at a temperature applied to a quadratic reward. When the reward is not too different from the teacher, the generalization error decreases monotonically with increasing inference time samples $k$. However, the specific reward that optimizes inference-time selection generally differs from the teacher. In contrast, substantial reward misspecification induces a finite optimal $k$ beyond which more sampling can increase the generalization error. For fixed $k$, there exists an optimal sampling temperature. We experimentally verify these facts in large language model inference with an additional large language model as a judge. In the "best-of-$k$" limit with the teacher as reward, we theoretically show that the generalization error decays as $Θ(1/k^2)$ and determine the leading coefficient via extreme value theory. These formulas delineate domains where scaling inference-time computation is provably preferable to collecting more data. Finally, we demonstrate that when task difficulty increases, the previously mentioned advantage of inference-time compute degrades.
     </details>
+
 
 
 
@@ -679,6 +740,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Budget-Aware Tool-Use Enables Effective Agent Scaling](https://arxiv.org/abs/2511.17006)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2511.17006)
 - 👤 **Authors:** Tengxiao Liu, Zifeng Wang, Jin Miao, I-Hung Hsu, Jun Yan, Jiefeng Chen, Rujun Han, Fangyuan Xu, Yanfei Chen, Ke Jiang, Samira Daruki, Yi Liang, William Yang Wang, Tomas Pfister, Chen-Yu Lee
@@ -705,6 +767,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Efficient Test-Time Scaling of Multi-Step Reasoning by Probing Internal States of Large Language Models](https://arxiv.org/abs/2511.06209)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2511.06209)
 - 👤 **Authors:** Jingwei Ni, Ekaterina Fadeeva, Tianyi Wu, Mubashara Akhtar, Jiaheng Zhang, Elliott Ash, Markus Leippold, Timothy Baldwin, S. Ng, Artem Shelmanov, Mrinmaya Sachan
@@ -715,6 +778,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     LLMs can solve complex tasks by generating long, multi-step reasoning chains. Test-time scaling (TTS) can further improve performance by sampling multiple variants of intermediate reasoning steps, verifying their correctness, and selecting the best steps for continuation. However, existing verification approaches, such as Process Reward Models (PRMs), are computationally expensive and require large-scale human or model-generated annotations. We propose a lightweight alternative for step-level reasoning verification based on probing the internal states of LLMs. We train a transformer-based probe that uses the internal states of a frozen LLM to estimate the credibility of its reasoning steps during generation. Annotation can be provided either by a larger LLM (e.g., DeepSeek-R1) or in a self-supervised manner by the original model itself. The probes are lightweight, containing fewer than 10M parameters. Across multiple domains, including mathematics, planning, and general knowledge question answering, our probes match or exceed the performance of PRMs that are up to 810x larger. These results suggest that LLM internal states encode confidence in their reasoning processes and can serve as reliable signals for step verification, offering a promising path toward scalable, generalizable TTS and more introspective LLMs.
     </details>
+
 
 
 
@@ -813,6 +877,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [TUMIX: Multi-Agent Test-Time Scaling with Tool-Use Mixture](https://arxiv.org/abs/2510.01279)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2510.01279)
 - 👤 **Authors:** Yongchao Chen, Jiefeng Chen, Rui Meng, Jiye Yin, Na Li, Chuchu Fan, Chi Wang, Tomas Pfister, Jinsung Yoon
@@ -823,6 +888,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     While integrating tools like Code Interpreter and Search has significantly enhanced Large Language Model (LLM) reasoning in models like ChatGPT Agent and Gemini-Pro, practical guidance on optimal tool use is lacking. The core challenge is effectively combining textual reasoning, coding, and search for diverse questions. In this paper, we propose Tool-Use Mixture (TUMIX), an ensemble framework that runs multiple agents in parallel, each employing distinct tool-use strategies and answer paths. Agents in TUMIX iteratively share and refine responses based on the question and previous answers. In experiments, TUMIX achieves significant gains over state-of-the-art tool-augmented and test-time scaling methods, delivering an average accuracy improvement of up to 3.55% over the best baseline on Gemini-2.5-Pro and Gemini-2.5-Flash across key reasoning benchmarks, with near-equal inference costs. We find that agent diversity and quality are crucial and can be enhanced by using LLMs to auto-optimize agent designs. Furthermore, TUMIX can halt refinement upon reaching sufficient confidence, preserving performance at only 49% of the inference cost. Further scaling can achieve higher performance, albeit at a greater cost.
     </details>
+
 
 
 
@@ -871,6 +937,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory](https://arxiv.org/abs/2509.25140)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.25140)
 - 👤 **Authors:** Siru Ouyang, Jun Yan, I-Hung Hsu, Yanfei Chen, Ke Jiang, Zifeng Wang, Rujun Han, Long T. Le, Samira Daruki, Xiangru Tang, Vishy Tirumalashetty, George Lee, Mahsan Rofouei, Hangfei Lin, Jiawei Han, Chen-Yu Lee, Tomas Pfister
@@ -881,6 +948,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     With the growing adoption of large language model agents in persistent real-world roles, they naturally encounter continuous streams of tasks. A key limitation, however, is their failure to learn from the accumulated interaction history, forcing them to discard valuable insights and repeat past errors. We propose ReasoningBank, a novel memory framework that distills generalizable reasoning strategies from an agent&#39;s self-judged successful and failed experiences. At test time, an agent retrieves relevant memories from ReasoningBank to inform its interaction and then integrates new learnings back, enabling it to become more capable over time. Building on this powerful experience learner, we further introduce memory-aware test-time scaling (MaTTS), which accelerates and diversifies this learning process by scaling up the agent&#39;s interaction experience. By allocating more compute to each task, the agent generates abundant, diverse experiences that provide rich contrastive signals for synthesizing higher-quality memory. The better memory in turn guides more effective scaling, establishing a powerful synergy between memory and test-time scaling. Across web browsing and software engineering benchmarks, ReasoningBank consistently outperforms existing memory mechanisms that store raw trajectories or only successful task routines, improving both effectiveness and efficiency; MaTTS further amplifies these gains. These findings establish memory-driven experience scaling as a new scaling dimension, enabling agents to self-evolve with emergent behaviors naturally arise. Our code can be found at this https URL .
     </details>
+
 
 
 
@@ -945,6 +1013,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Test-Time Scaling in Reasoning Models Is Not Effective for Knowledge-Intensive Tasks Yet](https://arxiv.org/abs/2509.06861)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.06861)
 - 👤 **Authors:** James Xu Zhao, Bryan Hooi, S. Ng
@@ -955,6 +1024,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Test-time scaling increases inference-time computation by allowing models to generate long reasoning chains, and has improved performance across many domains. However, in this work, we show that this approach is not yet effective for knowledge-intensive tasks. We evaluate 14 reasoning models on two knowledge-intensive benchmarks and find that increasing test-time computation does not consistently improve accuracy and often increases hallucinations. Further analysis shows that changes in hallucination rates under increased test-time computation are largely driven by models&#39; willingness to answer. We also observe that extended reasoning can induce confirmation bias, leading to overconfident hallucinations. Finally, we provide an information-theoretic account: compute-only test-time scaling is a post-processing of a fixed trained model and therefore cannot increase information about the ground-truth answer beyond what is already encoded in the model, explaining its limited gains on knowledge-intensive tasks. Code and data are available at this https URL
     </details>
+
 
 
 
@@ -1042,6 +1112,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [FastTTS: Accelerating Test-Time Scaling for Edge LLM Reasoning](https://arxiv.org/abs/2509.00195)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.00195)
 - 👤 **Authors:** H. Chen, Zhiwen Mo, Guanxi Lu, Shuang Liang, Lingxiao Ma, Wayne Luk, Hongxiang Fan
@@ -1052,6 +1123,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Recent advances in reasoning Large Language Models (LLMs) are driving the emergence of agentic AI systems. Edge deployment of LLM agents near end users is increasingly necessary to protect data privacy, enable offline use, and provide responsive interaction with local context. However, strict memory constraints on edge devices limit deployment to smaller LLMs, whose reasoning capabilities are much weaker than those of large cloud models, hindering practical deployment of edge agentic AI. Test-Time Scaling (TTS) offers a promising solution by allocating more compute during inference to enhance the reasoning capability of edge LLMs. However, current TTS methods introduce heavy hardware performance overhead on resource-constrained devices, making them impractical for real applications. To address this challenge, we present FastTTS, a serving system that enables fast and efficient TTS for memory-constrained LLM reasoning. After analyzing common patterns across various TTS methods and identifying their performance bottlenecks, we introduce three novel techniques: i) Speculative Beam Extension, which mitigates system stragglers caused by irregular reasoning paths, ii) Asymmetric Multi-Model Memory Allocation, which dynamically balances memory usage between token generation and reasoning-step verification, and iii) Dynamic Prefix-Aware Scheduling, which optimizes reasoning execution to maximize KV-cache reuse across search paths. FastTTS offers a plug-and-play third-party library on top of vLLM, enabling edge LLMs (łeq 7B) on a single consumer GPU (24 GB) to match cloud-model accuracy and cloud-measured latency. Comprehensive evaluation shows that FastTTS achieves an average 2.2× higher goodput and reduces latency by 38%-68% compared to the vLLM baseline; it pushes the boundaries of low-latency Test-Time Scaling on memory-constrained edge devices and highlights the potential for democratizing agentic AI.
     </details>
+
 
 
 
@@ -1119,6 +1191,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Thinking Before You Speak: A Proactive Test-time Scaling Approach](https://arxiv.org/abs/2508.18648)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2508.18648)
 - 👤 **Authors:** Cong Liu, Wenchang Chai, Hejun Wu, Yan Pan, Pengxu Wei, Liang Lin
@@ -1129,6 +1202,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Large Language Models (LLMs) often exhibit deficiencies with complex reasoning tasks, such as maths, which we attribute to the discrepancy between human reasoning patterns and those presented in the LLMs' training data. When dealing with complex problems, humans tend to think carefully before expressing solutions. However, they often do not articulate their inner thoughts, including their intentions and chosen methodologies. Consequently, critical insights essential for bridging reasoning steps may be absent in training data collected from human sources. To bridge this gap, we proposes inserting \emph{insight}s between consecutive reasoning steps, which review the status and initiate the next reasoning steps. Unlike prior prompting strategies that rely on a single or a workflow of static prompts to facilitate reasoning, \emph{insight}s are \emph{proactively} generated to guide reasoning processes. We implement our idea as a reasoning framework, named \emph{Thinking Before You Speak} (TBYS), and design a pipeline for automatically collecting and filtering in-context examples for the generation of \emph{insight}s, which alleviates human labeling efforts and fine-tuning overheads. Experiments on challenging mathematical datasets verify the effectiveness of TBYS. Project website: https://gitee.com/jswrt/TBYS
     </details>
+
 
 
 
@@ -1218,6 +1292,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Test-Time Reinforcement Learning for GUI Grounding via Region Consistency](https://arxiv.org/abs/2508.05615)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2508.05615)
 - 👤 **Authors:** Yong Du, Yuchen Yan, Fei Tang, Zhengxi Lu, Chang Zong, Weiming Lu, Shengpei Jiang, Yongliang Shen
@@ -1228,6 +1303,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Graphical User Interface (GUI) grounding, the task of mapping natural language instructions to precise screen coordinates, is fundamental to autonomous GUI agents. While existing methods achieve strong performance through extensive supervised training or reinforcement learning with labeled rewards, they remain constrained by the cost and availability of pixel-level annotations. We observe that when models generate multiple predictions for the same GUI element, the spatial overlap patterns reveal implicit confidence signals that can guide more accurate localization. Leveraging this insight, we propose GUI-RC (Region Consistency), a test-time scaling method that constructs spatial voting grids from multiple sampled predictions to identify consensus regions where models show highest agreement. Without any training, GUI-RC improves accuracy by 2-3% across various architectures on ScreenSpot benchmarks. We further introduce GUI-RCPO (Region Consistency Policy Optimization), transforming these consistency patterns into rewards for test-time reinforcement learning. By computing how well each prediction aligns with the collective consensus, GUI-RCPO enables models to iteratively refine their outputs on unlabeled data during inference. Extensive experiments demonstrate the generality of our approach: using only 1,272 unlabeled data, GUI-RCPO achieves 3-6% accuracy improvements across various architectures on ScreenSpot benchmarks. Our approach reveals the untapped potential of test-time scaling and test-time reinforcement learning for GUI grounding, offering a promising path toward more data-efficient GUI agents.
     </details>
+
 
 
 
@@ -1332,6 +1408,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Trae Agent: An LLM-based Agent for Software Engineering with Test-time Scaling](https://arxiv.org/abs/2507.23370)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2507.23370)
 - 👤 **Authors:** Pengfei Gao, Zhao Tian, Xiangxin Meng, Xinchen Wang, Ruida Hu, Yuanan Xiao, Yizhou Liu, Zhao Zhang, Junjie Chen, Cuiyun Gao, Yun Lin, Yingfei Xiong, Chao Peng, Xia Liu
@@ -1352,6 +1429,19 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
+🔹 [Deep Researcher with Test-Time Diffusion](https://arxiv.org/abs/2507.16075)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2507.16075)
+- 👤 **Authors:** Rujun Han, Yanfei Chen, Zoey CuiZhu, Lesly Miculicich, Guan Sun, Yuanjun Bi, Weimin Wen, Hui Wan, Chunfeng Wen, Solène Maître, George Lee, Vishwanadh Tirumalashetty, Emily Xue, Zizhao Zhang, S. Haykal, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
+- 🗓️ **Date:** 2025-07-21
+- 📑 **Publisher:** arXiv.org
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    Deep research agents, powered by Large Language Models (LLMs), are rapidly advancing; yet, their performance often plateaus when generating complex, long-form research reports using generic test-time scaling algorithms. Drawing inspiration from the iterative nature of human research, which involves cycles of searching, reasoning, and revision, we propose the Test-Time Diffusion Deep Researcher (TTD-DR). This novel framework conceptualizes research report generation as a diffusion process. TTD-DR initiates this process with a preliminary draft, an updatable skeleton that serves as an evolving foundation to guide the research direction. The draft is then iteratively refined through a "denoising" process, which is dynamically informed by a retrieval mechanism that incorporates external information at each step. The core process is further enhanced by a self-evolutionary algorithm applied to each component of the agentic workflow, ensuring the generation of high-quality context for the diffusion process. This draft-centric design makes the report writing process more timely and coherent while reducing information loss during the iterative search process. We demonstrate that our TTD-DR achieves state-of-the-art results on a wide array of benchmarks that require intensive search and multi-hop reasoning, significantly outperforming existing deep research agents.
+    </details>
+
+
 🔹 [GTA1: GUI Test-time Scaling Agent](https://arxiv.org/abs/2507.05791)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2507.05791)
 - 👤 **Authors:** Yan Yang, Dongxu Li, Yutong Dai, Yuhao Yang, Ziyang Luo, Zirui Zhao, Zhiyuan Hu, Junzhe Huang, Amrita Saha, Zeyuan Chen, Ran Xu, Liyuan Pan, Caiming Xiong, Junnan Li
@@ -1362,6 +1452,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Graphical user interface (GUI) agents autonomously complete tasks across platforms (\eg, Linux) by sequentially decomposing user instructions into action proposals that iteratively interact with visual elements in the evolving environment. However, two main challenges arise: i) planning (\ie, the action proposal sequence) under expansive action space, where selecting an appropriate plan is non-trivial, as many valid ones may exist; ii) accurately grounding actions in complex and high-resolution interfaces, \ie, precisely interacting with visual targets. This paper investigates the aforementioned challenges with our \textbf{G}UI \textbf{T}est-time Scaling \textbf{A}gent, namely GTA1. First, we conduct test-time scaling to select the most appropriate action proposal: at each step, multiple candidate proposals are sampled and evaluated and selected by a judge model. It trades off computation for better decision quality by concurrent sampling. Second, we propose a model that improves grounding of the selected action proposals to its corresponding visual elements. Our key insight is that reinforcement learning (RL) facilitates grounding through inherent objective alignments, rewarding successful clicks on interface elements. Experimentally, GTA1 achieves state-of-the-art performance on both grounding and agent task execution benchmarks. The code and models are released here.
     </details>
+
 
 
 
@@ -1452,6 +1543,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention](https://arxiv.org/abs/2506.13585)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2506.13585)
 - 👤 **Authors:** MiniMax Aili Chen, Aonian Li, Bangwei Gong, Binyang Jiang, Bo Fei, Bo Yang, Boji Shan, Changqing Yu, Chao Wang, Cheng Zhu, Chengjun Xiao, Chengyu Du, Chi Zhang, Chu Qiao, Chunhao Zhang, Chunhui Du, Congchao Guo, Da Chen, Deming Ding, Dianjun Sun, Dong Li, Enwei Jiao, Haigang Zhou, Haimo Zhang, Han Ding, Haohai Sun, Haoyu Feng, Huaiguang Cai, Haichao Zhu, Jian Sun, Jiaqi Zhuang, Jiaren Cai, Jiayuan Song, Jin Zhu, Jingyang Li, Jinhao Tian, Jinli Liu, Junhao Xu, Junjie Yan, Junteng Liu, Junxian He, Kaiyi Feng, Ke Yang, Ke Xiao, Le Han, Leyang Wang, Lian-Chun Yu, Li Feng, Lin Li, Lin Zheng, Linge Du, Lingyu Yang, Lunbin Zeng, Ming-Yuan Yu, Mingliang Tao, Mingyuan Chi, Mozhi Zhang, Mujie Lin, Nan Hu, Nongyu Di, Peng Gao, Pengfei Li, Pengyu Zhao, Qibing Ren, Qidi Xu, Qile Li, Qin Wang, Rong Tian, Ruitao Leng, Shaoxiang Chen, Shaoyu Chen, Shengmin Shi, Shitong Weng, Shuchang Guan, Shu Yu, Sichen Li, S. Zhu, Tengfei Li, Tian-Yi Cai, Tianrun Liang, Weiyu Cheng, Weize Kong, Wenkai Li, X. Chen, Xiangjun Song, Xiao Luo, Xiao Su, Xiaobo Li, Xiaodong Han, Xinzhu Hou, Xuan Lu, Xun Zou, Xuyang Shen, Yan Gong, Yan Ma, Yang Wang, Yiqi Shi, Yiran Zhong, Yonghong Duan, Yongxiang Fu, Yong Hu, Yu Gao, Yuanxiang Fan, Yufeng Yang, Yuhao Li, Yulin Hu, Yunan Huang, Yunji Li, Yun-Wei Xu, Yuxin Mao, Yuxuan Shi, Yuze Wenren, Zehan Li, Ze-Miao Li, Zhanxu Tian, Zhen-kun Zhu, Zhenhua Fan, Zhenzhen Wu, Zhichao Xu, Zhihang Yu, Zhiheng Lyu, Zhuo Jiang, Zi Gao, Zijia Wu, Zijian Song, Zijun Sun
@@ -1462,6 +1554,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     We introduce MiniMax-M1, the world's first open-weight, large-scale hybrid-attention reasoning model. MiniMax-M1 is powered by a hybrid Mixture-of-Experts (MoE) architecture combined with a lightning attention mechanism. The model is developed based on our previous MiniMax-Text-01 model, which contains a total of 456 billion parameters with 45.9 billion parameters activated per token. The M1 model natively supports a context length of 1 million tokens, 8x the context size of DeepSeek R1. Furthermore, the lightning attention mechanism in MiniMax-M1 enables efficient scaling of test-time compute. These properties make M1 particularly suitable for complex tasks that require processing long inputs and thinking extensively. MiniMax-M1 is trained using large-scale reinforcement learning (RL) on diverse problems including sandbox-based, real-world software engineering environments. In addition to M1's inherent efficiency advantage for RL training, we propose CISPO, a novel RL algorithm to further enhance RL efficiency. CISPO clips importance sampling weights rather than token updates, outperforming other competitive RL variants. Combining hybrid-attention and CISPO enables MiniMax-M1's full RL training on 512 H800 GPUs to complete in only three weeks, with a rental cost of just $534,700. We release two versions of MiniMax-M1 models with 40K and 80K thinking budgets respectively, where the 40K model represents an intermediate phase of the 80K training. Experiments on standard benchmarks show that our models are comparable or superior to strong open-weight models such as the original DeepSeek-R1 and Qwen3-235B, with particular strengths in complex software engineering, tool utilization, and long-context tasks. We publicly release MiniMax-M1 at https://github.com/MiniMax-AI/MiniMax-M1.
     </details>
+
 
 
 
@@ -1582,6 +1675,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Scaling Test-time Compute for LLM Agents](https://arxiv.org/abs/2506.12928)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2506.12928)
 - 👤 **Authors:** King Zhu, Hanhao Li, Siwei Wu, Tianshun Xing, Dehua Ma, Xiangru Tang, Minghao Liu, Jian Yang, Jiaheng Liu, Y. Jiang, Changwang Zhang, Chenghua Lin, Jun Wang, Ge Zhang, Wangchunshu Zhou
@@ -1611,6 +1705,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Thinking vs. Doing: Agents that Reason by Scaling Test-Time Interaction](https://arxiv.org/abs/2506.07976)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2506.07976)
 - 👤 **Authors:** Junhong Shen, Hao Bai, Lunjun Zhang, Yifei Zhou, Amrith Rajagopal Setlur, Shengbang Tong, Diego Caples, Nan Jiang, Tong Zhang, Ameet Talwalkar, Aviral Kumar
@@ -1621,6 +1716,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     The current paradigm of test-time scaling relies on generating long reasoning traces ("thinking"more) before producing a response. In agent problems that require interaction, this can be done by generating thinking traces before acting in the world. However, this process does not allow agents to acquire new information from the environment or adapt their behavior over time. In this work, we propose to scale test-time interaction, an untapped dimension of test-time scaling that increases the agent's interaction horizon to enable running rich behaviors such as exploration, backtracking, and dynamic re-planning within a single rollout. To demonstrate the promise of this scaling dimension, we study the domain of web agents. We first show that even prompting-based interaction scaling without any training can improve task success on web benchmarks non-trivially. Building on this, we introduce TTI (Test-Time Interaction), a curriculum-based online reinforcement learning (RL) approach that trains agents by adaptively adjusting their rollout lengths. Using a Gemma 3 12B model, TTI produces state-of-the-art open-source, open-data web agents on WebVoyager and WebArena benchmarks. We further show that TTI enables agents to balance exploration and exploitation adaptively. Our results establish interaction scaling as a powerful, complementary axis to scaling per-step compute, offering new avenues for training adaptive agents.
     </details>
+
 
 
 
@@ -1753,6 +1849,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Every Rollout Counts: Optimal Resource Allocation for Efficient Test-Time Scaling](https://arxiv.org/abs/2506.15707)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2506.15707)
 - 👤 **Authors:** Xinglin Wang, Yiwei Li, Shaoxiong Feng, Peiwen Yuan, Yueqi Zhang, Jiayi Shi, Chuyi Tan, Boyuan Pan, Yao Hu, Kan Li
@@ -1763,6 +1860,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Test-Time Scaling (TTS) improves the performance of Large Language Models (LLMs) by using additional inference-time computation to explore multiple reasoning paths through search. Yet how to allocate a fixed rollout budget most effectively during search remains underexplored, often resulting in inefficient use of compute at test time. To bridge this gap, we formulate test-time search as a resource allocation problem and derive the optimal allocation strategy that maximizes the probability of obtaining a correct solution under a fixed rollout budget. Within this formulation, we reveal a core limitation of existing search methods: solution-level allocation tends to favor reasoning directions with more candidates, leading to theoretically suboptimal and inefficient use of compute. To address this, we propose Direction-Oriented Resource Allocation (DORA), a provably optimal method that mitigates this bias by decoupling direction quality from candidate count and allocating resources at the direction level. To demonstrate DORA's effectiveness, we conduct extensive experiments on challenging mathematical reasoning benchmarks including MATH500, AIME2024, and AIME2025. The empirical results show that DORA consistently outperforms strong baselines with comparable computational cost, achieving state-of-the-art accuracy. We hope our findings contribute to a broader understanding of optimal TTS for LLMs.
     </details>
+
 
 
 
@@ -1893,6 +1991,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Test-Time Learning for Large Language Models](https://arxiv.org/abs/2505.20633)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.20633)
 - 👤 **Authors:** Jinwu Hu, Zhitian Zhang, Guohao Chen, Xutao Wen, Chao Shuai, Wei Luo, Bin Xiao, Yuanqing Li, Mingkui Tan
@@ -1903,6 +2002,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     While Large Language Models (LLMs) have exhibited remarkable emergent capabilities through extensive pre-training, they still face critical limitations in generalizing to specialized domains and handling diverse linguistic variations, known as distribution shifts. In this paper, we propose a Test-Time Learning (TTL) paradigm for LLMs, namely TLM, which dynamically adapts LLMs to target domains using only unlabeled test data during testing. Specifically, we first provide empirical evidence and theoretical insights to reveal that more accurate predictions from LLMs can be achieved by minimizing the input perplexity of the unlabeled test data. Based on this insight, we formulate the Test-Time Learning process of LLMs as input perplexity minimization, enabling self-supervised enhancement of LLM performance. Furthermore, we observe that high-perplexity samples tend to be more informative for model optimization. Accordingly, we introduce a Sample Efficient Learning Strategy that actively selects and emphasizes these high-perplexity samples for test-time updates. Lastly, to mitigate catastrophic forgetting and ensure adaptation stability, we adopt Low-Rank Adaptation (LoRA) instead of full-parameter optimization, which allows lightweight model updates while preserving more original knowledge from the model. We introduce the AdaptEval benchmark for TTL and demonstrate through experiments that TLM improves performance by at least 20% compared to original LLMs on domain knowledge adaptation.
     </details>
+
 
 
 
@@ -2047,6 +2147,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Guided by Gut: Efficient Test-Time Scaling with Reinforced Intrinsic Confidence](https://arxiv.org/abs/2505.20325)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.20325)
 - 👤 **Authors:** Amirhosein Ghasemabadi, Keith G. Mills, Baochun Li, Di Niu
@@ -2057,6 +2158,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Test-Time Scaling (TTS) methods for enhancing Large Language Model (LLM) reasoning often incur substantial computational costs, primarily due to extensive reliance on external Process Reward Models (PRMs) or sampling methods like Best-of-N (BoN). This paper introduces Guided by Gut (GG), an efficient self-guided TTS framework that achieves PRM-level performance without costly external verifier models. Our method employs a lightweight tree search guided solely by intrinsic LLM signals, token-level confidence and step novelty. One critical innovation is improving the reliability of internal confidence estimates via a targeted reinforcement learning fine-tuning phase. Empirical evaluations on challenging mathematical reasoning benchmarks demonstrate that GG enables smaller models (e.g., 1.5B parameters) to achieve accuracy matching or surpassing significantly larger models (e.g., 32B-70B parameters), while reducing GPU memory usage by up to 10x. Compared to PRM-based methods, GG achieves comparable accuracy with 8x faster inference speeds and 4-5x lower memory usage. Additionally, GG reduces KV cache memory usage by approximately 50% compared to the BoN strategy, facilitating more efficient and practical deployment of TTS techniques.
     </details>
+
 
 
 
@@ -2210,6 +2312,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Rethinking Optimal Verification Granularity for Compute-Efficient Test-Time Scaling](https://arxiv.org/abs/2505.11730)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.11730)
 - 👤 **Authors:** Hao Chen, Guanxi Lu, Yasuyuki Okoshi, Zhiwen Mo, Masato Motomura, Hongxiang Fan
@@ -2220,6 +2323,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Test-time scaling (TTS) has proven effective in enhancing the reasoning capabilities of large language models (LLMs). Verification plays a key role in TTS, simultaneously influencing (1) reasoning performance and (2) compute efficiency, due to the quality and computational cost of verification. In this work, we challenge the conventional paradigms of verification, and make the first attempt toward systematically investigating the impact of verification granularity-that is, how frequently the verifier is invoked during generation, beyond verifying only the final output or individual generation steps. To this end, we introduce Variable Granularity Search (VG-Search), a unified algorithm that generalizes beam search and Best-of-N sampling via a tunable granularity parameter g. Extensive experiments with VG-Search under varying compute budgets, generator-verifier configurations, and task attributes reveal that dynamically selecting g can improve the compute efficiency and scaling behavior. Building on these findings, we propose adaptive VG-Search strategies that achieve accuracy gains of up to 3.1\% over Beam Search and 3.6\% over Best-of-N, while reducing FLOPs by over 52\%. We will open-source the code to support future research.
     </details>
+
 
 
 
@@ -2346,6 +2450,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Crosslingual Reasoning through Test-Time Scaling](https://arxiv.org/abs/2505.05408)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.05408)
 - 👤 **Authors:** Zheng-Xin Yong, M. Adilazuarda, Jonibek Mansurov, Ruochen Zhang, Niklas Muennighoff, Carsten Eickhoff, G. Winata, Julia Kreutzer, Stephen H. Bach, Alham Fikri Aji
@@ -2429,6 +2534,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Putting the Value Back in RL: Better Test-Time Scaling by Unifying LLM Reasoners With Verifiers](https://arxiv.org/abs/2505.04842)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.04842)
 - 👤 **Authors:** Kusha Sareen, Morgane M Moss, Alessandro Sordoni, Rishabh Agarwal, Arian Hosseini
@@ -2439,6 +2545,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Prevalent reinforcement learning~(RL) methods for fine-tuning LLM reasoners, such as GRPO or Leave-one-out PPO, abandon the learned value function in favor of empirically estimated returns. This hinders test-time compute scaling that relies on using the value-function for verification. In this work, we propose RL$^V$ that augments any ``value-free'' RL method by jointly training the LLM as both a reasoner and a generative verifier using RL-generated data, adding verification capabilities without significant overhead. Empirically, RL$^V$ boosts MATH accuracy by over 20\% with parallel sampling and enables $8-32\times$ efficient test-time compute scaling compared to the base RL method. RL$^V$ also exhibits strong generalization capabilities for both easy-to-hard and out-of-domain tasks. Furthermore, RL$^V$ achieves $1.2-1.6\times$ higher performance when jointly scaling parallel and sequential test-time compute with a long reasoning R1 model.
     </details>
+
 
 
 
@@ -2598,6 +2705,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Visual Test-time Scaling for GUI Agent Grounding](https://arxiv.org/abs/2505.00684)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.00684)
 - 👤 **Authors:** Tiange Luo, Lajanugen Logeswaran, Justin Johnson, Honglak Lee
@@ -2619,6 +2727,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Process Reward Models That Think](https://arxiv.org/abs/2504.16828)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2504.16828)
 - 👤 **Authors:** Muhammad Khalifa, Rishabh Agarwal, Lajanugen Logeswaran, Jaekyeom Kim, Hao Peng, Moontae Lee, Honglak Lee, Lu Wang
@@ -2629,6 +2738,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Step-by-step verifiers -- also known as process reward models (PRMs) -- are a key ingredient for test-time scaling. PRMs require step-level supervision, making them expensive to train. This work aims to build data-efficient PRMs as verbalized step-wise reward models that verify every step in the solution by generating a verification chain-of-thought (CoT). We propose ThinkPRM, a long CoT verifier fine-tuned on orders of magnitude fewer process labels than those required by discriminative PRMs. Our approach capitalizes on the inherent reasoning abilities of long CoT models, and outperforms LLM-as-a-Judge and discriminative verifiers -- using only 1% of the process labels in PRM800K -- across several challenging benchmarks. Specifically, ThinkPRM beats the baselines on ProcessBench, MATH-500, and AIME '24 under best-of-N selection and reward-guided search. In an out-of-domain evaluation on a subset of GPQA-Diamond and LiveCodeBench, our PRM surpasses discriminative verifiers trained on the full PRM800K by 8% and 4.5%, respectively. Lastly, under the same token budget, ThinkPRM scales up verification compute more effectively compared to LLM-as-a-Judge, outperforming it by 7.2% on a subset of ProcessBench. Our work highlights the value of generative, long CoT PRMs that can scale test-time compute for verification while requiring minimal supervision for training. Our code, data, and models will be released at https://github.com/mukhal/thinkprm.
     </details>
+
 
 
 
@@ -2792,6 +2902,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Sleep-time Compute: Beyond Inference Scaling at Test-time](https://arxiv.org/abs/2504.13171)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2504.13171)
 - 👤 **Authors:** Kevin Lin, Charlie Snell, Yu Wang, Charles Packer, Sarah Wooders, Ion Stoica, Joseph Gonzalez
@@ -2802,6 +2913,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Scaling test-time compute has emerged as a key ingredient for enabling large language models (LLMs) to solve difficult problems, but comes with high latency and inference cost. We introduce sleep-time compute, which allows models to"think"offline about contexts before queries are presented: by anticipating what queries users might ask and pre-computing useful quantities, we can significantly reduce the compute requirements at test-time. To demonstrate the efficacy of our method, we create modified versions of two reasoning tasks - Stateful GSM-Symbolic and Stateful AIME. We find that sleep-time compute can reduce the amount of test-time compute needed to achieve the same accuracy by ~ 5x on Stateful GSM-Symbolic and Stateful AIME and that by scaling sleep-time compute we can further increase accuracy by up to 13% on Stateful GSM-Symbolic and 18% on Stateful AIME. Furthermore, we introduce Multi-Query GSM-Symbolic, which extends GSM-Symbolic by including multiple related queries per context. By amortizing sleep-time compute across related queries about the same context using Multi-Query GSM-Symbolic, we can decrease the average cost per query by 2.5x. We then conduct additional analysis to understand when sleep-time compute is most effective, finding the predictability of the user query to be well correlated with the efficacy of sleep-time compute. Finally, we conduct a case-study of applying sleep-time compute to a realistic agentic SWE task.
     </details>
+
 
 
 
@@ -2975,6 +3087,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Heimdall: test-time scaling on the generative verification](https://arxiv.org/abs/2504.10337)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2504.10337)
 - 👤 **Authors:** Wenlei Shi, Xing Jin
@@ -2985,6 +3098,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     An AI system can create and maintain knowledge only to the extent that it can verify that knowledge itself. Recent work on long Chain-of-Thought reasoning has demonstrated great potential of LLMs on solving competitive problems, but their verification ability remains to be weak and not sufficiently investigated. In this paper, we propose Heimdall, the long CoT verification LLM that can accurately judge the correctness of solutions. With pure reinforcement learning, we boost the verification accuracy from 62.5% to 94.5% on competitive math problems. By scaling with repeated sampling, the accuracy further increases to 97.5%. Through human evaluation, Heimdall demonstrates impressive generalization capabilities, successfully detecting most issues in challenging math proofs, the type of which is not included during training. Furthermore, we propose Pessimistic Verification to extend the functionality of Heimdall to scaling up the problem solving. It calls Heimdall to judge the solutions from a solver model and based on the pessimistic principle, selects the most likely correct solution with the least uncertainty. Taking DeepSeek-R1-Distill-Qwen-32B as the solver model, Pessimistic Verification improves the solution accuracy on AIME2025 from 54.2% to 70.0% with 16x compute budget and to 83.3% with more compute budget. With the stronger solver Gemini 2.5 Pro, the score reaches 93.0%. Finally, we prototype an automatic knowledge discovery system, a ternary system where one poses questions, another provides solutions, and the third verifies the solutions. Using the data synthesis work NuminaMath for the first two components, Heimdall effectively identifies problematic records within the dataset and reveals that nearly half of the data is flawed, which interestingly aligns with the recent ablation studies from NuminaMath.
     </details>
+
 
 
 
@@ -3156,6 +3270,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [SpecReason: Fast and Accurate Inference-Time Compute via Speculative Reasoning](https://arxiv.org/abs/2504.07891)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2504.07891)
 - 👤 **Authors:** Rui Pan, Yinwei Dai, Zhihao Zhang, Gabriele Oliaro, Zhihao Jia, Ravi Netravali
@@ -3166,6 +3281,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Recent advances in inference-time compute have significantly improved performance on complex tasks by generating long chains of thought (CoTs) using Large Reasoning Models (LRMs). However, this improved accuracy comes at the cost of high inference latency due to the length of generated reasoning sequences and the autoregressive nature of decoding. Our key insight in tackling these overheads is that LRM inference, and the reasoning that it embeds, is highly tolerant of approximations: complex tasks are typically broken down into simpler steps, each of which brings utility based on the semantic insight it provides for downstream steps rather than the exact tokens it generates. Accordingly, we introduce SpecReason, a system that automatically accelerates LRM inference by using a lightweight model to (speculatively) carry out simpler intermediate reasoning steps and reserving the costly base model only to assess (and potentially correct) the speculated outputs. Importantly, SpecReason's focus on exploiting the semantic flexibility of thinking tokens in preserving final-answer accuracy is complementary to prior speculation techniques, most notably speculative decoding, which demands token-level equivalence at each step. Across a variety of reasoning benchmarks, SpecReason achieves 1.5-2.5$\times$ speedup over vanilla LRM inference while improving accuracy by 1.0-9.9\%. Compared to speculative decoding without SpecReason, their combination yields an additional 19.4-44.2\% latency reduction. We open-source SpecReason at https://github.com/ruipeterpan/specreason.
     </details>
+
 
 
 
@@ -3343,6 +3459,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Inference-Time Scaling for Generalist Reward Modeling](https://arxiv.org/abs/2504.02495)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2504.02495)
 - 👤 **Authors:** Zijun Liu, Peiyi Wang, Runxin Xu, Shirong Ma, Chong Ruan, Peng Li, Yang Liu, Yu Wu
@@ -3353,6 +3470,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Reinforcement learning (RL) has been widely adopted in post-training for large language models (LLMs) at scale. Recently, the incentivization of reasoning capabilities in LLMs from RL indicates that $\textit{proper learning methods could enable effective inference-time scalability}$. A key challenge of RL is to obtain accurate reward signals for LLMs in various domains beyond verifiable questions or artificial rules. In this work, we investigate how to improve reward modeling (RM) with more inference compute for general queries, i.e. the $\textbf{inference-time scalability of generalist RM}$, and further, how to improve the effectiveness of performance-compute scaling with proper learning methods. For the RM approach, we adopt pointwise generative reward modeling (GRM) to enable flexibility for different input types and potential for inference-time scaling. For the learning method, we propose Self-Principled Critique Tuning (SPCT) to foster scalable reward generation behaviors in GRMs through online RL, to generate principles adaptively and critiques accurately, resulting in $\textbf{DeepSeek-GRM}$ models. Furthermore, for effective inference-time scaling, we use parallel sampling to expand compute usage, and introduce a meta RM to guide voting process for better scaling performance. Empirically, we show that SPCT significantly improves the quality and scalability of GRMs, outperforming existing methods and models in various RM benchmarks without severe biases, and could achieve better performance compared to training-time scaling. DeepSeek-GRM still meets challenges in some tasks, which we believe can be addressed by future efforts in generalist reward systems. The models will be released and open-sourced.
     </details>
+
 
 
 
@@ -3551,6 +3669,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [GenPRM: Scaling Test-Time Compute of Process Reward Models via Generative Reasoning](https://arxiv.org/abs/2504.00891)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2504.00891)
 - 👤 **Authors:** Jian Zhao, Runze Liu, Kaiyan Zhang, Zhimu Zhou, Junqi Gao, Dong Li, Jiafei Lyu, Zhouyi Qian, Biqing Qi, Xiu Li, Bowen Zhou
@@ -3561,6 +3680,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Recent advancements in Large Language Models (LLMs) have shown that it is promising to utilize Process Reward Models (PRMs) as verifiers to enhance the performance of LLMs. However, current PRMs face three key challenges: (1) limited process supervision and generalization capabilities, (2) dependence on scalar value prediction without leveraging the generative abilities of LLMs, and (3) inability to scale the test-time compute of PRMs. In this work, we introduce GenPRM, a generative process reward model that performs explicit Chain-of-Thought (CoT) reasoning with code verification before providing judgment for each reasoning step. To obtain high-quality process supervision labels and rationale data, we propose Relative Progress Estimation (RPE) and a rationale synthesis framework that incorporates code verification. Experimental results on ProcessBench and several mathematical reasoning tasks show that GenPRM significantly outperforms prior PRMs with only 23K training data from MATH dataset. Through test-time scaling, a 1.5B GenPRM outperforms GPT-4o, and a 7B GenPRM surpasses Qwen2.5-Math-PRM-72B on ProcessBench. Additionally, GenPRM demonstrates strong abilities to serve as a critic model for policy model refinement. This work establishes a new paradigm for process supervision that bridges the gap between PRMs and critic models in LLMs. Our code, model, and data will be available in https://ryanliu112.github.io/GenPRM.
     </details>
+
 
 
 
@@ -3754,6 +3874,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [m1: Unleash the Potential of Test-Time Scaling for Medical Reasoning with Large Language Models](https://arxiv.org/abs/2504.00869)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2504.00869)
 - 👤 **Authors:** Xiaoke Huang, Juncheng Wu, Hui Liu, Xianfeng Tang, Yuyin Zhou
@@ -3764,6 +3885,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Test-time scaling has emerged as a powerful technique for enhancing the reasoning capabilities of large language models. However, its effectiveness in medical reasoning remains uncertain, as the medical domain fundamentally differs from mathematical tasks in terms of knowledge representation and decision-making processes. In this paper, we provide the first comprehensive investigation of test-time scaling for medical reasoning and present m1, a simple yet effective approach that increases a model's medical reasoning capability at inference. Our evaluation across diverse medical tasks demonstrates that test-time scaling consistently enhances medical reasoning, enabling lightweight fine-tuned models under 10B parameters to establish new state-of-the-art performance, while our 32B model rivals previous 70B-scale medical LLMs. However, we identify an optimal reasoning token budget of approximately 4K, beyond which performance may degrade due to overthinking. Budget forcing, which extends test-time computation through iterative prompts, helps models double-check answers but does not necessarily improve the overall medical QA performance and, in some cases, even introduces errors into previously correct responses. Our case-by-case analysis identifies insufficient medical knowledge as a key bottleneck that prevents further performance gains through test-time scaling. We find that increasing data scale, improving data quality, and expanding model capacity consistently enhance medical knowledge grounding, enabling continued performance improvements, particularly on challenging medical benchmarks where smaller models reach saturation. These findings underscore fundamental differences between medical and mathematical reasoning in LLMs, highlighting that enriched medical knowledge, other than increased reasoning depth alone, is essential for realizing the benefits of test-time scaling.
     </details>
+
 
 
 
@@ -3953,6 +4075,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [What, How, Where, and How Well? A Survey on Test-Time Scaling in Large Language Models](https://arxiv.org/abs/2503.24235)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2503.24235)
 - 👤 **Authors:** Qiyuan Zhang, Fuyuan Lyu, Zexu Sun, Lei Wang, Weixu Zhang, Zhihan Guo, Yufei Wang, Irwin King, Xue Liu, Chen Ma
@@ -3963,6 +4086,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     As enthusiasm for scaling computation (data and parameters) in the pretraining era gradually diminished, test-time scaling (TTS), also referred to as ``test-time computing'' has emerged as a prominent research focus. Recent studies demonstrate that TTS can further elicit the problem-solving capabilities of large language models (LLMs), enabling significant breakthroughs not only in specialized reasoning tasks, such as mathematics and coding, but also in general tasks like open-ended Q&A. However, despite the explosion of recent efforts in this area, there remains an urgent need for a comprehensive survey offering a systemic understanding. To fill this gap, we propose a unified, multidimensional framework structured along four core dimensions of TTS research: what to scale, how to scale, where to scale, and how well to scale. Building upon this taxonomy, we conduct an extensive review of methods, application scenarios, and assessment aspects, and present an organized decomposition that highlights the unique functional roles of individual techniques within the broader TTS landscape. From this analysis, we distill the major developmental trajectories of TTS to date and offer hands-on guidelines for practical deployment. Furthermore, we identify several open challenges and offer insights into promising future directions, including further scaling, clarifying the functional essence of techniques, generalizing to more tasks, and more attributions.
     </details>
+
 
 
 
@@ -4075,6 +4199,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Inference-Time Scaling for Flow Models via Stochastic Generation and Rollover Budget Forcing](https://arxiv.org/abs/2503.19385)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2503.19385)
 - 👤 **Authors:** Jaihoon Kim, Taehoon Yoon, Jisung Hwang, Minhyuk Sung
@@ -4085,6 +4210,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     We propose an inference-time scaling approach for pretrained flow models. Recently, inference-time scaling has gained significant attention in LLMs and diffusion models, improving sample quality or better aligning outputs with user preferences by leveraging additional computation. For diffusion models, particle sampling has allowed more efficient scaling due to the stochasticity at intermediate denoising steps. On the contrary, while flow models have gained popularity as an alternative to diffusion models--offering faster generation and high-quality outputs in state-of-the-art image and video generative models--efficient inference-time scaling methods used for diffusion models cannot be directly applied due to their deterministic generative process. To enable efficient inference-time scaling for flow models, we propose three key ideas: 1) SDE-based generation, enabling particle sampling in flow models, 2) Interpolant conversion, broadening the search space and enhancing sample diversity, and 3) Rollover Budget Forcing (RBF), an adaptive allocation of computational resources across timesteps to maximize budget utilization. Our experiments show that SDE-based generation, particularly variance-preserving (VP) interpolant-based generation, improves the performance of particle sampling methods for inference-time scaling in flow models. Additionally, we demonstrate that RBF with VP-SDE achieves the best performance, outperforming all previous inference-time scaling approaches.
     </details>
+
 
 
 
@@ -4290,6 +4416,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [VideoMind: A Chain-of-LoRA Agent for Long Video Reasoning](https://arxiv.org/abs/2503.13444)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2503.13444)
 - 👤 **Authors:** Ye Liu, Kevin Qinghong Lin, Chang Wen Chen, Mike Zheng Shou
@@ -4300,6 +4427,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Videos, with their unique temporal dimension, demand precise grounded understanding, where answers are directly linked to visual, interpretable evidence. Despite significant breakthroughs in reasoning capabilities within Large Language Models, multi-modal reasoning - especially for videos - remains unexplored. In this work, we introduce VideoMind, a novel video-language agent designed for temporal-grounded video understanding. VideoMind incorporates two key innovations: (i) We identify essential capabilities for video temporal reasoning and develop a role-based agentic workflow, including a planner for coordinating different roles, a grounder for temporal localization, a verifier to assess temporal interval accuracy, and an answerer for question-answering. (ii) To efficiently integrate these diverse roles, we propose a novel Chain-of-LoRA strategy, enabling seamless role-switching via lightweight LoRA adaptors while avoiding the overhead of multiple models, thus balancing efficiency and flexibility. Extensive experiments on 14 public benchmarks, including 3 on grounded video question-answering (Grounded VideoQA), 6 on video temporal grounding (VTG), and 5 on general video question-answering (VideoQA), verify that our agent achieves state-of-the-art performance on diverse video understanding tasks, underscoring its effectiveness in advancing video agent and long-form temporal reasoning.
     </details>
+
 
 
 
@@ -4514,6 +4642,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [VisualPRM: An Effective Process Reward Model for Multimodal Reasoning](https://arxiv.org/abs/2503.10291)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2503.10291)
 - 👤 **Authors:** Weiyun Wang, Zhangwei Gao, Lianjie Chen, Zhe Chen, Jinguo Zhu, Xiangyu Zhao, Yangzhou Liu, Yue Cao, Shenglong Ye, Xizhou Zhu, Lewei Lu, Haodong Duan, Yu Qiao, Jifeng Dai, Wenhai Wang
@@ -4524,6 +4653,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     We introduce VisualPRM, an advanced multimodal Process Reward Model (PRM) with 8B parameters, which improves the reasoning abilities of existing Multimodal Large Language Models (MLLMs) across different model scales and families with Best-of-N (BoN) evaluation strategies. Specifically, our model improves the reasoning performance of three types of MLLMs and four different model scales. Even when applied to the highly capable InternVL2.5-78B, it achieves a 5.9-point improvement across seven multimodal reasoning benchmarks. Experimental results show that our model exhibits superior performance compared to Outcome Reward Models and Self-Consistency during BoN evaluation. To facilitate the training of multimodal PRMs, we construct a multimodal process supervision dataset VisualPRM400K using an automated data pipeline. For the evaluation of multimodal PRMs, we propose VisualProcessBench, a benchmark with human-annotated step-wise correctness labels, to measure the abilities of PRMs to detect erroneous steps in multimodal reasoning tasks. We hope that our work can inspire more future research and contribute to the development of MLLMs. Our model, data, and benchmark are released in https://internvl.github.io/blog/2025-03-13-VisualPRM/.
     </details>
+
 
 
 
@@ -4757,6 +4887,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Ideas in Inference-time Scaling can Benefit Generative Pre-training Algorithms](https://arxiv.org/abs/2503.07154)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2503.07154)
 - 👤 **Authors:** Jiaming Song, Linqi Zhou
@@ -4767,6 +4898,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Recent years have seen significant advancements in foundation models through generative pre-training, yet algorithmic innovation in this space has largely stagnated around autoregressive models for discrete signals and diffusion models for continuous signals. This stagnation creates a bottleneck that prevents us from fully unlocking the potential of rich multi-modal data, which in turn limits the progress on multimodal intelligence. We argue that an inference-first perspective, which prioritizes scaling efficiency during inference time across sequence length and refinement steps, can inspire novel generative pre-training algorithms. Using Inductive Moment Matching (IMM) as a concrete example, we demonstrate how addressing limitations in diffusion models' inference process through targeted modifications yields a stable, single-stage algorithm that achieves superior sample quality with over an order of magnitude greater inference efficiency.
     </details>
+
 
 
 
@@ -4985,6 +5117,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [LLM Post-Training: A Deep Dive into Reasoning Large Language Models](https://arxiv.org/abs/2502.21321)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.21321)
 - 👤 **Authors:** Komal Kumar, Tajamul Ashraf, Omkar Thawakar, R. Anwer, Hisham Cholakkal, Mubarak Shah, Ming-Hsuan Yang, P. Torr, Salman H. Khan, Fahad Shahbaz Khan
@@ -4995,6 +5128,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Large Language Models (LLMs) have transformed the natural language processing landscape and brought to life diverse applications. Pretraining on vast web-scale data has laid the foundation for these models, yet the research community is now increasingly shifting focus toward post-training techniques to achieve further breakthroughs. While pretraining provides a broad linguistic foundation, post-training methods enable LLMs to refine their knowledge, improve reasoning, enhance factual accuracy, and align more effectively with user intents and ethical considerations. Fine-tuning, reinforcement learning, and test-time scaling have emerged as critical strategies for optimizing LLMs performance, ensuring robustness, and improving adaptability across various real-world tasks. This survey provides a systematic exploration of post-training methodologies, analyzing their role in refining LLMs beyond pretraining, addressing key challenges such as catastrophic forgetting, reward hacking, and inference-time trade-offs. We highlight emerging directions in model alignment, scalable adaptation, and inference-time reasoning, and outline future research directions. We also provide a public repository to continually track developments in this fast-evolving field: https://github.com/mbzuai-oryx/Awesome-LLM-Post-training.
     </details>
+
 
 
 
@@ -5241,6 +5375,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [R2-T2: Re-Routing in Test-Time for Multimodal Mixture-of-Experts](https://arxiv.org/abs/2502.20395)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.20395)
 - 👤 **Authors:** Zhongyang Li, Ziyue Li, Tianyi Zhou
@@ -5251,6 +5386,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     In large multimodal models (LMMs), the perception of non-language modalities (e.g., visual representations) is usually not on par with the large language models (LLMs)' powerful reasoning capabilities, deterring LMMs' performance on challenging downstream tasks. This weakness has been recently mitigated by replacing the vision encoder with a mixture-of-experts (MoE), which provides rich, multi-granularity, and diverse representations required by diverse downstream tasks. The performance of multimodal MoE largely depends on its router, which reweights and mixes the representations of different experts for each input. However, we find that the end-to-end trained router does not always produce the optimal routing weights for every test sample. To bridge the gap, we propose a novel and efficient method"Re-Routing in Test-Time (R2-T2)"that locally optimizes the vector of routing weights in test-time by moving it toward those vectors of the correctly predicted samples in a neighborhood of the test sample. We propose three R2-T2 strategies with different optimization objectives and neighbor-search spaces. R2-T2 consistently and greatly improves state-of-the-art LMMs' performance on challenging benchmarks of diverse tasks, without training any base-model parameters.
     </details>
+
 
 
 
@@ -5360,6 +5496,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [TestNUC: Enhancing Test-Time Computing Approaches and Scaling through Neighboring Unlabeled Data Consistency](https://arxiv.org/abs/2502.19163)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.19163)
 - 👤 **Authors:** Henry Peng Zou, Zhengyao Gu, Yue Zhou, Yankai Chen, Weizhi Zhang, Liancheng Fang, Yibo Wang, Yangning Li, Kay Liu, Philip S. Yu
@@ -5370,6 +5507,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Test-time computing approaches, which leverage additional computational resources during inference, have been proven effective in enhancing large language model performance. This work introduces a novel, linearly scaling approach, TestNUC, that improves test-time predictions by leveraging the local consistency of neighboring unlabeled data-it classifies an input instance by considering not only the model's prediction on that instance but also on neighboring unlabeled instances. We evaluate TestNUC across eight diverse datasets, spanning intent classification, topic mining, domain discovery, and emotion detection, demonstrating its consistent superiority over baseline methods such as standard prompting and self-consistency. Furthermore, TestNUC can be seamlessly integrated with existing test-time computing approaches, substantially boosting their performance. Our analysis reveals that TestNUC scales effectively with increasing amounts of unlabeled data and performs robustly across different embedding models, making it practical for real-world applications. Our code is available at https://github.com/HenryPengZou/TestNUC.
     </details>
+
 
 
 
@@ -5551,6 +5689,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Rank1: Test-Time Compute for Reranking in Information Retrieval](https://arxiv.org/abs/2502.18418)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.18418)
 - 👤 **Authors:** Orion Weller, Kathryn Ricci, Eugene Yang, Andrew Yates, Dawn Lawrie, Benjamin Van Durme
@@ -5561,6 +5700,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     We introduce Rank1, the first reranking model trained to take advantage of test-time compute. Rank1 demonstrates the applicability within retrieval of using a reasoning language model (i.e. OpenAI's o1, Deepseek's R1, etc.) for distillation in order to rapidly improve the performance of a smaller model. We gather and open-source a dataset of more than 600,000 examples of R1 reasoning traces from queries and passages in MS MARCO. Models trained on this dataset show: (1) state-of-the-art performance on advanced reasoning and instruction following datasets; (2) work remarkably well out of distribution due to the ability to respond to user-input prompts; and (3) have explainable reasoning chains that can be given to users or RAG-based systems. Further, we demonstrate that quantized versions of these models retain strong performance while using less compute/memory. Overall, Rank1 shows that test-time compute allows for a fundamentally new type of explainable and performant reranker model for search.
     </details>
+
 
 
 
@@ -5779,6 +5919,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [From System 1 to System 2: A Survey of Reasoning Large Language Models](https://arxiv.org/abs/2502.17419)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.17419)
 - 👤 **Authors:** Zhongzhi Li, Duzhen Zhang, Ming-Liang Zhang, Jiaxin Zhang, Zengyan Liu, Yuxuan Yao, Haotian Xu, Junhao Zheng, Pei-Jie Wang, Xiuyi Chen, Yingying Zhang, Fei Yin, Jiahua Dong, Zhijiang Guo, Le Song, Cheng-Lin Liu
@@ -5789,6 +5930,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Achieving human-level intelligence requires refining the transition from the fast, intuitive System 1 to the slower, more deliberate System 2 reasoning. While System 1 excels in quick, heuristic decisions, System 2 relies on logical reasoning for more accurate judgments and reduced biases. Foundational Large Language Models (LLMs) excel at fast decision-making but lack the depth for complex reasoning, as they have not yet fully embraced the step-by-step analysis characteristic of true System 2 thinking. Recently, reasoning LLMs like OpenAI's o1/o3 and DeepSeek's R1 have demonstrated expert-level performance in fields such as mathematics and coding, closely mimicking the deliberate reasoning of System 2 and showcasing human-like cognitive abilities. This survey begins with a brief overview of the progress in foundational LLMs and the early development of System 2 technologies, exploring how their combination has paved the way for reasoning LLMs. Next, we discuss how to construct reasoning LLMs, analyzing their features, the core methods enabling advanced reasoning, and the evolution of various reasoning LLMs. Additionally, we provide an overview of reasoning benchmarks, offering an in-depth comparison of the performance of representative reasoning LLMs. Finally, we explore promising directions for advancing reasoning LLMs and maintain a real-time \href{https://github.com/zzli2022/Awesome-Slow-Reason-System}{GitHub Repository} to track the latest developments. We hope this survey will serve as a valuable resource to inspire innovation and drive progress in this rapidly evolving field.
     </details>
+
 
 
 
@@ -6041,6 +6183,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Revisiting the Test-Time Scaling of o1-like Models: Do they Truly Possess Test-Time Scaling Capabilities?](https://arxiv.org/abs/2502.12215)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.12215)
 - 👤 **Authors:** Zhiyuan Zeng, Qinyuan Cheng, Zhangyue Yin, Yunhua Zhou, Xipeng Qiu
@@ -6051,6 +6194,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     The advent of test-time scaling in large language models (LLMs), exemplified by OpenAI's o1 series, has advanced reasoning capabilities by scaling computational resource allocation during inference. While successors like QwQ, Deepseek-R1 (R1) and LIMO replicate these advancements, whether these models truly possess test-time scaling capabilities remains underexplored. This study found that longer CoTs of these o1-like models do not consistently enhance accuracy; in fact, correct solutions are often shorter than incorrect ones for the same questions. Further investigation shows this phenomenon is closely related to models' self-revision capabilities - longer CoTs contain more self-revisions, which often lead to performance degradation. We then compare sequential and parallel scaling strategies on QwQ, R1 and LIMO, finding that parallel scaling achieves better coverage and scalability. Based on these insights, we propose Shortest Majority Vote, a method that combines parallel scaling strategies with CoT length characteristics, significantly improving models' test-time scalability compared to conventional majority voting approaches.
     </details>
+
 
 
 
@@ -6312,6 +6456,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Scaling Test-Time Compute Without Verification or RL is Suboptimal](https://arxiv.org/abs/2502.12118)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.12118)
 - 👤 **Authors:** Amrith Rajagopal Setlur, Nived Rajaraman, Sergey Levine, Aviral Kumar
@@ -6322,6 +6467,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Despite substantial advances in scaling test-time compute, an ongoing debate in the community is how it should be scaled up to enable continued and efficient improvements with scaling. There are largely two approaches: first, distilling successful search or thinking traces; and second, using verification (e.g., 0/1 outcome rewards, reward models, or verifiers) to guide reinforcement learning (RL) and search algorithms. In this paper, we prove that finetuning LLMs with verifier-based (VB) methods based on RL or search is far superior to verifier-free (VF) approaches based on distilling or cloning search traces, given a fixed amount of compute/data budget. Further, we show that as we scale test-time compute (measured as the output token length) and training data, suboptimality of VF methods scales poorly compared to VB when the base pre-trained LLM presents a heterogeneous distribution over correct solution traces (e.g., different lengths, styles, etc.) and admits a non-sharp distribution over rewards on traces sampled from it. We formalize this condition using anti-concentration [Erd\H{o}s, 1945]. This implies a stronger result that VB methods scale better asymptotically, with the performance gap between VB and VF methods widening as test-time budget grows. We corroborate our theory empirically on both didactic and math reasoning problems with 3/8/32B-sized pre-trained LLMs, where we find verification is crucial for scaling test-time compute.
     </details>
+
 
 
 
@@ -6503,6 +6649,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Diverse Inference and Verification for Advanced Reasoning](https://arxiv.org/abs/2502.09955)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.09955)
 - 👤 **Authors:** Iddo Drori, Gaston Longhitano, Mao Mao, Seunghwan Hyun, Yuke Zhang, Sungjun Park, Zachary Meeks, Xin-Yu Zhang, Ben Segev, Howard Yong, Nakul Verma, A. Shporer, Alon Amit, Madeleine Udell
@@ -6513,6 +6660,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Reasoning LLMs such as OpenAI o1, o3 and DeepSeek R1 have made significant progress in mathematics and coding, yet find challenging advanced tasks such as International Mathematical Olympiad (IMO) combinatorics problems, Abstraction and Reasoning Corpus (ARC) puzzles, and Humanity's Last Exam (HLE) questions. We use a diverse inference approach that combines multiple models and methods at test time. We find that verifying mathematics and code problems, and rejection sampling on other problems is simple and effective. We automatically verify correctness of solutions to IMO problems by Lean, and ARC puzzles by code, and find that best-of-N effectively answers HLE questions. Our approach increases answer accuracy on IMO combinatorics problems from 33.3% to 77.8%, accuracy on HLE questions from 8% to 37%, and solves 80% of ARC puzzles that 948 humans could not and 26.5% of ARC puzzles that o3 high compute does not. Test-time simulations, reinforcement learning, and meta-learning with inference feedback improve generalization by adapting agent graph representations and varying prompts, code, and datasets. Our approach is reliable, robust, and scalable, and in the spirit of reproducible research, we will make it publicly available upon publication.
     </details>
+
 
 
 
@@ -6779,6 +6927,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Bag of Tricks for Inference-time Computation of LLM Reasoning](https://arxiv.org/abs/2502.07191)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.07191)
 - 👤 **Authors:** Fan Liu, WenShuo Chao, Naiqiang Tan, Hao Liu
@@ -6789,6 +6938,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     With the advancement of large language models (LLMs), solving complex reasoning tasks has gained increasing attention. Inference-time computation methods (e.g., Best-of-N, beam search, et al.) are particularly valuable as they can enhance reasoning performance without modifying model parameters or requiring additional training. However, these techniques come with implementation challenges, and most existing methods remain at the proof-of-concept stage with limited practical adoption due to their computational complexity and varying effectiveness across different tasks. In this paper, we investigate and benchmark diverse inference-time computation strategies across reasoning tasks of varying complexity. Since most current methods rely on a proposer-verifier pipeline that first generates candidate solutions (e.g., reasoning solutions) and then selects the best one based on reward signals (e.g., RLHF rewards, process rewards), our research focuses on optimizing both candidate solution generation (e.g., instructing prompts, hyperparameters such as temperature and top-p) and reward mechanisms (e.g., self-evaluation, reward types). Through extensive experiments (more than 20,000 A100-80G GPU hours with over 1,000 experiments) across a variety of models (e.g., Llama, Qwen, and Mistral families) of various sizes, our ablation studies reveal that previously overlooked strategies can significantly enhance performance (e.g., tuning temperature can improve reasoning task performance by up to 5%). Furthermore, we establish a standardized benchmark for inference-time computation by systematically evaluating six representative methods across eight reasoning tasks. These findings provide a stronger foundation for future research. The code is available at https://github.com/usail-hkust/benchmark_inference_time_computation_LLM
     </details>
+
 
 
 
@@ -7042,6 +7192,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Generating Symbolic World Models via Test-time Scaling of Large Language Models](https://arxiv.org/abs/2502.04728)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.04728)
 - 👤 **Authors:** Zhouliang Yu, Yuhuan Yuan, Tim Z. Xiao, Fuxiang Frank Xia, Jie Fu, Ge Zhang, Ge Lin, Weiyang Liu
@@ -7052,6 +7203,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Solving complex planning problems requires Large Language Models (LLMs) to explicitly model the state transition to avoid rule violations, comply with constraints, and ensure optimality-a task hindered by the inherent ambiguity of natural language. To overcome such ambiguity, Planning Domain Definition Language (PDDL) is leveraged as a planning abstraction that enables precise and formal state descriptions. With PDDL, we can generate a symbolic world model where classic searching algorithms, such as A*, can be seamlessly applied to find optimal plans. However, directly generating PDDL domains with current LLMs remains an open challenge due to the lack of PDDL training data. To address this challenge, we propose to scale up the test-time computation of LLMs to enhance their PDDL reasoning capabilities, thereby enabling the generation of high-quality PDDL domains. Specifically, we introduce a simple yet effective algorithm, which first employs a Best-of-N sampling approach to improve the quality of the initial solution and then refines the solution in a fine-grained manner with verbalized machine learning. Our method outperforms o1-mini by a considerable margin in the generation of PDDL domain, achieving over 50% success rate on two tasks (i.e., generating PDDL domains from natural language description or PDDL problems). This is done without requiring additional training. By taking advantage of PDDL as state abstraction, our method is able to outperform current state-of-the-art methods on almost all competition-level planning tasks.
     </details>
+
 
 
 
@@ -7325,6 +7477,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Llasa: Scaling Train-Time and Inference-Time Compute for Llama-based Speech Synthesis](https://arxiv.org/abs/2502.04128)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.04128)
 - 👤 **Authors:** Zhen Ye, Xinfa Zhu, Chi-Min Chan, Xinsheng Wang, Xu Tan, Jiahe Lei, Yi Peng, Haohe Liu, Yizhu Jin, Zheqi DAI, Hongzhan Lin, Jianyi Chen, Xingjian Du, Liumeng Xue, Yunlin Chen, Zhifei Li, Lei Xie, Qiuqiang Kong, Yike Guo, Wei Xue
@@ -7335,6 +7488,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Recent advances in text-based large language models (LLMs), particularly in the GPT series and the o1 model, have demonstrated the effectiveness of scaling both training-time and inference-time compute. However, current state-of-the-art TTS systems leveraging LLMs are often multi-stage, requiring separate models (e.g., diffusion models after LLM), complicating the decision of whether to scale a particular model during training or testing. This work makes the following contributions: First, we explore the scaling of train-time and inference-time compute for speech synthesis. Second, we propose a simple framework Llasa for speech synthesis that employs a single-layer vector quantizer (VQ) codec and a single Transformer architecture to fully align with standard LLMs such as Llama. Our experiments reveal that scaling train-time compute for Llasa consistently improves the naturalness of synthesized speech and enables the generation of more complex and accurate prosody patterns. Furthermore, from the perspective of scaling inference-time compute, we employ speech understanding models as verifiers during the search, finding that scaling inference-time compute shifts the sampling modes toward the preferences of specific verifiers, thereby improving emotional expressiveness, timbre consistency, and content accuracy. In addition, we released the checkpoint and training code for our TTS model (1B, 3B, 8B) and codec model publicly available.
     </details>
+
 
 
 
@@ -7634,6 +7788,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [QLASS: Boosting Language Agent Inference via Q-Guided Stepwise Search](https://arxiv.org/abs/2502.02584)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.02584)
 - 👤 **Authors:** Zongyu Lin, Yao Tang, Xingcheng Yao, Da Yin, Ziniu Hu, Yizhou Sun, Kai-Wei Chang
@@ -7779,6 +7934,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [ZebraLogic: On the Scaling Limits of LLMs for Logical Reasoning](https://arxiv.org/abs/2502.01100)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.01100)
 - 👤 **Authors:** Bill Yuchen Lin, R. L. Bras, Kyle Richardson, Ashish Sabharwal, Radha Poovendran, Peter Clark, Yejin Choi
@@ -7789,6 +7945,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     We investigate the logical reasoning capabilities of large language models (LLMs) and their scalability in complex non-monotonic reasoning. To this end, we introduce ZebraLogic, a comprehensive evaluation framework for assessing LLM reasoning performance on logic grid puzzles derived from constraint satisfaction problems (CSPs). ZebraLogic enables the generation of puzzles with controllable and quantifiable complexity, facilitating a systematic study of the scaling limits of models such as Llama, o1 models, and DeepSeek-R1. By encompassing a broad range of search space complexities and diverse logical constraints, ZebraLogic provides a structured environment to evaluate reasoning under increasing difficulty. Our results reveal a significant decline in accuracy as problem complexity grows -- a phenomenon we term the curse of complexity. This limitation persists even with larger models and increased inference-time computation, suggesting inherent constraints in current LLM reasoning capabilities. Additionally, we explore strategies to enhance logical reasoning, including Best-of-N sampling, backtracking mechanisms, and self-verification prompts. Our findings offer critical insights into the scalability of LLM reasoning, highlight fundamental limitations, and outline potential directions for improvement.
     </details>
+
 
 
 
@@ -8088,6 +8245,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Almost Surely Safe Alignment of Large Language Models at Inference-Time](https://arxiv.org/abs/2502.01208)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2502.01208)
 - 👤 **Authors:** Xiaotong Ji, Shyam Sundhar Ramesh, Matthieu Zimmer, Ilija Bogunovic, Jun Wang, H. Ammar
@@ -8098,6 +8256,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Even highly capable large language models (LLMs) can produce biased or unsafe responses, and alignment techniques, such as RLHF, aimed at mitigating this issue, are expensive and prone to overfitting as they retrain the LLM. This paper introduces a novel inference-time alignment approach that ensures LLMs generate safe responses almost surely, i.e., with a probability approaching one. We achieve this by framing the safe generation of inference-time responses as a constrained Markov decision process within the LLM's latent space. Crucially, we augment a safety state that tracks the evolution of safety constraints and enables us to demonstrate formal safety guarantees upon solving the MDP in the latent space. Building on this foundation, we propose InferenceGuard, a practical implementation that safely aligns LLMs without modifying the model weights. Empirically, we demonstrate InferenceGuard effectively balances safety and task performance, outperforming existing inference-time alignment methods in generating safe and aligned responses.
     </details>
+
 
 
 
@@ -8278,6 +8437,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [s1: Simple test-time scaling](https://arxiv.org/abs/2501.19393)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.19393)
 - 👤 **Authors:** Niklas Muennighoff, Zitong Yang, Weijia Shi, Xiang Lisa Li, Fei-Fei Li, Hanna Hajishirzi, Luke S. Zettlemoyer, Percy Liang, Emmanuel J. Candes, Tatsunori Hashimoto
@@ -8288,6 +8448,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Test-time scaling is a promising new approach to language modeling that uses extra test-time compute to improve performance. Recently, OpenAI's o1 model showed this capability but did not publicly share its methodology, leading to many replication efforts. We seek the simplest approach to achieve test-time scaling and strong reasoning performance. First, we curate a small dataset s1K of 1,000 questions paired with reasoning traces relying on three criteria we validate through ablations: difficulty, diversity, and quality. Second, we develop budget forcing to control test-time compute by forcefully terminating the model's thinking process or lengthening it by appending"Wait"multiple times to the model's generation when it tries to end. This can lead the model to double-check its answer, often fixing incorrect reasoning steps. After supervised finetuning the Qwen2.5-32B-Instruct language model on s1K and equipping it with budget forcing, our model s1 exceeds o1-preview on competition math questions by up to 27% (MATH and AIME24). Further, scaling s1 with budget forcing allows extrapolating beyond its performance without test-time intervention: from 50% to 57% on AIME24. Our model, data, and code are open-source at https://github.com/simplescaling/s1.
     </details>
+
 
 
 
@@ -8609,6 +8770,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [SETS: Leveraging Self-Verification and Self-Correction for Improved Test-Time Scaling](https://arxiv.org/abs/2501.19306)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.19306)
 - 👤 **Authors:** Jiefeng Chen, Jie Ren, Xinyun Chen, Chengrun Yang, Ruoxi Sun, Sercan Ö. Arik
@@ -8619,6 +8781,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Recent advancements in Large Language Models (LLMs) have created new opportunities to enhance performance on complex reasoning tasks by leveraging test-time computation. However, conventional approaches such as repeated sampling with majority voting or reward model scoring, often face diminishing returns as test-time compute scales, in addition to requiring costly task-specific reward model training. In this paper, we present Self-Enhanced Test-Time Scaling (SETS), a novel method that leverages the self-verification and self-correction capabilities of recent advanced LLMs to overcome these limitations. SETS integrates sampling, self-verification, and self-correction into a unified framework, enabling efficient and scalable test-time computation for improved capabilities at complex tasks. Through extensive experiments on challenging planning and reasoning benchmarks, compared to the alternatives, we demonstrate that SETS achieves significant performance improvements and more favorable test-time scaling laws.
     </details>
+
 
 
 
@@ -8787,6 +8950,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [SANA 1.5: Efficient Scaling of Training-Time and Inference-Time Compute in Linear Diffusion Transformer](https://arxiv.org/abs/2501.18427)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.18427)
 - 👤 **Authors:** Enze Xie, Junsong Chen, Yuyang Zhao, Jincheng Yu, Ligeng Zhu, Yujun Lin, Zhekai Zhang, Muyang Li, Junyu Chen, Han Cai, Bingchen Liu, Daquan Zhou, Song Han
@@ -8797,6 +8961,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     This paper presents SANA-1.5, a linear Diffusion Transformer for efficient scaling in text-to-image generation. Building upon SANA-1.0, we introduce three key innovations: (1) Efficient Training Scaling: A depth-growth paradigm that enables scaling from 1.6B to 4.8B parameters with significantly reduced computational resources, combined with a memory-efficient 8-bit optimizer. (2) Model Depth Pruning: A block importance analysis technique for efficient model compression to arbitrary sizes with minimal quality loss. (3) Inference-time Scaling: A repeated sampling strategy that trades computation for model capacity, enabling smaller models to match larger model quality at inference time. Through these strategies, SANA-1.5 achieves a text-image alignment score of 0.72 on GenEval, which can be further improved to 0.80 through inference scaling, establishing a new SoTA on GenEval benchmark. These innovations enable efficient model scaling across different compute budgets while maintaining high quality, making high-quality image generation more accessible.
     </details>
+
 
 
 
@@ -9145,6 +9310,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Inference-Time Scaling for Diffusion Models beyond Scaling Denoising Steps](https://arxiv.org/abs/2501.09732)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.09732)
 - 👤 **Authors:** Nanye Ma, Shangyuan Tong, Haolin Jia, Hexiang Hu, Yu-Chuan Su, Mingda Zhang, Xuan Yang, Yandong Li, T. Jaakkola, Xuhui Jia, Saining Xie
@@ -9155,6 +9321,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Generative models have made significant impacts across various domains, largely due to their ability to scale during training by increasing data, computational resources, and model size, a phenomenon characterized by the scaling laws. Recent research has begun to explore inference-time scaling behavior in Large Language Models (LLMs), revealing how performance can further improve with additional computation during inference. Unlike LLMs, diffusion models inherently possess the flexibility to adjust inference-time computation via the number of denoising steps, although the performance gains typically flatten after a few dozen. In this work, we explore the inference-time scaling behavior of diffusion models beyond increasing denoising steps and investigate how the generation performance can further improve with increased computation. Specifically, we consider a search problem aimed at identifying better noises for the diffusion sampling process. We structure the design space along two axes: the verifiers used to provide feedback, and the algorithms used to find better noise candidates. Through extensive experiments on class-conditioned and text-conditioned image generation benchmarks, our findings reveal that increasing inference-time compute leads to substantial improvements in the quality of samples generated by diffusion models, and with the complicated nature of images, combinations of the components in the framework can be specifically chosen to conform with different application scenario.
     </details>
+
 
 
 
@@ -9503,6 +9670,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [O1 Replication Journey -- Part 3: Inference-time Scaling for Medical Reasoning](https://arxiv.org/abs/2501.06458)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.06458)
 - 👤 **Authors:** Zhongzhen Huang, Gui Geng, Shengyi Hua, Zhen Huang, Haoyang Zou, Shaoting Zhang, Pengfei Liu, Xiaofan Zhang
@@ -9513,6 +9681,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Building upon our previous investigations of O1 replication (Part 1: Journey Learning [Qin et al., 2024] and Part 2: Distillation [Huang et al., 2024]), this work explores the potential of inference-time scaling in large language models (LLMs) for medical reasoning tasks, ranging from diagnostic decision-making to treatment planning. Through extensive experiments on medical benchmarks of varying complexity (MedQA, Medbullets, and JAMA Clinical Challenges), our investigation reveals several key insights: (1) Increasing inference time does lead to improved performance. With a modest training set of 500 samples, our model yields substantial performance improvements of 6%-11%. (2) Task complexity directly correlates with the required length of reasoning chains, confirming the necessity of extended thought processes for challenging problems. (3) The differential diagnoses generated by our model adhere to the principles of the hypothetico-deductive method, producing a list of potential conditions that may explain a patient's symptoms and systematically narrowing these possibilities by evaluating the evidence. These findings demonstrate the promising synergy between inference-time scaling and journey learning in advancing LLMs' real-world clinical reasoning capabilities.
     </details>
+
 
 
 
@@ -9853,6 +10022,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Towards System 2 Reasoning in LLMs: Learning How to Think With Meta Chain-of-Though](https://arxiv.org/abs/2501.04682)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2501.04682)
 - 👤 **Authors:** Violet Xiang, Charlie Snell, Kanishk Gandhi, Alon Albalak, Anikait Singh, Chase Blagden, Duy Phung, Rafael Rafailov, nathan lile, Dakota Mahan, Louis Castricato, Jan-Philipp Franken, Nick Haber, Chelsea Finn
@@ -9863,6 +10033,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     We propose a novel framework, Meta Chain-of-Thought (Meta-CoT), which extends traditional Chain-of-Thought (CoT) by explicitly modeling the underlying reasoning required to arrive at a particular CoT. We present empirical evidence from state-of-the-art models exhibiting behaviors consistent with in-context search, and explore methods for producing Meta-CoT via process supervision, synthetic data generation, and search algorithms. Finally, we outline a concrete pipeline for training a model to produce Meta-CoTs, incorporating instruction tuning with linearized search traces and reinforcement learning post-training. Finally, we discuss open research questions, including scaling laws, verifier roles, and the potential for discovering novel reasoning algorithms. This work provides a theoretical and practical roadmap to enable Meta-CoT in LLMs, paving the way for more powerful and human-like reasoning in artificial intelligence.
     </details>
+
 
 
 
@@ -10184,6 +10355,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Efficiently Scaling LLM Reasoning with Certaindex](https://arxiv.org/abs/2412.20993)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2412.20993)
 - 👤 **Authors:** Yichao Fu, Junda Chen, Siqi Zhu, Zheyu Fu, Zhongdongming Dai, Yonghao Zhuang, Yian Ma, Aurick Qiao, Tajana Rosing, Ion Stoica, Hao Zhang
@@ -10227,6 +10399,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Outcome-Refining Process Supervision for Code Generation](https://arxiv.org/abs/2412.15118)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2412.15118)
 - 👤 **Authors:** Zhuohao Yu, Weizheng Gu, Yidong Wang, Zhengran Zeng, Jindong Wang, Wei Ye, Shi-Bo Zhang
@@ -10237,6 +10410,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Large Language Models have demonstrated remarkable capabilities in code generation, yet they often struggle with complex programming tasks that require deep algorithmic reasoning. While process supervision through learned reward models shows promise in guiding reasoning steps, it requires expensive training data and suffers from unreliable evaluation. We propose Outcome-Refining Process Supervision, a novel paradigm that treats outcome refinement itself as the process to be supervised. Our framework leverages concrete execution signals to ground the supervision of reasoning steps, while using tree-structured exploration to maintain multiple solution trajectories simultaneously. Experiments demonstrate that our approach enables even smaller models to achieve high success accuracy and performance metrics on competitive programming tasks, creates more reliable verification than traditional reward models without requiring training PRMs. Our approach achieves significant improvements across 5 models and 3 datasets: an average of 26.9% increase in correctness and 42.2% in efficiency. The results suggest that providing structured reasoning space with concrete verification signals is crucial for solving complex programming tasks. We open-source all our code and data at: https://github.com/zhuohaoyu/ORPS
     </details>
+
 
 
 
@@ -10461,6 +10635,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Forest-of-Thought: Scaling Test-Time Compute for Enhancing LLM Reasoning](https://arxiv.org/abs/2412.09078)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2412.09078)
 - 👤 **Authors:** Zhenni Bi, Kai Han, Chuanjian Liu, Yehui Tang, Yunhe Wang
@@ -10578,6 +10753,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Expanding Performance Boundaries of Open-Source Multimodal Models with Model, Data, and Test-Time Scaling](https://arxiv.org/abs/2412.05271)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2412.05271)
 - 👤 **Authors:** Zhe Chen, Weiyun Wang, Yue Cao, Yangzhou Liu, Zhangwei Gao, Erfei Cui, Jinguo Zhu, Shenglong Ye, Hao Tian, Zhaoyang Liu, Lixin Gu, Xuehui Wang, Qingyun Li, Yiming Ren, Zixuan Chen, Jiapeng Luo, Jiahao Wang, Tan Jiang, Bo Wang, Conghui He, Botian Shi, Xingcheng Zhang, Han Lv, Yi Wang, Wenqi Shao, Pei Chu, Zhongying Tu, Tong He, Zhiyong Wu, Hui Deng, Jiaye Ge, Kaiming Chen, Min Dou, Lewei Lu, Xizhou Zhu, Tong Lu, Dahu Lin, Yunfeng Qiao, Jifeng Dai, Wenhai Wang
@@ -10588,6 +10764,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     We introduce InternVL 2.5, an advanced multimodal large language model (MLLM) series that builds upon InternVL 2.0, maintaining its core model architecture while introducing significant enhancements in training and testing strategies as well as data quality. In this work, we delve into the relationship between model scaling and performance, systematically exploring the performance trends in vision encoders, language models, dataset sizes, and test-time configurations. Through extensive evaluations on a wide range of benchmarks, including multi-discipline reasoning, document understanding, multi-image / video understanding, real-world comprehension, multimodal hallucination detection, visual grounding, multilingual capabilities, and pure language processing, InternVL 2.5 exhibits competitive performance, rivaling leading commercial models such as GPT-4o and Claude-3.5-Sonnet. Notably, our model is the first open-source MLLMs to surpass 70% on the MMMU benchmark, achieving a 3.7-point improvement through Chain-of-Thought (CoT) reasoning and showcasing strong potential for test-time scaling. We hope this model contributes to the open-source community by setting new standards for developing and applying multimodal AI systems. HuggingFace demo see https://huggingface.co/spaces/OpenGVLab/InternVL
     </details>
+
 
 
 
@@ -10830,6 +11007,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Scaling Inference-Time Search with Vision Value Model for Improved Visual Comprehension](https://arxiv.org/abs/2412.03704)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2412.03704)
 - 👤 **Authors:** Wang Xiyao, Zhengyuan Yang, Linjie Li, Hongjin Lu, Yuancheng Xu, Lin Chung-Ching Lin, Lin Kevin, Furong Huang, Lijuan Wang
@@ -10840,6 +11018,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Despite significant advancements in vision-language models (VLMs), there lacks effective approaches to enhance response quality by scaling inference-time computation. This capability is known to be a core step towards the self-improving models in recent large language model studies. In this paper, we present Vision Value Model (VisVM) that can guide VLM inference-time search to generate responses with better visual comprehension. Specifically, VisVM not only evaluates the generated sentence quality in the current search step, but also anticipates the quality of subsequent sentences that may result from the current step, thus providing a long-term value. In this way, VisVM steers VLMs away from generating sentences prone to hallucinations or insufficient detail, thereby producing higher quality responses. Experimental results demonstrate that VisVM-guided search significantly enhances VLMs' ability to generate descriptive captions with richer visual details and fewer hallucinations, compared with greedy decoding and search methods with other visual reward signals. Furthermore, we find that self-training the model with the VisVM-guided captions improve VLM's performance across a wide range of multimodal benchmarks, indicating the potential for developing self-improving VLMs. Our value model and code are available at https://github.com/si0wang/VisVM.
     </details>
+
 
 
 
@@ -11169,6 +11348,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [o1-Coder: an o1 Replication for Coding](https://arxiv.org/abs/2412.00154)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2412.00154)
 - 👤 **Authors:** Yuxiang Zhang, Shangxi Wu, Yuqi Yang, Jiangming Shu, Jinlin Xiao, Chao Kong, Jitao Sang
@@ -11179,6 +11359,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     The technical report introduces O1-CODER, an attempt to replicate OpenAI's o1 model with a focus on coding tasks. It integrates reinforcement learning (RL) and Monte Carlo Tree Search (MCTS) to enhance the model's System-2 thinking capabilities. The framework includes training a Test Case Generator (TCG) for standardized code testing, using MCTS to generate code data with reasoning processes, and iteratively fine-tuning the policy model to initially produce pseudocode and then generate the full code. The report also addresses the opportunities and challenges in deploying o1-like models in real-world applications, suggesting transitioning to the System-2 paradigm and highlighting the imperative for world model construction. Updated model progress and experimental results will be reported in subsequent versions. All source code, curated datasets, as well as the derived models are disclosed at https://github.com/ADaM-BJTU/O1-CODER .
     </details>
+
 
 
 
@@ -11481,6 +11662,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Marco-o1: Towards Open Reasoning Models for Open-Ended Solutions](https://arxiv.org/abs/2411.14405)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2411.14405)
 - 👤 **Authors:** Yu Zhao, Huifeng Yin, Bo Zeng, Hao Wang, Tianqi Shi, Chenyang Lyu, Longyue Wang, Weihua Luo, Kaifu Zhang
@@ -11635,6 +11817,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Enhancing LLM Reasoning with Reward-guided Tree Search](https://arxiv.org/abs/2411.11694)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2411.11694)
 - 👤 **Authors:** Jinhao Jiang, Zhipeng Chen, Yingqian Min, Jie Chen, Xiaoxue Cheng, Jiapeng Wang, Yiru Tang, Haoxiang Sun, Jia Deng, Wayne Xin Zhao, Zheng Liu, Dong Yan, Jian Xie, Zhongyuan Wang, Jiahui Wen
@@ -11645,6 +11828,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Recently, test-time scaling has garnered significant attention from the research community, largely due to the substantial advancements of the o1 model released by OpenAI. By allocating more computational resources during the inference phase, large language models~(LLMs) can extensively explore the solution space by generating more thought tokens or diverse solutions, thereby producing more accurate responses. However, developing an o1-like reasoning approach is challenging, and researchers have been making various attempts to advance this open area of research. In this paper, we present a preliminary exploration into enhancing the reasoning abilities of LLMs through reward-guided tree search algorithms. This framework is implemented by integrating the policy model, reward model, and search algorithm. It is primarily constructed around a tree search algorithm, where the policy model navigates a dynamically expanding tree guided by a specially trained reward model. The implemented framework is denoted as \textbf{STILL-1}. We thoroughly explore various design considerations necessary for implementing this framework and provide a detailed report of the technical aspects. To assess the effectiveness of our approach, we focus on mathematical reasoning tasks and conduct extensive evaluations on four challenging datasets, significantly enhancing the reasoning abilities of LLMs.
     </details>
+
 
 
 
@@ -11947,6 +12131,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [The Surprising Effectiveness of Test-Time Training for Abstract Reasoning](https://arxiv.org/abs/2411.07279)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2411.07279)
 - 👤 **Authors:** Ekin Akyürek, Mehul Damani, Linlu Qiu, Han Guo, Yoon Kim, Jacob Andreas
@@ -11957,6 +12142,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Language models have shown impressive performance on tasks within their training distribution, but often struggle with novel problems requiring complex reasoning. We investigate the effectiveness of test-time training (TTT) -- updating model parameters temporarily during inference using a loss derived from input data -- as a mechanism for improving models' reasoning capabilities, using the Abstraction and Reasoning Corpus (ARC) as a benchmark. Through systematic experimentation, we identify three crucial components for successful TTT: (1) initial finetuning on similar tasks (2) auxiliary task format and augmentations (3) per-instance training. TTT significantly improves performance on ARC tasks, achieving up to 6x improvement in accuracy compared to base fine-tuned models; applying TTT to an 8B-parameter language model, we achieve 53% accuracy on the ARC's public validation set, improving the state-of-the-art by nearly 25% for public and purely neural approaches. By ensembling our method with recent program generation approaches, we get SoTA public validation accuracy of 61.9%, matching the average human score. Our findings suggest that explicit symbolic search is not the only path to improved abstract reasoning in neural language models; additional test-time applied to continued training on few-shot examples can also be extremely effective.
     </details>
+
 
 
 
@@ -12278,6 +12464,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [CodeTree: Agent-guided Tree Search for Code Generation with Large Language Models](https://arxiv.org/abs/2411.04329)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2411.04329)
 - 👤 **Authors:** Jierui Li, Hung Le, Yinbo Zhou, Caiming Xiong, Silvio Savarese, Doyen Sahoo
@@ -12393,6 +12580,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [GPT-Guided Monte Carlo Tree Search for Symbolic Regression in Financial Fraud Detection](https://arxiv.org/abs/2411.04459)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2411.04459)
 - 👤 **Authors:** Prashank Kadam
@@ -12403,6 +12591,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     With the increasing number of financial services available online, the rate of financial fraud has also been increasing. The traffic and transaction rates on the internet have increased considerably, leading to a need for fast decision-making. Financial institutions also have stringent regulations that often require transparency and explainability of the decision-making process. However, most state-of-the-art algorithms currently used in the industry are highly parameterized black-box models that rely on complex computations to generate a score. These algorithms are inherently slow and lack the explainability and speed of traditional rule-based learners. This work introduces SR-MCTS (Symbolic Regression MCTS), which utilizes a foundational GPT model to guide the MCTS, significantly enhancing its convergence speed and the quality of the generated expressions which are further extracted to rules. Our experiments show that SR-MCTS can detect fraud more efficiently than widely used methods in the industry while providing substantial insights into the decision-making process.
     </details>
+
 
 
 
@@ -12639,6 +12828,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Improve Vision Language Model Chain-of-thought Reasoning](https://arxiv.org/abs/2410.16198)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2410.16198)
 - 👤 **Authors:** Ruohong Zhang, Bowen Zhang, Yanghao Li, Haotian Zhang, Zhiqing Sun, Zhe Gan, Yinfei Yang, Ruoming Pang, Yiming Yang
@@ -12649,6 +12839,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Chain-of-thought (CoT) reasoning in vision language models (VLMs) is crucial for improving interpretability and trustworthiness. However, current training recipes lack robust CoT reasoning data, relying on datasets dominated by short annotations with minimal rationales. In this work, we show that training VLM on short answers does not generalize well to reasoning tasks that require more detailed responses. To address this, we propose a two-fold approach. First, we distill rationales from GPT-4o model to enrich the training data and fine-tune VLMs, boosting their CoT performance. Second, we apply reinforcement learning to further calibrate reasoning quality. Specifically, we construct positive (correct) and negative (incorrect) pairs of model-generated reasoning chains, by comparing their predictions with annotated short answers. Using this pairwise data, we apply the Direct Preference Optimization algorithm to refine the model's reasoning abilities. Our experiments demonstrate significant improvements in CoT reasoning on benchmark datasets and better generalization to direct answer prediction as well. This work emphasizes the importance of incorporating detailed rationales in training and leveraging reinforcement learning to strengthen the reasoning capabilities of VLMs.
     </details>
+
 
 
 
@@ -12959,6 +13150,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Efficiently Learning at Test-Time: Active Fine-Tuning of LLMs](https://arxiv.org/abs/2410.08020)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2410.08020)
 - 👤 **Authors:** Jonas Hübotter, Sascha Bongni, Ido Hakimi, Andreas Krause
@@ -12969,6 +13161,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Recent efforts in fine-tuning language models often rely on automatic data selection, commonly using Nearest Neighbors retrieval from large datasets. However, we theoretically show that this approach tends to select redundant data, limiting its effectiveness or even hurting performance. To address this, we introduce SIFT, a data selection algorithm designed to reduce uncertainty about the model's response given a prompt, which unifies ideas from retrieval and active learning. Whereas Nearest Neighbor retrieval typically fails in the presence of information duplication, SIFT accounts for information duplication and optimizes the overall information gain of the selected examples. We focus our evaluations on fine-tuning at test-time for prompt-specific language modeling on the Pile dataset, and show that SIFT consistently outperforms Nearest Neighbor retrieval, with minimal computational overhead. Moreover, we show that our uncertainty estimates can predict the performance gain of test-time fine-tuning, and use this to develop an adaptive algorithm that invests test-time compute proportional to realized performance gains. We provide the $\texttt{activeft}$ (Active Fine-Tuning) library which can be used as a drop-in replacement for Nearest Neighbor retrieval.
     </details>
+
 
 
 
@@ -13145,6 +13338,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Adaptive Inference-Time Compute: LLMs Can Predict if They Can Do Better, Even Mid-Generation](https://arxiv.org/abs/2410.02725)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2410.02725)
 - 👤 **Authors:** Rohin Manvi, Anikait Singh, Stefano Ermon
@@ -13155,6 +13349,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Inference-time computation is a powerful paradigm to enhance the performance of large language models (LLMs), with Best-of-N sampling being a widely used technique. However, this method is computationally expensive, requiring both (1) an external reward model and (2) the generation of multiple samples. In this work, we introduce a new generative self-evaluation scheme designed to adaptively reduce the number of generated samples while maintaining or even improving performance. We use a generative reward model formulation, allowing the LLM to predict mid-generation the probability that restarting the generation will yield a better response. These predictions are obtained without an external reward model and can be used to decide whether or not to generate more samples, prune unpromising samples early on, or to pick the best sample. This capability is very inexpensive as it involves generating a single predefined token. Trained using a dataset constructed with real unfiltered LMSYS user prompts, Llama 3.1 8B's win rate against GPT-4 on AlpacaEval increases from 21% to 34% with 16 samples and math performance on GSM8K improves from 84% to 91%. By sampling only when the LLM determines that it is beneficial to do so and adaptively adjusting temperature annealing, we demonstrate that 74% of the improvement from using 16 samples can be achieved with only 1.2 samples on average. We further demonstrate that 50-75% of samples can be pruned early in generation with minimal degradation in performance. Overall, our methods enable more efficient and scalable compute utilization during inference for LLMs.
     </details>
+
 
 
 
@@ -13474,6 +13669,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [RethinkMCTS: Refining Erroneous Thoughts in Monte Carlo Tree Search for Code Generation](https://arxiv.org/abs/2409.09584)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2409.09584)
 - 👤 **Authors:** Qingyao Li, Wei Xia, Kounianhua Du, Xinyi Dai, Ruiming Tang, Yasheng Wang, Yong Yu, Weinan Zhang
@@ -13484,6 +13680,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     LLM agents enhanced by tree search algorithms have yielded notable performances in code generation. However, current search algorithms in this domain suffer from low search quality due to several reasons: 1) Ineffective design of the search space for the high-reasoning demands of code generation tasks, 2) Inadequate integration of code feedback with the search algorithm, and 3) Poor handling of negative feedback during the search, leading to reduced search efficiency and quality. To address these challenges, we propose to search for the reasoning process of the code and use the detailed feedback of code execution to refine erroneous thoughts during the search. In this paper, we introduce RethinkMCTS, which employs the Monte Carlo Tree Search (MCTS) algorithm to conduct thought-level searches before generating code, thereby exploring a wider range of strategies. More importantly, we construct verbal feedback from fine-grained code execution feedback to refine erroneous thoughts during the search. This ensures that the search progresses along the correct reasoning paths, thus improving the overall search quality of the tree by leveraging execution feedback. Through extensive experiments, we demonstrate that RethinkMCTS outperforms previous search-based and feedback-based code generation baselines. On the HumanEval dataset, it improves the pass@1 of GPT-3.5-turbo from 70.12 to 89.02 and GPT-4o-mini from 87.20 to 94.51. It effectively conducts more thorough exploration through thought-level searches and enhances the search quality of the entire tree by incorporating rethink operation.
     </details>
+
 
 
 
@@ -13764,6 +13961,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Scaling LLM Test-Time Compute Optimally can be More Effective than Scaling Model Parameters](https://arxiv.org/abs/2408.03314)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2408.03314)
 - 👤 **Authors:** Charlie Snell, Jaehoon Lee, Kelvin Xu, Aviral Kumar
@@ -13774,6 +13972,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Enabling LLMs to improve their outputs by using more test-time computation is a critical step towards building generally self-improving agents that can operate on open-ended natural language. In this paper, we study the scaling of inference-time computation in LLMs, with a focus on answering the question: if an LLM is allowed to use a fixed but non-trivial amount of inference-time compute, how much can it improve its performance on a challenging prompt? Answering this question has implications not only on the achievable performance of LLMs, but also on the future of LLM pretraining and how one should tradeoff inference-time and pre-training compute. Despite its importance, little research attempted to understand the scaling behaviors of various test-time inference methods. Moreover, current work largely provides negative results for a number of these strategies. In this work, we analyze two primary mechanisms to scale test-time computation: (1) searching against dense, process-based verifier reward models; and (2) updating the model's distribution over a response adaptively, given the prompt at test time. We find that in both cases, the effectiveness of different approaches to scaling test-time compute critically varies depending on the difficulty of the prompt. This observation motivates applying a"compute-optimal"scaling strategy, which acts to most effectively allocate test-time compute adaptively per prompt. Using this compute-optimal strategy, we can improve the efficiency of test-time compute scaling by more than 4x compared to a best-of-N baseline. Additionally, in a FLOPs-matched evaluation, we find that on problems where a smaller base model attains somewhat non-trivial success rates, test-time compute can be used to outperform a 14x larger model.
     </details>
+
 
 
 
@@ -14122,6 +14321,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Large Language Monkeys: Scaling Inference Compute with Repeated Sampling](https://arxiv.org/abs/2407.21787)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2407.21787)
 - 👤 **Authors:** Bradley Brown, Jordan Juravsky, Ryan Ehrlich, Ronald Clark, Quoc V. Le, Christopher R'e, Azalia Mirhoseini
@@ -14132,6 +14332,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Scaling the amount of compute used to train language models has dramatically improved their capabilities. However, when it comes to inference, we often limit models to making only one attempt at a problem. Here, we explore inference compute as another axis for scaling, using the simple technique of repeatedly sampling candidate solutions from a model. Across multiple tasks and models, we observe that coverage -- the fraction of problems that are solved by any generated sample -- scales with the number of samples over four orders of magnitude. Interestingly, the relationship between coverage and the number of samples is often log-linear and can be modelled with an exponentiated power law, suggesting the existence of inference-time scaling laws. In domains like coding and formal proofs, where answers can be automatically verified, these increases in coverage directly translate into improved performance. When we apply repeated sampling to SWE-bench Lite, the fraction of issues solved with DeepSeek-Coder-V2-Instruct increases from 15.9% with one sample to 56% with 250 samples, outperforming the single-sample state-of-the-art of 43%. In domains without automatic verifiers, we find that common methods for picking from a sample collection (majority voting and reward models) plateau beyond several hundred samples and fail to fully scale with the sample budget.
     </details>
+
 
 
 
@@ -14372,6 +14573,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Tree Search for Language Model Agents](https://arxiv.org/abs/2407.01476)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2407.01476)
 - 👤 **Authors:** Jing Yu Koh, Stephen McAleer, Daniel Fried, Ruslan Salakhutdinov
@@ -14382,6 +14584,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Autonomous agents powered by language models (LMs) have demonstrated promise in their ability to perform decision-making tasks such as web automation. However, a key limitation remains: LMs, primarily optimized for natural language understanding and generation, struggle with multi-step reasoning, planning, and using environmental feedback when attempting to solve realistic computer tasks. Towards addressing this, we propose an inference-time search algorithm for LM agents to explicitly perform exploration and multi-step planning in interactive web environments. Our approach is a form of best-first tree search that operates within the actual environment space, and is complementary with most existing state-of-the-art agents. It is the first tree search algorithm for LM agents that shows effectiveness on realistic web tasks. On the challenging VisualWebArena benchmark, applying our search algorithm on top of a GPT-4o agent yields a 39.7% relative increase in success rate compared to the same baseline without search, setting a state-of-the-art success rate of 26.4%. On WebArena, search also yields a 28.0% relative improvement over a baseline agent, setting a competitive success rate of 19.2%. Our experiments highlight the effectiveness of search for web agents, and we demonstrate that performance scales with increased test-time compute. We conduct a thorough analysis of our results to highlight improvements from search, limitations, and promising directions for future work. Our code and models are publicly released at https://jykoh.com/search-agents.
     </details>
+
 
 
 
@@ -14754,6 +14957,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search](https://arxiv.org/abs/2406.03816)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2406.03816)
 - 👤 **Authors:** Dan Zhang, Sining Zhoubian, Yisong Yue, Yuxiao Dong, Jie Tang
@@ -14910,6 +15114,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Monte Carlo Tree Search Boosts Reasoning via Iterative Preference Learning](https://arxiv.org/abs/2405.00451)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2405.00451)
 - 👤 **Authors:** Yuxi Xie, Anirudh Goyal, Wenyue Zheng, Min-Yen Kan, T. Lillicrap, Kenji Kawaguchi, Michael Shieh
@@ -14920,6 +15125,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     We introduce an approach aimed at enhancing the reasoning capabilities of Large Language Models (LLMs) through an iterative preference learning process inspired by the successful strategy employed by AlphaZero. Our work leverages Monte Carlo Tree Search (MCTS) to iteratively collect preference data, utilizing its look-ahead ability to break down instance-level rewards into more granular step-level signals. To enhance consistency in intermediate steps, we combine outcome validation and stepwise self-evaluation, continually updating the quality assessment of newly generated data. The proposed algorithm employs Direct Preference Optimization (DPO) to update the LLM policy using this newly generated step-level preference data. Theoretical analysis reveals the importance of using on-policy sampled data for successful self-improving. Extensive evaluations on various arithmetic and commonsense reasoning tasks demonstrate remarkable performance improvements over existing models. For instance, our approach outperforms the Mistral-7B Supervised Fine-Tuning (SFT) baseline on GSM8K, MATH, and ARC-C, with substantial increases in accuracy to $81.8\%$ (+$5.9\%$), $34.7\%$ (+$5.8\%$), and $76.4\%$ (+$15.8\%$), respectively. Additionally, our research delves into the training and inference compute tradeoff, providing insights into how our method effectively maximizes performance gains. Our code is publicly available at https://github.com/YuxiXie/MCTS-DPO.
     </details>
+
 
 
 
@@ -15179,6 +15385,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Test-Time Training on Nearest Neighbors for Large Language Models](https://arxiv.org/abs/2305.18466)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2305.18466)
 - 👤 **Authors:** Moritz Hardt, Yu Sun
@@ -15189,6 +15396,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Many recent efforts augment language models with retrieval, by adding retrieved data to the input context. For this approach to succeed, the retrieved data must be added at both training and test time. Moreover, as input length grows linearly with the size of retrieved data, cost in computation and memory grows quadratically for modern Transformers. To avoid these complications, we simply fine-tune the model on retrieved data at test time, using its standard training setup. We build a large-scale distributed index based on text embeddings of the Pile dataset. For each test input, our system retrieves its neighbors and fine-tunes the model on their text. Surprisingly, retrieving and training on as few as 20 neighbors, each for only one gradient iteration, drastically improves performance across more than 20 language modeling tasks in the Pile. For example, test-time training with nearest neighbors significantly narrows the performance gap between a small GPT-2 and a GPT-Neo model more than 10 times larger. Sufficient index quality and size, however, are necessary. Our work establishes a first baseline of test-time training for language modeling.
     </details>
+
 
 
 
@@ -15440,6 +15648,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2305.10601)
 - 👤 **Authors:** Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, T. Griffiths, Yuan Cao, Karthik Narasimhan
@@ -15450,6 +15659,7 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     Language models are increasingly being deployed for general problem solving across a wide range of tasks, but are still confined to token-level, left-to-right decision-making processes during inference. This means they can fall short in tasks that require exploration, strategic lookahead, or where initial decisions play a pivotal role. To surmount these challenges, we introduce a new framework for language model inference, Tree of Thoughts (ToT), which generalizes over the popular Chain of Thought approach to prompting language models, and enables exploration over coherent units of text (thoughts) that serve as intermediate steps toward problem solving. ToT allows LMs to perform deliberate decision making by considering multiple different reasoning paths and self-evaluating choices to decide the next course of action, as well as looking ahead or backtracking when necessary to make global choices. Our experiments show that ToT significantly enhances language models' problem-solving abilities on three novel tasks requiring non-trivial planning or search: Game of 24, Creative Writing, and Mini Crosswords. For instance, in Game of 24, while GPT-4 with chain-of-thought prompting only solved 4% of tasks, our method achieved a success rate of 74%. Code repo with all prompts: https://github.com/princeton-nlp/tree-of-thought-llm.
     </details>
+
 
 
 
@@ -16055,6 +16265,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 
 
+
 🔹 [The MADlib Analytics Library or MAD Skills, the SQL](https://www.semanticscholar.org/paper/4b2a2d750c0e59a826e138bb0e4d55ed1547c6a0)
 - 👤 **Authors:** Joseph M Hellerstein, C. Ré, F. Schoppmann, D. Wang, Eugene Fratkin, Aleksander Gorajek, K. S. Ng, Caleb Welton, Xixuan Feng, Kun Li, Arun Kumar
 - 🗓️ **Date:** 2012-08-20
@@ -16064,45 +16275,6 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     No abstract available.
     </details>
-
-
-
-
-
-
-
-
-
-🔹 [Deep Researcher with Test-Time Diffusion](https://arxiv.org/abs/2507.16075)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2507.16075)
-- 👤 **Authors:** Rujun Han, Yanfei Chen, Zoey CuiZhu, Lesly Miculicich, Guan Sun, Yuanjun Bi, Weimin Wen, Hui Wan, Chunfeng Wen, Solène Maître, George Lee, Vishwanadh Tirumalashetty, Emily Xue, Zizhao Zhang, S. Haykal, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
-- 🗓️ **Date:** 2025-07-21
-- 📑 **Publisher:** arXiv.org
-- 📝 **Abstract:** 
-    <details>
-    <summary>Expand</summary>
-    Deep research agents, powered by Large Language Models (LLMs), are rapidly advancing; yet, their performance often plateaus when generating complex, long-form research reports using generic test-time scaling algorithms. Drawing inspiration from the iterative nature of human research, which involves cycles of searching, reasoning, and revision, we propose the Test-Time Diffusion Deep Researcher (TTD-DR). This novel framework conceptualizes research report generation as a diffusion process. TTD-DR initiates this process with a preliminary draft, an updatable skeleton that serves as an evolving foundation to guide the research direction. The draft is then iteratively refined through a "denoising" process, which is dynamically informed by a retrieval mechanism that incorporates external information at each step. The core process is further enhanced by a self-evolutionary algorithm applied to each component of the agentic workflow, ensuring the generation of high-quality context for the diffusion process. This draft-centric design makes the report writing process more timely and coherent while reducing information loss during the iterative search process. We demonstrate that our TTD-DR achieves state-of-the-art results on a wide array of benchmarks that require intensive search and multi-hop reasoning, significantly outperforming existing deep research agents.
-    </details>
-
-🔹 [Stop When Reasoning Converges: Semantic-Preserving Early Exit for Reasoning Models](https://arxiv.org/abs/2605.17672)
-- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2605.17672)
-- 👤 **Authors:** Dehai Min, Giovanni Vaccarino, Huiyi Chen, Yongliang Wu, Gal Yona, Lu Cheng
-- 🗓️ **Date:** 2026-05-17
-- 📑 **Publisher:** arXiv.org
-- 📝 **Abstract:** 
-    <details>
-    <summary>Expand</summary>
-    Large Reasoning Models (LRMs) achieve strong performance by generating long chains of thought (CoT), but often overthink, continuing to reason after a solution has already stabilized and thereby wasting tokens and increasing latency. Existing inference-time early-exit methods rely primarily on answer-level signals, such as confidence or trial-answer consistency, to decide when to stop. However, these signals mainly reflect answer readiness rather than reasoning convergence: they may trigger before the model has finished exploring or self-correcting, causing premature exits that can degrade final-answer accuracy and leave the retained reasoning chain semantically incomplete. We identify reasoning-level semantic redundancy as a complementary signal for semantic-preserving early exit: when successive steps no longer add novel progress and instead revisit established conclusions, the reasoning trajectory has likely converged. Building on this insight, we propose PUMA, a plug-and-play framework that combines a lightweight Redundancy Detector with answer-level verification. The detector flags semantically redundant candidate exits, while verification confirms whether stopping is safe, allowing PUMA to remove redundant continuation while preserving both answer accuracy and a coherent reasoning prefix. Across five LRMs and five challenging reasoning benchmarks, PUMA achieves 26.2% average token reduction while preserving accuracy and retained CoT quality. Additional experiments on code generation, zero-shot vision-language reasoning, and learned stopping-policy internalization further demonstrate that reasoning-level semantic redundancy is a robust, transferable, and learnable signal for efficient reasoning. Code at https://github.com/giovanni-vaccarino/PUMA.
-    </details>
-
-
-
-
-
-
-
-
-
 
 
 
