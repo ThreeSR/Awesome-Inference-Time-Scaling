@@ -61,6 +61,18 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 ## 📖 Paper List (Listed in Time Order)
 
+🔹 [ThinkRetrieve: Retrieval-Augmented Reasoning Traces for Test-Time Scaling](https://arxiv.org/abs/2608.10928)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2608.10928)
+- 💻 **Official Code:** [ThinkRetrieve](https://github.com/itsvaibhav01/ThinkRetrieve)
+- 👤 **Authors:** Vaibhav Singh, Soumya Suvra Ghosal, Sarvesh Gharat, Soumyabrata Pal, Ramasuri Narayanam, Dinesh Manocha
+- 🗓️ **Date:** 2026-08-11
+- 📑 **Publisher:** arXiv.org; accepted to Findings of EMNLP 2026
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Large Reasoning Models improve performance with additional inference-time compute, but longer traces can suffer from uncertainty, accumulated errors, and drift. ThinkRetrieve retrieves solved examples at intermediate reasoning steps using the question and an interim answer, then injects them into the ongoing trace as procedural guidance. The paper evaluates five reasoning models on GSM8K, MATH-500, AIME 2025, and SciQ.
+    </details>
+
 🔹 [MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling](https://www.semanticscholar.org/paper/33a1741fb2d3e7ac05649ef34c1b0a111fd8d5cf)
 - 👤 **Authors:** Jiacheng Chen, Xinyu Zhang, Shunkai Zhang, Yanmohan Wang, Lin Li, Tiancheng Qin, Qin Wang, Zhengmao Zhu, Tianle Li, Jingyang Li, Zehan Li, Binyan Jiang, Jin-Feng Zhu, Han Ding, F. Yu, Chenyu Du, Zijian Song, Jiayuan Song, Zhi Zhang, Yunan Huang, Weiyu Cheng, Pengyu Zhao, Yuntao Cheng
 - 🗓️ **Date:** 2026-06-11
