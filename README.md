@@ -73,6 +73,18 @@ If you find our code useful when you would like to organize your own repo, feel 
     Large Reasoning Models improve performance with additional inference-time compute, but longer traces can suffer from uncertainty, accumulated errors, and drift. ThinkRetrieve retrieves solved examples at intermediate reasoning steps using the question and an interim answer, then injects them into the ongoing trace as procedural guidance. The paper evaluates five reasoning models on GSM8K, MATH-500, AIME 2025, and SciQ.
     </details>
 
+🔹 [Steer, Don't Solve: Training Small Critic Models for Large Code Agents](https://arxiv.org/abs/2606.21811)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2606.21811)
+- 💻 **Official Code:** [critic-training](https://github.com/shubhamrgandhi/critic-training)
+- 👤 **Authors:** Shubham Gandhi, Yiqing Xie, Atharva Naik, Ruichen Zhu, Carolyn Rose
+- 🗓️ **Date:** 2026-06-20
+- 📑 **Publisher:** arXiv.org
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Coding tasks are typically complicated and require multiple capabilities, ranging from high-level planning to low-level implementation. While coding agents are optimized for the joint capabilities, individual capabilities such as high-level planning may have different optima and remain a major bottleneck. To address this challenge, we train a separate critic model that is specialized in high-level planning to steer the coding agent in inference. We construct SFT and DPO data to train the critic model to identify errors made by the coding agent and provide correct and clear high-level guidance without generating concrete actions. Experiments show that our fine-tuned 4B and 8B critic models significantly improve the performance of 6 larger coding agents (e.g., improving the resolved rates of GLM-4.7-Flash-30B-A3B and GPT-OSS-120B by 16.0% and 14.4% on SWE-Bench Verified). The critic model also reduces the total inference costs for some coding agents by solving tasks in fewer steps (e.g., reducing the per-example inference cost for GPT-OSS-20B from $0.07 to $0.03). Code: https://github.com/shubhamrgandhi/critic-training
+    </details>
+
 🔹 [MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling](https://www.semanticscholar.org/paper/33a1741fb2d3e7ac05649ef34c1b0a111fd8d5cf)
 - 👤 **Authors:** Jiacheng Chen, Xinyu Zhang, Shunkai Zhang, Yanmohan Wang, Lin Li, Tiancheng Qin, Qin Wang, Zhengmao Zhu, Tianle Li, Jingyang Li, Zehan Li, Binyan Jiang, Jin-Feng Zhu, Han Ding, F. Yu, Chenyu Du, Zijian Song, Jiayuan Song, Zhi Zhang, Yunan Huang, Weiyu Cheng, Pengyu Zhao, Yuntao Cheng
 - 🗓️ **Date:** 2026-06-11
