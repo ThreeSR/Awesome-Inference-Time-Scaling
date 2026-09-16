@@ -73,6 +73,17 @@ If you find our code useful when you would like to organize your own repo, feel 
     Large Reasoning Models improve performance with additional inference-time compute, but longer traces can suffer from uncertainty, accumulated errors, and drift. ThinkRetrieve retrieves solved examples at intermediate reasoning steps using the question and an interim answer, then injects them into the ongoing trace as procedural guidance. The paper evaluates five reasoning models on GSM8K, MATH-500, AIME 2025, and SciQ.
     </details>
 
+🔹 [Adaptive Test-Time Compute Allocation with Evolving In-Context Demonstrations](https://aclanthology.org/2026.findings-acl.1754/)
+- 🔗 **PDF Link:** [Paper Link](https://aclanthology.org/2026.findings-acl.1754.pdf)
+- 👤 **Authors:** Bowen Zuo, Dongruo Zhou, Yinglun Zhu
+- 🗓️ **Date:** 2026-07
+- 📑 **Publisher:** Findings of the Association for Computational Linguistics: ACL 2026
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    While scaling test-time compute can substantially improve model performance, existing approaches either rely on static compute allocation or sample from fixed generation distributions. In this work, we introduce a test-time compute allocation framework that jointly adapts where computation is spent and how generation is performed. Our method begins with a warm-up phase that identifies easy queries and assembles an initial pool of question-response pairs from the test set itself. An adaptive phase then concentrates further computation on unresolved queries while reshaping their generation distributions through evolving in-context demonstrations—conditioning each generation on successful responses from semantically related queries rather than resampling from a fixed distribution. Experiments across math, coding, and reasoning benchmarks demonstrate that our approach consistently outperforms existing baselines while consuming substantially less inference-time compute.
+    </details>
+
 🔹 [Steer, Don't Solve: Training Small Critic Models for Large Code Agents](https://arxiv.org/abs/2606.21811)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2606.21811)
 - 💻 **Official Code:** [critic-training](https://github.com/shubhamrgandhi/critic-training)
@@ -16470,7 +16481,6 @@ If you find our code useful when you would like to organize your own repo, feel 
     <summary>Expand</summary>
     No abstract available.
     </details>
-
 
 
 
