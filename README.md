@@ -73,6 +73,16 @@ If you find our code useful when you would like to organize your own repo, feel 
     Large Reasoning Models improve performance with additional inference-time compute, but longer traces can suffer from uncertainty, accumulated errors, and drift. ThinkRetrieve retrieves solved examples at intermediate reasoning steps using the question and an interim answer, then injects them into the ongoing trace as procedural guidance. The paper evaluates five reasoning models on GSM8K, MATH-500, AIME 2025, and SciQ.
     </details>
 
+🔹 [The Agent Loop: A Survey of Control Strategies, Skills, and Harnesses for LLM Agents](https://ssrn.com/abstract=7186738)
+- 👤 **Authors:** Jungseob Lee, Chanjun Park
+- 🗓️ **Date:** 2026-08
+- 📑 **Publisher:** SSRN
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Every LLM agent, beneath its framework and its prompts, runs a loop: it observes, decides, acts, and observes again until it stops. This survey takes that agent loop, not the model in isolation, as its unit of analysis, on the argument that the properties practitioners actually care about, cost, reliability, and safety, are decided by the loop rather than by the model alone. We organize the field around control: the loop paradigms that shape reasoning, action, and search; the trained loops that absorb control into model weights through agentic reinforcement learning; the mechanics of termination, verification, context management, and recovery that govern any loop; the skills that externalize the loop's competence into portable, reusable procedure; the harnesses that instantiate it; and the evaluation and safety problems it creates. One thesis runs throughout: the loop is being pulled in two directions at once, internalized into weights and externalized into skills and harnesses. These are not rivals but partially inter-convertible realizations of a single control structure, so the organizing question is not which wins but who owns the loop, and what each choice costs in reliability, transparency, and safety. Throughout, we give documented negative results the same weight as the positive claims: on intrinsic self-correction, on elaborate agents versus simple pipelines, on the reliability cost of longer loops, and on the harness confound in evaluation, supported with small controlled experiments of our own. A continuously updated companion repository, indexing every cited paper by section alongside the open-source artifacts we survey, is available at https://github.com/js-lee-AI/awesome-agent-loop-papers.
+    </details>
+
 🔹 [Adaptive Test-Time Compute Allocation with Evolving In-Context Demonstrations](https://aclanthology.org/2026.findings-acl.1754/)
 - 🔗 **PDF Link:** [Paper Link](https://aclanthology.org/2026.findings-acl.1754.pdf)
 - 👤 **Authors:** Bowen Zuo, Dongruo Zhou, Yinglun Zhu
