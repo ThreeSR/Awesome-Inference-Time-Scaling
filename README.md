@@ -195,6 +195,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Joongwon Kim, Wannan Yang, Kelvin Niu, Hongming Zhang, Yun Zhu, Eryk Helenowski, Ruan Silva, Zhengxing Chen, Srinivasan Iyer, M. Zaheer, Daniel Fried, Hanna Hajishirzi, Sanjeev Arora, Gabriel Synnaeve, Ruslan Salakhutdinov, Anirudh Goyal
 - 🗓️ **Date:** 2026-04-16
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Compresses long agent rollouts into structured summaries, then scales via recursive tournament voting (parallel) and summary-conditioned refinement (sequential); lifts Claude-4.5-Opus from 70.9% to 77.6% on SWE-Bench Verified.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -206,6 +207,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yining Hong, Huang Huang, Manling Li, Fei-Fei Li, Jiajun Wu, Yejin Choi
 - 🗓️ **Date:** 2026-02-24
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Embodied planning with two reflection modes: reflection-in-action scores candidate actions before execution, and reflection-on-action updates the agent from past trials so mistakes accumulate into experience.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -217,6 +219,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Nicholas Lee, Lutfi Eren Erdogan, C. John, Surya Krishnapillai, Michael W. Mahoney, Kurt Keutzer, Amir Gholami
 - 🗓️ **Date:** 2026-02-12
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Shows uniform per-step sampling saturates quickly for web agents and proposes CATTS, which dynamically allocates compute across steps of multi-step trajectories.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -228,6 +231,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Chiwei Zhu, Benfeng Xu, Mingxuan Du, Shaohan Wang, Xiaorui Wang, Zhendong Mao, Yongdong Zhang
 - 🗓️ **Date:** 2026-02-02
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Dual-agent deep research with a persistent file-system workspace: a librarian agent archives structured notes and sources so report writing can scale beyond the context window.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -239,6 +243,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yichuan Ma, Linyang Li, Yongkang Chen, Peiji Li, Xiaozhe Li, Qipeng Guo, Dahua Lin, Kai Chen
 - 🗓️ **Date:** 2026-01-23
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Redefines test-time as wall-clock time for tool-calling agents (tool latency decouples time from tokens) and makes models adapt strategies to explicit time budgets, with the Timely-Eval benchmark.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -250,6 +255,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Tengxiao Liu, Zifeng Wang, Jin Miao, I-Hung Hsu, Jun Yan, Jiefeng Chen, Rujun Han, Fangyuan Xu, Yanfei Chen, Ke Jiang, Samira Daruki, Yi Liang, William Yang Wang, Tomas Pfister, Chen-Yu Lee
 - 🗓️ **Date:** 2025-11-21
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Finds agents lack awareness of their tool-call budget and hit ceilings; making the remaining budget explicit enables effective scaling of acting, not just thinking.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -261,6 +267,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yongchao Chen, Jiefeng Chen, Rui Meng, Jiye Yin, Na Li, Chuchu Fan, Chi Wang, Tomas Pfister, Jinsung Yoon
 - 🗓️ **Date:** 2025-09-30
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Runs an ensemble of agents with distinct tool-use strategies (text, code, search) in parallel, letting them iteratively share and refine answers before selection.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -272,6 +279,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Pengfei Gao, Zhao Tian, Xiangxin Meng, Xinchen Wang, Ruida Hu, Yuanan Xiao, Yizhou Liu, Zhao Zhang, Junjie Chen, Cuiyun Gao, Yun Lin, Yingfei Xiong, Chao Peng, Xia Liu
 - 🗓️ **Date:** 2025-07-31
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Agentic ensemble reasoning for repository-level issue resolution, exploring large ensemble spaces with test-time scaling.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -283,6 +291,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Rujun Han, Yanfei Chen, Zoey CuiZhu, Lesly Miculicich, Guan Sun, Yuanjun Bi, Weimin Wen, Hui Wan, Chunfeng Wen, Solène Maître, George Lee, Vishwanadh Tirumalashetty, Emily Xue, Zizhao Zhang, S. Haykal, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
 - 🗓️ **Date:** 2025-07-21
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Casts research-report generation as diffusion: an evolving draft is iteratively denoised with retrieval in the loop, plus self-evolution over each agentic component.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -294,6 +303,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yan Yang, Dongxu Li, Yutong Dai, Yuhao Yang, Ziyang Luo, Zirui Zhao, Zhiyuan Hu, Junzhe Huang, Amrita Saha, Zeyuan Chen, Ran Xu, Liyuan Pan, Caiming Xiong, Junnan Li
 - 🗓️ **Date:** 2025-07-08
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** GUI agent that samples multiple action proposals per step with a judge for plan selection, paired with a precise grounding model for high-resolution interfaces.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -305,6 +315,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** King Zhu, Hanhao Li, Siwei Wu, Tianshun Xing, Dehua Ma, Xiangru Tang, Minghao Liu, Jian Yang, Jiaheng Liu, Y. Jiang, Changwang Zhang, Chenghua Lin, Jun Wang, Ge Zhang, Wangchunshu Zhou
 - 🗓️ **Date:** 2025-06-15
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** First systematic study of test-time scaling for language agents across parallel sampling, sequential revision, verifiers/merging, and rollout diversification.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -316,6 +327,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Junhong Shen, Hao Bai, Lunjun Zhang, Yifei Zhou, Amrith Rajagopal Setlur, Shengbang Tong, Diego Caples, Nan Jiang, Tong Zhang, Ameet Talwalkar, Aviral Kumar
 - 🗓️ **Date:** 2025-06-09
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Scales the agent's interaction horizon (more acting: exploration, backtracking, re-planning) instead of longer per-step thinking traces.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -327,6 +339,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Tiange Luo, Lajanugen Logeswaran, Justin Johnson, Honglak Lee
 - 🗓️ **Date:** 2025-05-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** RegionFocus zooms into relevant screen regions at test time and keeps an image-as-map record of landmarks, improving GUI grounding without retraining.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -338,6 +351,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yingwei Ma, Binhua Li, Yihong Dong, Xue Jiang, Rongyu Cao, Jue Chen, Fei Huang, Yongbin Li
 - 🗓️ **Date:** 2025-03-31
 - 📑 **Publisher:** International Conference on Automated Software Engineering
+- 💡 **TL;DR:** A unified test-time compute framework that lets personally deployable open-source LLMs match much larger models on software engineering agent tasks.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -349,6 +363,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Ethan Mendes, Alan Ritter
 - 🗓️ **Date:** 2025-03-04
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Self-taught lookahead: trains a value model from state-transition dynamics without ground-truth rewards; an 8B value model matches GPT-4o as a search guide on web tasks.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -360,6 +375,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Bingxuan Li, Yiwei Wang, Jiuxiang Gu, Kai-Wei Chang, Nanyun Peng
 - 🗓️ **Date:** 2025-02-24
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** VLM-based multi-agent chart-to-code generation whose iterative generation-critique loop improves monotonically with more test-time compute.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -371,6 +387,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhenfang Chen, Delin Chen, Rui Sun, Wenjun Liu, Chuang Gan
 - 🗓️ **Date:** 2025-02-17
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** ARMAP learns a reward model from LLM-synthesized trajectory data without human annotation, then uses it to guide planning for API-only LLM agents.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -382,6 +399,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zongyu Lin, Yao Tang, Xingcheng Yao, Da Yin, Ziniu Hu, Yizhou Sun, Kai-Wei Chang
 - 🗓️ **Date:** 2025-02-04
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Automatically estimates step-level Q-values from exploration trees and uses them to guide stepwise search at agent inference time.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -393,6 +411,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yu Gu, Boyuan Zheng, Boyu Gou, Kai Zhang, Cheng Chang, Sanjari Srivastava, Yanan Xie, Peng Qi, Huan Sun, Yu Su
 - 🗓️ **Date:** 2024-11-10
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** WebDreamer uses an LLM as a world model to simulate candidate web actions before committing, enabling safe planning on live websites with irreversible actions.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -404,6 +423,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Xiao Yu, Baolin Peng, Vineeth Vajipey, Hao Cheng, Michel Galley, Jianfeng Gao, Zhou Yu
 - 🗓️ **Date:** 2024-10-02
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Combines Reflective MCTS (contrastive reflection at test time) with exploratory learning that internalizes the search behavior back into the model.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
