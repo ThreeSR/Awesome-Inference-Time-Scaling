@@ -74,6 +74,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 🔹 [RRSI: Regularized Recursive Self-Improvement of Agent Harnesses](https://arxiv.org/abs/2609.24972)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2609.24972)
+- 💻 **Official Code:** [rrsi](https://github.com/google-research/rrsi)
 - 👤 **Authors:** Peng Xia, Rujun Han, Zifeng Wang, Yanfei Chen, Yufan Zhuang, Yoonho Lee, Chengsong Huang, Han Yu, Zhongying CuiZhu, Yifei Ming, Huaxiu Yao, Burak Gokturk, Tomas Pfister, Chen-Yu Lee
 - 🗓️ **Date:** 2026-09-21
 - 📑 **Publisher:** arXiv.org
