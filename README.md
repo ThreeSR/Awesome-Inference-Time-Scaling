@@ -462,20 +462,23 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Shubham Gandhi, Yiqing Xie, Atharva Naik, Ruichen Zhu, Carolyn Rose
 - 🗓️ **Date:** 2026-06-20
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Trains small (4B/8B) planning-specialized critic models that steer large coding agents at inference, improving six agents (e.g., +16.0 resolved rate for GLM-4.7-Flash) while reducing steps and cost.
 - 📝 **Abstract:**
     <details>
     <summary>Expand</summary>
     Coding tasks are typically complicated and require multiple capabilities, ranging from high-level planning to low-level implementation. While coding agents are optimized for the joint capabilities, individual capabilities such as high-level planning may have different optima and remain a major bottleneck. To address this challenge, we train a separate critic model that is specialized in high-level planning to steer the coding agent in inference. We construct SFT and DPO data to train the critic model to identify errors made by the coding agent and provide correct and clear high-level guidance without generating concrete actions. Experiments show that our fine-tuned 4B and 8B critic models significantly improve the performance of 6 larger coding agents (e.g., improving the resolved rates of GLM-4.7-Flash-30B-A3B and GPT-OSS-120B by 16.0% and 14.4% on SWE-Bench Verified). The critic model also reduces the total inference costs for some coding agents by solving tasks in fewer steps (e.g., reducing the per-example inference cost for GPT-OSS-20B from $0.07 to $0.03). Code: https://github.com/shubhamrgandhi/critic-training
     </details>
 
-🔹 [MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling](https://www.semanticscholar.org/paper/33a1741fb2d3e7ac05649ef34c1b0a111fd8d5cf)
+🔹 [MaxProof: Scaling Mathematical Proof with Generative-Verifier RL and Population-Level Test-Time Scaling](https://arxiv.org/abs/2606.13473)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2606.13473)
 - 👤 **Authors:** Jiacheng Chen, Xinyu Zhang, Shunkai Zhang, Yanmohan Wang, Lin Li, Tiancheng Qin, Qin Wang, Zhengmao Zhu, Tianle Li, Jingyang Li, Zehan Li, Binyan Jiang, Jin-Feng Zhu, Han Ding, F. Yu, Chenyu Du, Zijian Song, Jiayuan Song, Zhi Zhang, Yunan Huang, Weiyu Cheng, Pengyu Zhao, Yuntao Cheng
 - 🗓️ **Date:** 2026-06-11
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** One model trained as proof generator, verifier, and repairer; population-level search with tournament selection over candidate proofs reaches 35/42 on IMO 2025 and 36/42 on USAMO 2026.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
-    No abstract available.
+    We present MaxProof, a population-level test-time scaling framework for competition-level mathematical proof in the MiniMax-M3 series. M3 first trains three proof-oriented capabilities -- proof generation, proof verification, and critique-conditioned proof repair -- using a defense-in-depth generative verifier engineered for low false-positive rate. These capabilities are merged into a single released M3 model. At test time, MaxProof treats the model as a generator, verifier, refiner, and ranker, searches over a population of candidate proofs, and returns one final proof through tournament selection. With MaxProof test-time scaling, the M3 model reaches 35/42 on IMO 2025 and 36/42 on USAMO 2026, exceeding the human gold-medal threshold on both.
     </details>
 
 🔹 [DTS: Enhancing Large Reasoning Models via Decoding Tree Sketching](https://arxiv.org/abs/2511.00640)
@@ -483,6 +486,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zicheng Xu, Xiuyi Lou, Guanchu Wang, Yu-Neng Chuang, Feng Luo, Guangyao Zheng, Alexander S. Szalay, Zirui Liu, Vladimir Braverman
 - 🗓️ **Date:** 2026-02-04
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Plug-and-play decoding that sketches a tree over trajectories for structural multi-path exploration and selection, replacing redundant independent sampling.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -494,6 +498,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Youheng Zhu, Yiping Lu
 - 🗓️ **Date:** 2026-02-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Analyzes Sequential Monte Carlo inference-time scaling through its reward model, characterizing what approximate reward models can and cannot deliver when guiding compute allocation.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -505,6 +510,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Ramya Keerthy Thatikonda, W. Buntine, Ehsan Shareghi
 - 🗓️ **Date:** 2025-08-27
 - 📑 **Publisher:** Conference on Empirical Methods in Natural Language Processing
+- 💡 **TL;DR:** Builds outcome reward models for deductive logical reasoning and pairs them with test-time scaling, a setting underexplored relative to math.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -516,6 +522,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Hao Chen, Guanxi Lu, Yasuyuki Okoshi, Zhiwen Mo, Masato Motomura, Hongxiang Fan
 - 🗓️ **Date:** 2025-05-16
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Systematically studies how often to verify during test-time scaling, between per-step and per-solution granularity, for the best accuracy-compute trade-off.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -527,6 +534,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Kusha Sareen, Morgane M Moss, Alessandro Sordoni, Rishabh Agarwal, Arian Hosseini
 - 🗓️ **Date:** 2025-05-07
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** RL^V jointly trains the LLM as reasoner and generative verifier on RL-generated data, restoring the value signal that GRPO-style methods discard for test-time verification.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -538,6 +546,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Muhammad Khalifa, Rishabh Agarwal, Lajanugen Logeswaran, Jaekyeom Kim, Hao Peng, Moontae Lee, Honglak Lee, Lu Wang
 - 🗓️ **Date:** 2025-04-23
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** ThinkPRM verifies every step by generating a verification chain-of-thought, matching discriminative PRMs with orders of magnitude fewer process labels.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -549,6 +558,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Wenlei Shi, Xing Jin
 - 🗓️ **Date:** 2025-04-14
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** A long-CoT verification LLM trained with pure RL to judge solution correctness, making verification itself a target of test-time scaling.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -560,6 +570,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yikun Wang, Siyin Wang, Qinyuan Cheng, Zhaoye Fei, Liang Ding, Qipeng Guo, D. Tao, Xipeng Qiu
 - 🗓️ **Date:** 2025-04-12
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Multimodal tree search that interleaves visual aids with verbal reasoning steps, enabling deliberate step-by-step visual-verbal thinking in LVLMs.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -571,6 +582,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Minki Kang, Jongwon Jeong, Jaewoong Cho
 - 🗓️ **Date:** 2025-04-07
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Small LMs' self-verification becomes reliable when verification is delegated to tools such as code execution, enabling verifier-free test-time scaling for sLMs.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -582,6 +594,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zijun Liu, Peiyi Wang, Runxin Xu, Shirong Ma, Chong Ruan, Peng Li, Yang Liu, Yu Wu
 - 🗓️ **Date:** 2025-04-03
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Self-Principled Critique Tuning builds pointwise generative reward models whose judgments improve with more inference-time sampling, scaling reward quality beyond verifiable domains.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -593,6 +606,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Nishad Singhi, Hritik Bansal, Arian Hosseini, Aditya Grover, Kai-Wei Chang, Marcus Rohrbach, Anna Rohrbach
 - 🗓️ **Date:** 2025-04-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Compute-matched comparison of self-consistency versus generative verification for reasoning: majority voting wins at low budgets, verification pays off only with larger budgets.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -604,6 +618,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jian Zhao, Runze Liu, Kaiyan Zhang, Zhimu Zhou, Junqi Gao, Dong Li, Jiafei Lyu, Zhouyi Qian, Biqing Qi, Xiu Li, Bowen Zhou
 - 🗓️ **Date:** 2025-04-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** A generative PRM that reasons explicitly (CoT plus code verification) before judging each step, and gains further from scaling its own verification-time compute.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -615,6 +630,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Weiyun Wang, Zhangwei Gao, Lianjie Chen, Zhe Chen, Jinguo Zhu, Xiangyu Zhao, Yangzhou Liu, Yue Cao, Shenglong Ye, Xizhou Zhu, Lewei Lu, Haodong Duan, Yu Qiao, Jifeng Dai, Wenhai Wang
 - 🗓️ **Date:** 2025-03-13
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** An 8B multimodal PRM that improves MLLM reasoning across scales and families under Best-of-N, including +5.9 points for InternVL2.5-78B.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -626,6 +642,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Shalev Lifshitz, Sheila A. McIlraith, Yilun Du
 - 🗓️ **Date:** 2025-02-27
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Scales the number of verifiers: BoN-MAV combines many off-the-shelf aspect verifiers, showing weak-to-strong generalization and self-improvement without training.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -637,6 +654,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jaesik Yoon, Hyeonseo Cho, Doojin Baek, Y. Bengio, Sungjin Ahn
 - 🗓️ **Date:** 2025-02-11
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Integrates MCTS with diffusion planning so diffusion-based planners gain the test-time-compute scalability that tree search enjoys.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -648,6 +666,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jinyang Wu, Mingkuan Feng, Shuai Zhang, Ruihan Jin, Feihu Che, Zengqi Wen, Jianhua Tao
 - 🗓️ **Date:** 2025-02-04
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Automates o1-like structured thinking for MLLMs via MCTS over atomic reasoning actions, balancing performance and efficiency without heavy search or distillation.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -659,6 +678,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Eric Zhao, Pranjal Awasthi, Sreenivas Gollapudi
 - 🗓️ **Date:** 2025-02-03
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Minimalist sampling-based search (random sampling plus direct self-verification) keeps improving with scale; the paper characterizes the scaling trends of test-time verification.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -670,6 +690,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Xinyu Guan, L. Zhang, Yifei Liu, Ning Shang, Youran Sun, Yi Zhu, Fan Yang, Mao Yang
 - 🗓️ **Date:** 2025-01-08
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Small LMs rival o1 in math via MCTS guided by an SLM process preference model, with code-verified CoT synthesis and four rounds of self-evolution (Qwen2.5-Math-7B: 58.8% to 90.0% on MATH).
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -681,6 +702,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhuohao Yu, Weizheng Gu, Yidong Wang, Zhengran Zeng, Jindong Wang, Wei Ye, Shi-Bo Zhang
 - 🗓️ **Date:** 2024-12-19
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Treats outcome refinement itself as the process to supervise: execution feedback plus tree-structured exploration replaces expensively trained PRMs for code reasoning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -692,6 +714,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Chi Zhang, Jiajun Song, Siyu Li, Yitao Liang, Yuxi Ma, Wei Wang, Yixin Zhu, Song-Chun Zhu
 - 🗓️ **Date:** 2024-12-14
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** TongGeometry: a tree-search-based Euclidean geometry system that both proposes and solves olympiad geometry problems.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -703,6 +726,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhenni Bi, Kai Han, Chuanjian Liu, Yehui Tang, Yunhe Wang
 - 🗓️ **Date:** 2024-12-12
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Ensembles multiple reasoning trees so flawed paths can be revisited and corrected, going beyond single-pass CoT and ToT reasoning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -714,6 +738,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Wang Xiyao, Zhengyuan Yang, Linjie Li, Hongjin Lu, Yuancheng Xu, Lin Chung-Ching Lin, Lin Kevin, Furong Huang, Lijuan Wang
 - 🗓️ **Date:** 2024-12-04
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** VisVM scores candidate sentences and anticipates downstream quality to guide VLM inference-time search, reducing hallucinations and enabling self-training on the searched captions.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -725,6 +750,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jinyang Wu, Mingkuan Feng, Shuai Zhang, Feihu Che, Zengqi Wen, Jianhua Tao
 - 🗓️ **Date:** 2024-11-27
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** HiAR-ICL shifts in-context learning from example-based prompts to MCTS-discovered high-level reasoning patterns that guide inference on complex math.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -736,6 +762,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jinhao Jiang, Zhipeng Chen, Yingqian Min, Jie Chen, Xiaoxue Cheng, Jiapeng Wang, Yiru Tang, Haoxiang Sun, Jia Deng, Wayne Xin Zhao, Zheng Liu, Dong Yan, Jian Xie, Zhongyuan Wang, Jiahui Wen
 - 🗓️ **Date:** 2024-11-18
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** A broad empirical study of o1-style reward-guided tree search: how policy model, reward model, and search algorithm choices interact for reasoning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -747,6 +774,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jierui Li, Hung Le, Yinbo Zhou, Caiming Xiong, Silvio Savarese, Doyen Sahoo
 - 🗓️ **Date:** 2024-11-07
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Dedicated agents plan, generate, and debug along a unified search tree, with execution feedback steering exploration over the huge code search space.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -758,6 +786,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Chang Ma, Haiteng Zhao, Junlei Zhang, Junxian He, Lingpeng Kong
 - 🗓️ **Date:** 2024-10-22
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Predictive-Decoding takes an optimal-control view: foresight trajectories reweight next-step choices (model predictive control) to reduce the myopia of autoregressive planning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -769,6 +798,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jiahao Qiu, Yifu Lu, Yifan Zeng, Jiacheng Guo, Jiayi Geng, Huazheng Wang, Kaixuan Huang, Yue Wu, Mengdi Wang
 - 🗓️ **Date:** 2024-10-18
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Integrates speculative tree search into Best-of-N: iteratively branching and pruning partial responses keeps BoN-level quality at a fraction of the compute.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -780,6 +810,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Qingyao Li, Wei Xia, Kounianhua Du, Xinyi Dai, Ruiming Tang, Yasheng Wang, Yong Yu, Weinan Zhang
 - 🗓️ **Date:** 2024-09-15
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** MCTS over thoughts for code generation that uses execution feedback to rethink and repair erroneous reasoning during the search itself.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -791,6 +822,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Arian Hosseini, Xingdi Yuan, Nikolay Malkin, Aaron C. Courville, Alessandro Sordoni, Rishabh Agarwal
 - 🗓️ **Date:** 2024-02-09
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Trains a DPO verifier on both the correct and incorrect solutions produced across STaR-style self-improvement iterations, then ranks candidates with it at inference.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -802,6 +834,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Shibo Hao, Yi Gu, Haodi Ma, Joshua Jiahua Hong, Zhen Wang, D. Wang, Zhiting Hu
 - 🗓️ **Date:** 2023-05-24
 - 📑 **Publisher:** Conference on Empirical Methods in Natural Language Processing
+- 💡 **TL;DR:** RAP repurposes the LLM as both world model and reasoning agent, planning with MCTS over anticipated states and rewards.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -813,6 +846,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Shunyu Yao, Dian Yu, Jeffrey Zhao, Izhak Shafran, T. Griffiths, Yuan Cao, Karthik Narasimhan
 - 🗓️ **Date:** 2023-05-17
 - 📑 **Publisher:** Neural Information Processing Systems
+- 💡 **TL;DR:** Generalizes chain-of-thought into tree exploration over coherent thought units with lookahead and backtracking, using the LM to generate and evaluate branches.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -824,6 +858,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yuxi Xie, Kenji Kawaguchi, Yiran Zhao, Xu Zhao, MingSung Kan, Junxian He, Qizhe Xie
 - 🗓️ **Date:** 2023-05-01
 - 📑 **Publisher:** Neural Information Processing Systems
+- 💡 **TL;DR:** Stepwise self-evaluation calibrates stochastic beam search over reasoning chains, curbing uncertainty and error accumulation in multi-step reasoning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
