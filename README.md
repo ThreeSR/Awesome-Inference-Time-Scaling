@@ -19,7 +19,7 @@ Collect papers and scale up paper list (Still Ongoing)
 
 Categorize all papers for better reference (Done — see topic sections below)
 
-Add a one-line TL;DR to every entry (In Progress)
+Add a one-line TL;DR to every entry (Done)
 
 ## How to Contribute? 
 
