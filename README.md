@@ -2053,6 +2053,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Nicholas Roberts, Sung-Dae Cho, Zhiqi Gao, Tzu-Heng Huang, Albert Wu, Gabriel Orlanski, Avi Trost, Kelly A. Buchanan, Aws Albarghouthi, Frederic Sala
 - 🗓️ **Date:** 2026-04-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Train-to-Test scaling laws jointly optimize model size, training tokens, and inference samples; once sampling is in the loop, overtraining smaller models becomes compute-optimal.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2064,6 +2065,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Xiaochuan Li, Ryan Ming, P. Setlur, Abhijay Paladugu, Andy Tang, Hao Kang, Shuai Shao, Rong Jin, Chenyan Xiong
 - 🗓️ **Date:** 2026-02-22
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** A benchmark for test-time scaling of general-purpose agents handling open-ended requests across skills and tools in one environment.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2075,6 +2077,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Indranil Halder, Cengiz Pehlevan
 - 🗓️ **Date:** 2025-12-22
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** An analytically tractable model (Bayesian regression with reward-weighted sampling) that explains when LLM-as-a-judge inference-time scaling helps and when it fails.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2086,6 +2089,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Aradhye Agarwal, Ayan Sengupta, Tanmoy Chakraborty
 - 🗓️ **Date:** 2025-12-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Systematic head-to-head comparison of test-time scaling strategies under identical conditions, across model types and problem difficulty.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2097,6 +2101,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** James Xu Zhao, Bryan Hooi, S. Ng
 - 🗓️ **Date:** 2025-09-08
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Evaluates 14 reasoning models on knowledge-intensive benchmarks: longer reasoning fails to help and often increases hallucination.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2108,6 +2113,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** George Kour, Itay Nakash, Ateret Anaby-Tavor, Michal Shmueli-Scheuer
 - 🗓️ **Date:** 2025-05-26
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Measures how test-time compute shifts LLMs' expressed preferences, opinions, and beliefs, beyond accuracy effects.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2119,6 +2125,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yexiang Liu, Zekun Li, Zhi Fang, Nan Xu, Ran He, Tieniu Tan
 - 🗓️ **Date:** 2025-05-16
 - 📑 **Publisher:** Annual Meeting of the Association for Computational Linguistics
+- 💡 **TL;DR:** Large-scale study (6 LLMs x 8 prompting strategies x 6 benchmarks) of how prompting interacts with majority-vote scaling; simple CoT often wins at scale.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2130,6 +2137,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zheng-Xin Yong, M. Adilazuarda, Jonibek Mansurov, Ruochen Zhang, Niklas Muennighoff, Carsten Eickhoff, G. Winata, Julia Kreutzer, Stephen H. Bach, Alham Fikri Aji
 - 🗓️ **Date:** 2025-05-08
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** English-centric reasoning finetuning plus scaled inference transfers across languages: longer CoTs improve crosslingual math, with quote-and-think language mixing.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2141,6 +2149,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Vidhisha Balachandran, Jingya Chen, Lingjiao Chen, Shivam Garg, Neel Joshi, Yash Lara, John Langford, Besmira Nushi, Vibhav Vineet, Yue Wu, Safoora Yousefi
 - 🗓️ **Date:** 2025-03-31
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Benchmarks inference-time scaling beyond math across eight complex tasks: strong on planning-style problems, limited elsewhere; verification quality is the bottleneck.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2152,6 +2161,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jiaming Song, Linqi Zhou
 - 🗓️ **Date:** 2025-03-10
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Position: inference-time scaling ideas (search, verifiers) should feed back into the design of generative pre-training algorithms themselves.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2163,6 +2173,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhiyuan Zeng, Qinyuan Cheng, Zhangyue Yin, Yunhua Zhou, Xipeng Qiu
 - 🗓️ **Date:** 2025-02-17
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Asks whether o1-replicas truly scale with longer thinking: longer CoTs often do NOT yield higher accuracy; proposes parallel-based shortest-majority-vote instead.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2174,6 +2185,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Amrith Rajagopal Setlur, Nived Rajaraman, Sergey Levine, Aviral Kumar
 - 🗓️ **Date:** 2025-02-17
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Theory and experiments showing verifier-free distillation of search traces is asymptotically outscaled by verification-based (RL/search) test-time scaling.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2185,6 +2197,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Fan Liu, WenShuo Chao, Naiqiang Tan, Hao Liu
 - 🗓️ **Date:** 2025-02-11
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Ablates the implementation details (candidate counts, temperatures, reward choices) that silently dominate inference-time computation results across methods.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2196,6 +2209,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Runze Liu, Junqi Gao, Jian Zhao, Kaiyan Zhang, Xiu Li, Biqing Qi, Wanli Ouyang, Bowen Zhou
 - 🗓️ **Date:** 2025-02-10
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Compute-optimal TTS analysis across policy models, PRMs, and difficulty: with the right strategy a 1B model can beat a 405B model on MATH-500.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2207,6 +2221,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Bill Yuchen Lin, R. L. Bras, Kyle Richardson, Ashish Sabharwal, Radha Poovendran, Peter Clark, Yejin Choi
 - 🗓️ **Date:** 2025-02-03
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Logic-grid-puzzle benchmark with controllable CSP complexity revealing a 'curse of complexity' that model size and inference compute do not overcome.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2218,6 +2233,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Wojciech Zaremba, Evgenia Nitishinskaya, Boaz Barak, Stephanie Lin, Sam Toyer, Yaodong Yu, Rachel Dias, Eric Wallace, Kai Xiao, Jo-hannes Heidecke, Amelia Glaese
 - 🗓️ **Date:** 2025-01-31
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** More inference-time compute generally improves o1-series robustness to adversarial attacks, without adversarial training, though with notable exceptions.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2229,6 +2245,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yanxi Chen, Xuchen Pan, Yaliang Li, Bolin Ding, Jingren Zhou
 - 🗓️ **Date:** 2024-11-29
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Two-stage generate-then-knockout-tournament algorithm with provable test-time scaling guarantees under mild pairwise-comparison assumptions.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2240,6 +2257,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yiwei Qin, Xuefeng Li, Haoyang Zou, Yixiu Liu, Shijie Xia, Zhen Huang, Yixin Ye, Weizhe Yuan, Hector Liu, Yuanzhi Li, Pengfei Liu
 - 🗓️ **Date:** 2024-10-08
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Transparent real-time o1 replication introducing journey learning: training on full search trajectories (trial-and-error, reflection) rather than shortcut answers.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2251,6 +2269,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Charlie Snell, Jaehoon Lee, Kelvin Xu, Aviral Kumar
 - 🗓️ **Date:** 2024-08-06
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Canonical compute-optimal TTS study: adaptively choosing revision vs. search per difficulty beats best-of-N by ~4x efficiency and can outperform a 14x larger model.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2262,6 +2281,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yangzhen Wu, Zhiqing Sun, Shanda Li, S. Welleck, Yiming Yang
 - 🗓️ **Date:** 2024-08-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Empirical inference scaling laws over model size vs. token budget: small models with sophisticated inference strategies (e.g., tree voting) can be compute-optimal.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2274,6 +2294,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jungseob Lee, Chanjun Park
 - 🗓️ **Date:** 2026-08
 - 📑 **Publisher:** SSRN
+- 💡 **TL;DR:** Surveys LLM agents through their control loop: loop paradigms, trained loops, termination/verification mechanics, skills, and harnesses, with negative results given equal weight.
 - 📝 **Abstract:**
     <details>
     <summary>Expand</summary>
@@ -2285,6 +2306,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhuoyi Yang, Xu Guo, Tong Zhang, Huijuan Xu, Boyang Li
 - 🗓️ **Date:** 2025-11-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Organizes test-time scaling by how problems decompose into subproblems and their topology (sequential, parallel, tree).
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2296,6 +2318,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Xiaobao Wu
 - 🗓️ **Date:** 2025-05-05
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Survey unifying post-training and test-time scaling under 'learning from rewards': reward model designs, training signals, and reward-guided inference.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2307,6 +2330,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Qiyuan Zhang, Fuyuan Lyu, Zexu Sun, Lei Wang, Weixu Zhang, Zhihan Guo, Yufei Wang, Irwin King, Xue Liu, Chen Ma
 - 🗓️ **Date:** 2025-03-31
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Four-axis taxonomy of test-time scaling: what scales, how it scales, where it applies, and how well it works.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2318,6 +2342,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Komal Kumar, Tajamul Ashraf, Omkar Thawakar, R. Anwer, Hisham Cholakkal, Mubarak Shah, Ming-Hsuan Yang, P. Torr, Salman H. Khan, Fahad Shahbaz Khan
 - 🗓️ **Date:** 2025-02-28
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Survey of post-training for reasoning LLMs spanning fine-tuning, RL, and test-time scaling as complementary levers.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2329,6 +2354,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhongzhi Li, Duzhen Zhang, Ming-Liang Zhang, Jiaxin Zhang, Zengyan Liu, Yuxuan Yao, Haotian Xu, Junhao Zheng, Pei-Jie Wang, Xiuyi Chen, Yingying Zhang, Fei Yin, Jiahua Dong, Zhijiang Guo, Le Song, Cheng-Lin Liu
 - 🗓️ **Date:** 2025-02-24
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Surveys the transition from fast System-1 LLMs to deliberate System-2 reasoning LLMs, covering the o1-style training and inference stack.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2340,6 +2366,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yixin Ji, Juntao Li, Hai Ye, Kaixin Wu, Jia Xu, Linjian Mo, Min Zhang
 - 🗓️ **Date:** 2025-01-05
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Traces test-time computing from System-1 adaptation (distribution shift) to System-2 reasoning (search, verification, scaling).
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -2351,6 +2378,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** S. Welleck, Amanda Bertsch, Matthew Finlayson, Hailey Schoelkopf, Alex Xie, Graham Neubig, Ilia Kulikov, Zaid Harchaoui
 - 🗓️ **Date:** 2024-06-24
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Unified formalism for inference-time algorithms across token-level decoding, meta-generation (chained/parallel generators), and efficiency techniques.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
