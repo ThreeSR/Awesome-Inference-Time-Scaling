@@ -435,6 +435,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Pranav Putta, Edmund Mills, Naman Garg, S. Motwani, Chelsea Finn, Divyansh Garg, Rafael Rafailov
 - 🗓️ **Date:** 2024-08-13
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Combines MCTS over web trajectories with self-critique and DPO over search-derived preferences, improving autonomous web agents beyond behavior cloning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -446,6 +447,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jing Yu Koh, Stephen McAleer, Daniel Fried, Ruslan Salakhutdinov
 - 🗓️ **Date:** 2024-07-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Best-first tree search at inference lets LM web agents explicitly explore and multi-step plan, improving success on realistic web automation.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
