@@ -25,21 +25,20 @@ Add a one-line TL;DR to every entry (Done)
 
 We understand that Inference/Test Time Scaling/Computing is a broad field. If you feel that our list is incomplete, **we warmly welcome your contributions (open a pull request or issue, I will handle it).**
 
-If you can follow this format, that would be great.
+Papers are grouped into topic sections (see the table of contents below), newest-first within each section, and every entry carries a one-line **TL;DR**. To add a paper:
 
-First, you can fork my repo. Then, add the paper you think relevant. After that, open a pull request. Through my verification, I will accept and merge.
-
-Below is the way you can use to run the code in my repo to call Semantic Scholar API to obtain the information and insert it to the README.
+1. Fork this repo.
+2. Run the helper script to fetch the paper from arXiv and insert it at the top of the right section:
 
 ```
-python fetch_semantic_info.py --paper_name "Paper Name or Key Word of the name"
-```
-Example:
-```
-python fetch_semantic_info.py --paper_name "Scaling Autonomous Agents via Automatic Reward Modeling And Planning"
+python fetch_arxiv.py --id 2609.24972 --section "Self-Improvement and RSI" --tldr "One-line summary of the paper."
 ```
 
-If you find our code useful when you would like to organize your own repo, feel free to use. Also, thanks for the free use of [Semantic Scholar API](https://www.semanticscholar.org/product/api).
+Optional flags: `--code <github-url>` adds an Official Code line, `--publisher-note "accepted to XXX"` extends the Publisher field, and `--dry-run` previews the entry without writing. The script reads arxiv.org directly, updates the section count in the table of contents, and never touches git — review the diff and open a pull request.
+
+3. If you prefer not to run the script, copying the format of any existing entry works just as well.
+
+(The earlier Semantic-Scholar-based `fetch_semantic_info.py` predates the topic-section layout and is deprecated. Thanks to the free [Semantic Scholar API](https://www.semanticscholar.org/product/api) that powered it.)
 
 
 ## Citation
@@ -65,7 +64,7 @@ If you find our code useful when you would like to organize your own repo, feel 
 
 Entries are grouped by topic; within each topic they are listed newest-first.
 
-- 🔁 [Self-Improvement and RSI](#self-improvement-and-rsi) (9)
+- 🔁 [Self-Improvement and RSI](#self-improvement-and-rsi) (10)
 - 🤖 [Agentic Test-Time Scaling](#agentic-test-time-scaling) (22)
 - 🌲 [Search and Verifiers](#search-and-verifiers) (34)
 - ⚡ [Parallel Scaling](#parallel-scaling) (9)
@@ -186,6 +185,18 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     <details>
     <summary>Expand</summary>
     With the growing adoption of large language model agents in persistent real-world roles, they naturally encounter continuous streams of tasks. A key limitation, however, is their failure to learn from the accumulated interaction history, forcing them to discard valuable insights and repeat past errors. We propose ReasoningBank, a novel memory framework that distills generalizable reasoning strategies from an agent&#39;s self-judged successful and failed experiences. At test time, an agent retrieves relevant memories from ReasoningBank to inform its interaction and then integrates new learnings back, enabling it to become more capable over time. Building on this powerful experience learner, we further introduce memory-aware test-time scaling (MaTTS), which accelerates and diversifies this learning process by scaling up the agent&#39;s interaction experience. By allocating more compute to each task, the agent generates abundant, diverse experiences that provide rich contrastive signals for synthesizing higher-quality memory. The better memory in turn guides more effective scaling, establishing a powerful synergy between memory and test-time scaling. Across web browsing and software engineering benchmarks, ReasoningBank consistently outperforms existing memory mechanisms that store raw trajectories or only successful task routines, improving both effectiveness and efficiency; MaTTS further amplifies these gains. These findings establish memory-driven experience scaling as a new scaling dimension, enabling agents to self-evolve with emergent behaviors naturally arise. Our code can be found at this https URL .
+    </details>
+
+🔹 [Darwin Godel Machine: Open-Ended Evolution of Self-Improving Agents](https://arxiv.org/abs/2505.22954)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.22954)
+- 👤 **Authors:** Jenny Zhang, Shengran Hu, Cong Lu, Robert Lange, Jeff Clune
+- 🗓️ **Date:** 2025-05-29
+- 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** The Darwin Gödel Machine iteratively rewrites its own agent code and validates each change empirically, growing an open-ended archive of agents; lifts its own SWE-bench score from 20.0% to 50.0%.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Today's AI systems have human-designed, fixed architectures and cannot autonomously and continuously improve themselves. The advance of AI could itself be automated. If done safely, that would accelerate AI development and allow us to reap its benefits much sooner. Meta-learning can automate the discovery of novel algorithms, but is limited by first-order improvements and the human design of a suitable search space. The Gödel machine proposed a theoretical alternative: a self-improving AI that repeatedly modifies itself in a provably beneficial manner. Unfortunately, proving that most changes are net beneficial is impossible in practice. We introduce the Darwin Gödel Machine (DGM), a self-improving system that iteratively modifies its own code (thereby also improving its ability to modify its own codebase) and empirically validates each change using coding benchmarks. Inspired by Darwinian evolution and open-endedness research, the DGM maintains an archive of generated coding agents. It grows the archive by sampling an agent from it and using a foundation model to create a new, interesting, version of the sampled agent. This open-ended exploration forms a growing tree of diverse, high-quality agents and allows the parallel exploration of many different paths through the search space. Empirically, the DGM automatically improves its coding capabilities (e.g., better code editing tools, long-context window management, peer-review mechanisms), increasing performance on SWE-bench from 20.0% to 50.0%, and on Polyglot from 14.2% to 30.7%. Furthermore, the DGM significantly outperforms baselines without self-improvement or open-ended exploration. All experiments were done with safety precautions (e.g., sandboxing, human oversight). The DGM is a significant step toward self-improving AI, capable of gathering its own stepping stones along paths that unfold into endless innovation.
     </details>
 
 ### Agentic Test-Time Scaling

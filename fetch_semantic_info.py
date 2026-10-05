@@ -1,3 +1,5 @@
+# DEPRECATED (2026-10-05): predates the topic-section README layout and will insert
+# entries in the wrong place. Use fetch_arxiv.py instead.
 import requests
 import time
 import argparse
