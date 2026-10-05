@@ -73,7 +73,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - ⏱️ [Efficient Test-Time Scaling](#efficient-test-time-scaling) (23)
 - 🧠 [Test-Time Training and RL](#test-time-training-and-rl) (13)
 - 🎨 [Generation and Diffusion](#generation-and-diffusion) (11)
-- 🧬 [Domain-Specific Applications](#domain-specific-applications) (17)
+- 🧬 [Domain-Specific Applications](#domain-specific-applications) (16)
 - 📊 [Benchmarks and Analysis](#benchmarks-and-analysis) (20)
 - 📚 [Surveys and Position](#surveys-and-position) (8)
 
@@ -2034,16 +2034,6 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     <details>
     <summary>Expand</summary>
     Chain-of-thought (CoT) reasoning in vision language models (VLMs) is crucial for improving interpretability and trustworthiness. However, current training recipes lack robust CoT reasoning data, relying on datasets dominated by short annotations with minimal rationales. In this work, we show that training VLM on short answers does not generalize well to reasoning tasks that require more detailed responses. To address this, we propose a two-fold approach. First, we distill rationales from GPT-4o model to enrich the training data and fine-tune VLMs, boosting their CoT performance. Second, we apply reinforcement learning to further calibrate reasoning quality. Specifically, we construct positive (correct) and negative (incorrect) pairs of model-generated reasoning chains, by comparing their predictions with annotated short answers. Using this pairwise data, we apply the Direct Preference Optimization algorithm to refine the model's reasoning abilities. Our experiments demonstrate significant improvements in CoT reasoning on benchmark datasets and better generalization to direct answer prediction as well. This work emphasizes the importance of incorporating detailed rationales in training and leveraging reinforcement learning to strengthen the reasoning capabilities of VLMs.
-    </details>
-
-🔹 [The MADlib Analytics Library or MAD Skills, the SQL](https://www.semanticscholar.org/paper/4b2a2d750c0e59a826e138bb0e4d55ed1547c6a0)
-- 👤 **Authors:** Joseph M Hellerstein, C. Ré, F. Schoppmann, D. Wang, Eugene Fratkin, Aleksander Gorajek, K. S. Ng, Caleb Welton, Xixuan Feng, Kun Li, Arun Kumar
-- 🗓️ **Date:** 2012-08-20
-- 📑 **Publisher:** Proceedings of the VLDB Endowment
-- 📝 **Abstract:** 
-    <details>
-    <summary>Expand</summary>
-    No abstract available.
     </details>
 
 ### Benchmarks and Analysis
