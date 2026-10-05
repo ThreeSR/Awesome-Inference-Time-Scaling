@@ -1557,6 +1557,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Qingyang Zhang, Xinke Kong, Haitao Wu, Qinghua Hu, Minghao Wu, Baosong Yang, Yu Cheng, Yun Luo, Ganqu Cui, Changqing Zhang
 - 🗓️ **Date:** 2026-04-21
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Diagnoses why test-time training plateaus for reasoning models (self-reward drift as the policy moves) and scales TTT so extra test-time compute keeps paying off.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1568,6 +1569,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yong Du, Yuchen Yan, Fei Tang, Zhengxi Lu, Chang Zong, Weiming Lu, Shengpei Jiang, Yongliang Shen
 - 🗓️ **Date:** 2025-08-07
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Test-time RL for GUI grounding using region consistency across sampled predictions as the reward, avoiding pixel-level annotation.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1579,6 +1581,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jinwu Hu, Zhitian Zhang, Guohao Chen, Xutao Wen, Chao Shuai, Wei Luo, Bin Xiao, Yuanqing Li, Mingkui Tan
 - 🗓️ **Date:** 2025-05-27
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** TLM adapts LLMs to target domains at test time from unlabeled inputs, tackling distribution shift without offline retraining.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1590,6 +1593,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yuxin Zuo, Kaiyan Zhang, Shang Qu, Li Sheng, Xuekai Zhu, Biqing Qi, Youbang Sun, Ganqu Cui, Ning Ding, Bowen Zhou
 - 🗓️ **Date:** 2025-04-22
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** RL on unlabeled test data using majority-vote agreement as the reward: Qwen-2.5-Math-7B pass@1 on AIME 2024 improves by ~159% without ground-truth labels.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1601,6 +1605,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yuxiao Qu, Matthew Y. R. Yang, Amrith Rajagopal Setlur, Lewis Tunstall, E. Beeching, Ruslan Salakhutdinov, Aviral Kumar
 - 🗓️ **Date:** 2025-03-10
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Casts optimizing test-time compute as meta-RL: dense progress-based rewards (MRT) make each extra token of thinking count, improving token efficiency over outcome-reward RL.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1612,6 +1617,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Violet Xiang, Charlie Snell, Kanishk Gandhi, Alon Albalak, Anikait Singh, Chase Blagden, Duy Phung, Rafael Rafailov, nathan lile, Dakota Mahan, Louis Castricato, Jan-Philipp Franken, Nick Haber, Chelsea Finn
 - 🗓️ **Date:** 2025-01-08
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Meta-CoT argues CoT should explicitly model the latent search process behind it, and studies process supervision, synthetic data, and RL recipes to internalize in-context search.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1623,6 +1629,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yuxiang Zhang, Shangxi Wu, Yuqi Yang, Jiangming Shu, Jinlin Xiao, Chao Kong, Jitao Sang
 - 🗓️ **Date:** 2024-11-29
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** o1 replication for coding: RL plus MCTS with a trained test-case generator providing execution-based rewards for System-2 code reasoning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1634,6 +1641,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yu Zhao, Huifeng Yin, Bo Zeng, Hao Wang, Tianqi Shi, Chenyang Lyu, Longyue Wang, Weihua Luo, Kaifu Zhang
 - 🗓️ **Date:** 2024-11-21
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Open reasoning model combining CoT fine-tuning, MCTS, and reflection, extending o1-style reasoning to open-ended tasks without standard answers.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1645,6 +1653,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Ekin Akyürek, Mehul Damani, Linlu Qiu, Han Guo, Yoon Kim, Jacob Andreas
 - 🗓️ **Date:** 2024-11-11
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Temporarily updating parameters on each test input (with augmented in-context tasks) up to 6x's ARC accuracy, letting an 8B model reach human-average scores.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1656,6 +1665,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jonas Hübotter, Sascha Bongni, Ido Hakimi, Andreas Krause
 - 🗓️ **Date:** 2024-10-10
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** SIFT selects informative (not redundant nearest-neighbor) data for per-prompt test-time fine-tuning, reducing uncertainty about the prompt at minimal cost.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1667,6 +1677,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Dan Zhang, Sining Zhoubian, Yisong Yue, Yuxiao Dong, Jie Tang
 - 🗓️ **Date:** 2024-06-06
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Self-training where process-reward-guided MCTS collects per-step-verified traces, training both policy and process reward model in a reinforced loop.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1678,6 +1689,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yuxi Xie, Anirudh Goyal, Wenyue Zheng, Min-Yen Kan, T. Lillicrap, Kenji Kawaguchi, Michael Shieh
 - 🗓️ **Date:** 2024-05-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** AlphaZero-style iterative preference learning: MCTS lookahead turns instance rewards into step-level preferences for DPO-style updates.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1689,6 +1701,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Moritz Hardt, Yu Sun
 - 🗓️ **Date:** 2023-05-29
 - 📑 **Publisher:** International Conference on Learning Representations
+- 💡 **TL;DR:** Fine-tunes the model on retrieved nearest neighbors at test time instead of stuffing them into the context, sharply improving perplexity across domains.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1702,6 +1715,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhitong Gao, Parham Rezaei, Ali Cy, Mingqiao Ye, Natavsa Jovanovi'c, Jesse Allardice, Afshin Dehghan, Amir Zamir, Roman Bachmann, Ouguzhan Fatih Kar
 - 🗓️ **Date:** 2026-04-16
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Shows 1D ordered (coarse-to-fine) token structures make autoregressive generation far more steerable by test-time search than local patch tokens.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1713,6 +1727,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Minhuan Li, Jiequn Han, Pilar Cossio, Luhuan Wu
 - 🗓️ **Date:** 2026-02-05
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Steers protein diffusion models in embedding space with experimental-measurement likelihoods, robustly sampling conformations consistent with observations.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1724,6 +1739,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yinuo Ren, Wenhao Gao, Lexing Ying, Grant M. Rotskoff, Jiequn Han
 - 🗓️ **Date:** 2025-09-25
 - 📑 **Publisher:** International Conference on Learning Representations
+- 💡 **TL;DR:** Training-free particle-based steering of diffusion inference that controls drift to adapt pretrained models to new target distributions, avoiding guidance bias and weight degeneracy.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1735,6 +1751,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Haoran He, Jiajun Liang, Xintao Wang, Pengfei Wan, Di Zhang, Kun Gai, Ling Pan
 - 🗓️ **Date:** 2025-05-23
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Evolutionary search over the generation process scales image and video quality at inference, closing the TTS gap between language and visual generation.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1746,6 +1763,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Jaihoon Kim, Taehoon Yoon, Jisung Hwang, Minhyuk Sung
 - 🗓️ **Date:** 2025-03-25
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Brings particle-sampling-style inference scaling to deterministic flow models via stochastic generation and rollover budget forcing.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1757,6 +1775,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Fangfu Liu, Hanyang Wang, Yimo Cai, Kaiyan Zhang, Xiaohang Zhan, Yueqi Duan
 - 🗓️ **Date:** 2025-03-24
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** First systematic test-time scaling for video generation: search over the generation space with verifiers (Tree-of-Frames) instead of retraining bigger models.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1768,6 +1787,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Shufan Li, Konstantinos Kallidromitis, Akash Gokul, Arsh Koneru, Yusuke Kato, Kazuki Kozuka, Aditya Grover
 - 🗓️ **Date:** 2025-03-15
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Gives diffusion transformers in-context reflection: the model revises generations based on its own previous images and critiques, beating naive best-of-N.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1779,6 +1799,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yuta Oshima, Masahiro Suzuki, Yutaka Matsuo, Hiroki Furuta
 - 🗓️ **Date:** 2025-01-31
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Beam search over diffusion latents with lookahead reward estimation aligns text-to-video outputs (motion naturalness) without model updates.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1790,6 +1811,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Enze Xie, Junsong Chen, Yuyang Zhao, Jincheng Yu, Ligeng Zhu, Yujun Lin, Zhekai Zhang, Muyang Li, Junyu Chen, Han Cai, Bingchen Liu, Daquan Zhou, Song Han
 - 🗓️ **Date:** 2025-01-30
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Linear diffusion transformer with depth-growth training, pruning, and repeated-sampling inference scaling, letting a small T2I model match much larger ones.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1801,6 +1823,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Nanye Ma, Shangyuan Tong, Haolin Jia, Hexiang Hu, Yu-Chuan Su, Mingda Zhang, Xuan Yang, Yandong Li, T. Jaakkola, Xuhui Jia, Saining Xie
 - 🗓️ **Date:** 2025-01-16
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Frames diffusion inference scaling as search over injected noises, with verifier-feedback algorithms beating simply adding denoising steps.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1812,6 +1835,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Raghav Singhal, Zachary Horvitz, Ryan Teehan, Mengye Ren, Zhou Yu, Kathleen McKeown, Rajesh Ranganath
 - 🗓️ **Date:** 2025-01-12
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Feynman-Kac steering: interacting particle systems with rewards steer diffusion sampling toward user-specified properties without fine-tuning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1825,6 +1849,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Louis Serrano, Jiequn Han, Edouard Oyallon, Shirley Ho, Rudy Morel
 - 🗓️ **Date:** 2026-01-31
 - 📑 **Publisher:** International Conference on Machine Learning
+- 💡 **TL;DR:** Operator splitting at test time composes pretrained neural operators to generalize to unseen PDE coefficients and physics without retraining.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1836,6 +1861,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Yupei Liu, Yanting Wang, Yuqi Jia, Jinyuan Jia, N. Gong
 - 🗓️ **Date:** 2025-09-29
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Defends against prompt injection by inference-time scaling: parallel system-prompt-guided explorations plus aggregation, instead of security fine-tuning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1847,6 +1873,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Hung-Chun Hsu, Yuan-Ching Kuo, C. Yang, Szu-Wei Fu, Hanrong Ye, Hongxu Yin, Yu-Chiang Frank Wang, Ming-Feng Tsai, Chuan-Ju Wang
 - 🗓️ **Date:** 2025-08-25
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Test-time scaling for MLLM-based generative retrieval in multi-turn conversational product search.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1858,6 +1885,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zheyuan Yang, Lyuhao Chen, Arman Cohan, Yilun Zhao
 - 🗓️ **Date:** 2025-05-29
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** First study of inference-time scaling on table reasoning, comparing distillation from R1 traces against RL with verifiable rewards.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1869,6 +1897,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Xiaoke Huang, Juncheng Wu, Hui Liu, Xianfeng Tang, Yuyin Zhou
 - 🗓️ **Date:** 2025-04-01
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Comprehensive study of test-time scaling for medical reasoning: a sub-10B model sets SOTA, but gains cap out near 4k thinking tokens and hinge on medical knowledge, not just longer thought.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1880,6 +1909,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Ye Liu, Kevin Qinghong Lin, Chang Wen Chen, Mike Zheng Shou
 - 🗓️ **Date:** 2025-03-17
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Role-based video agent (planner, grounder, verifier, answerer) switching via lightweight LoRA adapters for temporally grounded long-video reasoning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1891,6 +1921,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Orion Weller, Kathryn Ricci, Eugene Yang, Andrew Yates, Dawn Lawrie, Benjamin Van Durme
 - 🗓️ **Date:** 2025-02-25
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** First reasoning reranker: distills R1 traces into a smaller model that thinks before scoring passages, transferring test-time compute benefits to IR.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1902,6 +1933,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhouliang Yu, Yuhuan Yuan, Tim Z. Xiao, Fuxiang Frank Xia, Jie Fu, Ge Zhang, Ge Lin, Weiyang Liu
 - 🗓️ **Date:** 2025-02-07
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Uses test-time scaling (BoN plus refinement) to translate natural-language planning problems into formal PDDL world models, sidestepping language ambiguity.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1913,6 +1945,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhen Ye, Xinfa Zhu, Chi-Min Chan, Xinsheng Wang, Xu Tan, Jiahe Lei, Yi Peng, Haohe Liu, Yizhu Jin, Zheqi DAI, Hongzhan Lin, Jianyi Chen, Xingjian Du, Liumeng Xue, Yunlin Chen, Zhifei Li, Lei Xie, Qiuqiang Kong, Yike Guo, Wei Xue
 - 🗓️ **Date:** 2025-02-06
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Single-stage Llama-style TTS codec model where scaling either training or inference compute (with verifiers) improves naturalness and expressiveness.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1924,6 +1957,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Xiaotong Ji, Shyam Sundhar Ramesh, Matthieu Zimmer, Ilija Bogunovic, Jun Wang, H. Ammar
 - 🗓️ **Date:** 2025-02-03
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Inference-time alignment as a constrained MDP in latent space with a safety state, guaranteeing safe responses with probability approaching one, no retraining.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1935,6 +1969,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhongzhen Huang, Gui Geng, Shengyi Hua, Zhen Huang, Haoyang Zou, Shaoting Zhang, Pengfei Liu, Xiaofan Zhang
 - 🗓️ **Date:** 2025-01-11
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Studies inference-time scaling for medical reasoning: journey-learning distilled models improve diagnosis and treatment planning with longer reasoning.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1946,6 +1981,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Zhe Chen, Weiyun Wang, Yue Cao, Yangzhou Liu, Zhangwei Gao, Erfei Cui, Jinguo Zhu, Shenglong Ye, Hao Tian, Zhaoyang Liu, Lixin Gu, Xuehui Wang, Qingyun Li, Yiming Ren, Zixuan Chen, Jiapeng Luo, Jiahao Wang, Tan Jiang, Bo Wang, Conghui He, Botian Shi, Xingcheng Zhang, Han Lv, Yi Wang, Wenqi Shao, Pei Chu, Zhongying Tu, Tong He, Zhiyong Wu, Hui Deng, Jiaye Ge, Kaiming Chen, Min Dou, Lewei Lu, Xizhou Zhu, Tong Lu, Dahu Lin, Yunfeng Qiao, Jifeng Dai, Wenhai Wang
 - 🗓️ **Date:** 2024-12-06
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** InternVL 2.5: open multimodal series whose gains come jointly from model, data, and test-time scaling (CoT plus majority voting), first open MLLM past 70% on MMMU.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1957,6 +1993,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** James Beetham, Souradip Chakraborty, Mengdi Wang, Furong Huang, A. S. Bedi, Mubarak Shah
 - 🗓️ **Date:** 2024-12-06
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Shows Best-of-N inference-time alignment can be weaponized: fast, training-free jailbreaks framed as reward-guided sampling.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1968,6 +2005,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Guowei Xu, Peng Jin, Hao Li, Yibing Song, Lichao Sun, Li Yuan
 - 🗓️ **Date:** 2024-11-15
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Trains VLMs for staged (summary, caption, reasoning, conclusion) thinking and scales it at inference with stage-level beam search.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1979,6 +2017,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Prashank Kadam
 - 🗓️ **Date:** 2024-11-07
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** GPT-guided MCTS over symbolic-regression expressions yields fast, transparent fraud-detection models satisfying explainability regulation.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
@@ -1990,6 +2029,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 👤 **Authors:** Ruohong Zhang, Bowen Zhang, Yanghao Li, Haotian Zhang, Zhiqing Sun, Zhe Gan, Yinfei Yang, Ruoming Pang, Yiming Yang
 - 🗓️ **Date:** 2024-10-21
 - 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Builds VLM CoT ability by distilling GPT-4o rationales then applying RL on reasoning chains, improving generalization over short-answer training.
 - 📝 **Abstract:** 
     <details>
     <summary>Expand</summary>
