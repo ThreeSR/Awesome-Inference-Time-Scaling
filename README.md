@@ -73,7 +73,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 🧠 [Test-Time Training and RL](#test-time-training-and-rl) (13)
 - 🎨 [Generation and Diffusion](#generation-and-diffusion) (11)
 - 🧬 [Domain-Specific Applications](#domain-specific-applications) (16)
-- 📊 [Benchmarks and Analysis](#benchmarks-and-analysis) (20)
+- 📊 [Benchmarks and Analysis](#benchmarks-and-analysis) (21)
 - 📚 [Surveys and Position](#surveys-and-position) (8)
 
 ### Self-Improvement and RSI
@@ -2119,6 +2119,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     <details>
     <summary>Expand</summary>
     As Large Language Models (LLMs) become deeply integrated into human life and increasingly influence decision-making, it's crucial to evaluate whether and to what extent they exhibit subjective preferences, opinions, and beliefs. These tendencies may stem from biases within the models, which may shape their behavior, influence the advice and recommendations they offer to users, and potentially reinforce certain viewpoints. This paper presents the Preference, Opinion, and Belief survey (POBs), a benchmark developed to assess LLMs' subjective inclinations across societal, cultural, ethical, and personal domains. We applied our benchmark to evaluate leading open- and closed-source LLMs, measuring desired properties such as reliability, neutrality, and consistency. In addition, we investigated the effect of increasing the test-time compute, through reasoning and self-reflection mechanisms, on those metrics. While effective in other tasks, our results show that these mechanisms offer only limited gains in our domain. Furthermore, we reveal that newer model versions are becoming less consistent and more biased toward specific viewpoints, highlighting a blind spot and a concerning trend. POBS: https://ibm.github.io/POBS
+    </details>
+
+🔹 [SPaRC: A Spatial Pathfinding Reasoning Challenge](https://arxiv.org/abs/2505.16686)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2505.16686)
+- 💻 **Official Code:** [SPaRC](https://github.com/lkaesberg/SPaRC)
+- 👤 **Authors:** Lars Benedikt Kaesberg, Jan Philip Wahle, Terry Ruas, Bela Gipp
+- 🗓️ **Date:** 2025-05-22
+- 📑 **Publisher:** Conference on Empirical Methods in Natural Language Processing
+- 💡 **TL;DR:** 1,000 2D grid pathfinding puzzles; humans reach 98.0% and o4-mini 15.8%, and unlike humans, models do not scale test-time compute with puzzle difficulty, while multiple attempts improve accuracy.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Existing reasoning datasets saturate and fail to test abstract, multi-step problems, especially pathfinding and complex rule constraint satisfaction. We introduce SPaRC (Spatial Pathfinding Reasoning Challenge), a dataset of 1,000 2D grid pathfinding puzzles to evaluate spatial and symbolic reasoning, requiring step-by-step planning with arithmetic and geometric rules. Humans achieve near-perfect accuracy (98.0%; 94.5% on hard puzzles), while the best reasoning models, such as o4-mini, struggle (15.8%; 1.1% on hard puzzles). Models often generate invalid paths (>50% of puzzles for o4-mini), and reasoning tokens reveal they make errors in navigation and spatial logic. Unlike humans, who take longer on hard puzzles, models fail to scale test-time compute with difficulty. Allowing models to make multiple solution attempts improves accuracy, suggesting potential for better spatial reasoning with improved training and efficient test-time scaling methods. SPaRC can be used as a window into models' spatial reasoning limitations and drive research toward new methods that excel in abstract, multi-step problem-solving.
     </details>
 
 🔹 [Rethinking the Role of Prompting Strategies in LLM Test-Time Scaling: A Perspective of Probability Theory](https://arxiv.org/abs/2505.10981)
