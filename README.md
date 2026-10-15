@@ -69,7 +69,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 🌲 [Search and Verifiers](#search-and-verifiers) (34)
 - ⚡ [Parallel Scaling](#parallel-scaling) (9)
 - 🔄 [Sequential Refinement](#sequential-refinement) (5)
-- ⏱️ [Efficient Test-Time Scaling](#efficient-test-time-scaling) (23)
+- ⏱️ [Efficient Test-Time Scaling](#efficient-test-time-scaling) (24)
 - 🧠 [Test-Time Training and RL](#test-time-training-and-rl) (13)
 - 🎨 [Generation and Diffusion](#generation-and-diffusion) (11)
 - 🧬 [Domain-Specific Applications](#domain-specific-applications) (16)
@@ -1284,6 +1284,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     </details>
 
 ### Efficient Test-Time Scaling
+
+🔹 [DoubtLess: Training-Free Contrastive Decoding for Efficient Reasoning](https://arxiv.org/abs/2610.18862)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2610.18862)
+- 💻 **Official Code:** [DoubtLess](https://github.com/leoluolol/DoubtLess)
+- 👤 **Authors:** Minghao Luo, Liang Chen
+- 🗓️ **Date:** 2026-10-13
+- 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Training-free contrastive decoding uses a small model's brief-versus-verbose logit difference to shorten a larger model's CoT, reducing Qwen3-32B thinking tokens by 31% across seven benchmarks with unchanged overall accuracy.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Reasoning models achieve strong performance through long chains of thought (CoT), but often spend more tokens than needed to solve a problem. Existing ways to shorten the CoT require additional training for each model, add a fixed steering vector to the model's hidden states, or use decoding heuristics such as stopping early or banning words like "wait", which can reduce accuracy. We propose DoubtLess, a training-free decoding method in which a much smaller reasoning model steers the large one towards brevity. The small model reads the large model's CoT so far twice, once prompted to be brief (the brief thinker) and once prompted to be verbose (the verbose thinker), and the difference between its two logit vectors, scaled by a strength, is added to the large model's logits at every step of the CoT. On seven benchmarks of competition mathematics, graduate-level science and competitive programming, DoubtLess shortens the CoT of Qwen3-32B by 31% with unchanged accuracy, outperforming five inference-time baselines. We also show that DoubtLess reduces thinking tokens per turn by 20% in a self-debugging coding agent with unchanged task performance. It also generalizes to two other model families with unchanged accuracy. When combined with training-based compression, it further shortens the CoT of a model already trained for brevity. Ablations and behavioral analysis show that DoubtLess reduces repeated checking, with most token savings coming after the correct answer first appears in the CoT. Our code is available at https://github.com/leoluolol/DoubtLess.
+    </details>
 
 🔹 [Adaptive Test-Time Compute Allocation with Evolving In-Context Demonstrations](https://aclanthology.org/2026.findings-acl.1754/)
 - 🔗 **PDF Link:** [Paper Link](https://aclanthology.org/2026.findings-acl.1754.pdf)
