@@ -73,7 +73,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 🧠 [Test-Time Training and RL](#test-time-training-and-rl) (13)
 - 🎨 [Generation and Diffusion](#generation-and-diffusion) (11)
 - 🧬 [Domain-Specific Applications](#domain-specific-applications) (16)
-- 📊 [Benchmarks and Analysis](#benchmarks-and-analysis) (21)
+- 📊 [Benchmarks and Analysis](#benchmarks-and-analysis) (22)
 - 📚 [Surveys and Position](#surveys-and-position) (8)
 
 ### Self-Improvement and RSI
@@ -2108,6 +2108,20 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     <details>
     <summary>Expand</summary>
     Test-time scaling (TTS) -- the dynamic allocation of compute during inference -- is a promising direction for improving reasoning in large language models (LLMs). However, a systematic comparison of well-known TTS strategies under identical conditions is missing, and the influence of model type and problem difficulty on performance remains unclear. To address these gaps, we conduct the first large-scale study of TTS, spanning over thirty billion tokens generated using eight open-source LLMs (7B to 235B parameters), across four reasoning datasets. We observe three consistent trends: (1) no single TTS strategy universally dominates; (2) reasoning models exhibit distinct trace-quality patterns across problem difficulty and trace length, forming short-horizon and long-horizon categories; and (3) for a given model type, the optimal TTS performance scales monotonically with compute budget. Based on these insights, we provide a practical recipe for selecting the best TTS strategy, considering problem difficulty, model type, and compute budget, providing a practical guide to effective inference-time scaling.
+    </details>
+
+🔹 [Don't Pass@k: A Bayesian Framework for Large Language Model Evaluation](https://arxiv.org/abs/2510.04265)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2510.04265)
+- 🎥 **Video:** [Watch](https://mohsenhariri.github.io/assets/videos/bayes-at-n/bayes-at-n.mp4)
+- 💻 **Official Code:** [Scorio](https://github.com/mohsenhariri/scorio)
+- 👤 **Authors:** Mohsen Hariri, Amirhossein Samandar, Michael Hinczewski, Vipin Chaudhary
+- 🗓️ **Date:** 2025-10-05
+- 📑 **Publisher:** arXiv.org; published at ICLR 2026
+- 💡 **TL;DR:** Introduces Bayes@N for evaluating and ranking LLMs from repeated samples, with uncertainty estimates for binary and graded outcomes.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Pass$@k$ is widely used to report the reasoning performance of LLMs, but it often produces unstable and potentially misleading rankings, especially when the number of trials (samples) is limited and computational resources are constrained. We present a principled Bayesian evaluation framework that replaces Pass$@k$ and average accuracy over $N$ trials (avg$@N$) with posterior estimates of a model's underlying success probability and credible intervals, yielding stable rankings and a transparent decision rule for differences. Evaluation outcomes are modeled as categorical (not just 0/1) with a Dirichlet prior, giving closed-form expressions for the posterior mean and uncertainty of any weighted rubric and enabling the use of prior evidence when appropriate. Theoretically, under a uniform prior, the Bayesian posterior mean is order-equivalent to average accuracy (Pass$@1$), explaining its empirical robustness while adding principled uncertainty. Empirically, in simulations with known ground-truth success rates and on AIME'24/'25, HMMT'25, and BrUMO'25, the posterior-based procedure achieves faster convergence and greater rank stability than Pass$@k$ and recent variants, enabling reliable comparisons at far smaller sample counts. The framework clarifies when observed gaps are statistically meaningful (non-overlapping credible intervals) versus noise, and it naturally extends to graded, rubric-based evaluations. Together, these results recommend replacing Pass$@k$ for LLM evaluation and ranking with a posterior-based, compute-efficient protocol that unifies binary and non-binary evaluation while making uncertainty explicit. Source code is available at https://github.com/mohsenhariri/scorio.
     </details>
 
 🔹 [Test-Time Scaling in Reasoning Models Is Not Effective for Knowledge-Intensive Tasks Yet](https://arxiv.org/abs/2509.06861)
