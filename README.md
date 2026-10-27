@@ -7,6 +7,8 @@ Maintained by [Rui Sun](https://threesr.github.io/)
 
 If you think our paper list is helpful, please Star⭐. Thanks! We will continue to update.
 
+🔗 **Related reading list:** [Awesome Loop Transformers](https://github.com/Mrkkew/Awesome-Loop-Transformers) — a bilingual atlas of looped, recurrent-depth, and latent-reasoning models, with papers and official code.
+
 <!-- ![Scaling](./fig/Scaling.webp) -->
 <p align="center">
     <img src="./fig/Scaling.webp" alt="Scaling" width="400">
