@@ -65,8 +65,8 @@ Optional flags: `--code <github-url>` adds an Official Code line, `--publisher-n
 Entries are grouped by topic; within each topic they are listed newest-first.
 
 - 🔁 [Self-Improvement and RSI](#self-improvement-and-rsi) (10)
-- 🤖 [Agentic Test-Time Scaling](#agentic-test-time-scaling) (22)
-- 🌲 [Search and Verifiers](#search-and-verifiers) (34)
+- 🤖 [Agentic Test-Time Scaling](#agentic-test-time-scaling) (23)
+- 🌲 [Search and Verifiers](#search-and-verifiers) (35)
 - ⚡ [Parallel Scaling](#parallel-scaling) (9)
 - 🔄 [Sequential Refinement](#sequential-refinement) (5)
 - ⏱️ [Efficient Test-Time Scaling](#efficient-test-time-scaling) (25)
@@ -200,6 +200,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     </details>
 
 ### Agentic Test-Time Scaling
+
+🔹 [AgonAlpha: Autonomous Alpha Discovery via Prompt Economy and Scalable Agentic Search](https://arxiv.org/abs/2608.11250)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2608.11250)
+- 💻 **Official Code:** [AgonAlpha](https://github.com/AutoResearch-Factory/AgonAlpha)
+- 👤 **Authors:** Weicheng Ye, Youran Sun, Xingyu Ren, Shunyao Yu, Chugang Yi, Haizhao Yang
+- 🗓️ **Date:** 2026-08-04
+- 📑 **Publisher:** arXiv.org; accepted to NeurIPS 2026 Workshop (Agenthon)
+- 💡 **TL;DR:** First alpha-mining system to combine verified artifact search, a fresh-context adversarial reviewer that can re-run and veto, and pending-aware parallel budget allocation. On WorldQuant BRAIN, 17 of 60 submissions reached SPECTACULAR, with peak Fitness 9.50 and Sharpe 3.48.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Language models can propose many plausible trading factors, but an autonomous research system must also allocate its evaluation budget, verify its own evidence, and preserve how each candidate was produced. We present AgonAlpha, an architecture that searches over frozen research artifacts---hypotheses, executable expressions, platform evidence, rationales, and review status---rather than formulas alone. To our knowledge, AgonAlpha is the first alpha-mining system to combine verified artifact search, a fresh-context adversarial reviewer with re-execution and veto authority, and pending-aware parallel budget allocation, together with a complete public evidence trail. Independent deployments on WorldQuant BRAIN produced SPECTACULAR-grade alphas across five users and six model backends, with Fitness reaching 9.50 and Sharpe reaching 3.48, while retaining prompt-to-expression provenance for every submission.
+    </details>
 
 🔹 [Scaling Test-Time Compute for Agentic Coding](https://arxiv.org/abs/2604.16529)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2604.16529)
@@ -466,6 +479,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     </details>
 
 ### Search and Verifiers
+
+🔹 [AutoSR: Automatic Symbolic Regression by Searching Research States](https://arxiv.org/abs/2608.16876)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2608.16876)
+- 💻 **Official Code:** [AutoSR](https://github.com/AutoResearch-Factory/AutoSR)
+- 👤 **Authors:** Kejia Zhang, Youran Sun, Xingyu Ren, Chugang Yi, Haizhao Yang
+- 🗓️ **Date:** 2026-08-17
+- 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** A proposer and a reviewer search over research states (candidate equation, motivation, probes, failed attempts, independent review) with progressive-widening MCTS. Exactly recovers three cp3-bench equations that none of 12 published SR systems solved.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    We introduce Automatic Symbolic Regression (AutoSR), a fully automated system that instantiates Research-Space Symbolic Regression by searching persistent scientific investigations rather than isolated equations. Finite, noisy data often yield numerically competitive expressions that imply very different behavior outside the observed regime, making numerical fit and syntactic complexity insufficient measures of scientific credibility. Existing approaches largely focus on improving expressions, yet the search typically retains little beyond the resulting formula and score, losing the scientific record, such as motivations and probes, that inform what to try next. AutoSR preserves this record in a \textbf{Research State}, coupling each candidate equation with the reasoning, computational evidence, and independent review developed along its branch. Proposer--reviewer agents develop these states under progressive-widening Monte Carlo tree search (PW-MCTS), which allocates computation across competing investigations, while the accumulated research record is ultimately synthesized into a final report that explains the leading relation and the basis for its selection. Across nine selected challenges from two benchmark suites, AutoSR recovers algebraically equivalent relations in every case, including three cp3-bench problems that no published system recovers and six structurally diverse LSR-Transform problems. Overall, AutoSR extends symbolic regression from equation-level search toward automated scientific investigation, allowing scientific knowledge and accumulated evidence to shape both what is explored and how the resulting equation is justified.
+    </details>
 
 🔹 [Steer, Don't Solve: Training Small Critic Models for Large Code Agents](https://arxiv.org/abs/2606.21811)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2606.21811)
