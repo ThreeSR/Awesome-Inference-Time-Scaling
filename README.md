@@ -67,7 +67,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 🔁 [Self-Improvement and RSI](#self-improvement-and-rsi) (10)
 - 🤖 [Agentic Test-Time Scaling](#agentic-test-time-scaling) (23)
 - 🌲 [Search and Verifiers](#search-and-verifiers) (35)
-- ⚡ [Parallel Scaling](#parallel-scaling) (9)
+- ⚡ [Parallel Scaling](#parallel-scaling) (10)
 - 🔄 [Sequential Refinement](#sequential-refinement) (5)
 - ⏱️ [Efficient Test-Time Scaling](#efficient-test-time-scaling) (25)
 - 🧠 [Test-Time Training and RL](#test-time-training-and-rl) (13)
@@ -1137,6 +1137,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 <<<<<<< HEAD
 
 ### Parallel Scaling
+
+🔹 [SwarmEvolve: Latent Agent Swarms for Evolutionary Discovery and Optimization](https://arxiv.org/abs/2611.08483)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2611.08483)
+- 💻 **Official Code:** [SwarmEvolve](https://github.com/Qile-J/SwarmEvolve)
+- 👤 **Authors:** Qile Jiang, George Em Karniadakis
+- 🗓️ **Date:** 2026-11-05
+- 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Scales evolutionary program search to hundreds of latent agents per round that share KV caches instead of text, on one GPU.
+- 📝 **Abstract:** 
+    <details>
+    <summary>Expand</summary>
+    LLM-guided evolutionary search uses AI agents to improve programs for mathematical and computational problems by iteratively refining solutions and combining high-scoring methods. However, the process is often slow because the LLM generates a long textual chain of thought for each round and must repeat this generation many times to maintain population diversity. We present SwarmEvolve, a framework in which hundreds of low-cost agents per round work in swarms, reason in latent space without decoding to text, and share information by passing KV caches. Each swarm studies the problem from a different angle. A novelty filter keeps the most distinct agent ideas by directly measuring the distances between the agents' hidden state vectors. Crossover of ideas happens naturally in latent space, as a summarizer agent receives the combined KV caches of all swarm members. On 21 problems in mathematical discovery and scientific computing, SwarmEvolve gets the highest average score and needs a median of only 3 to 8 minutes to reach the best scores that other state-of-the-art frameworks reach in 60 minutes. On several problems, SwarmEvolve with Qwen3 8B improves on the solutions that AlphaEvolve first found with frontier LLMs. Our work shows that agent swarms that communicate in latent space offer a fast, low-cost approach to program search for scientific problems.
+    </details>
 
 🔹 [Share More, Search Less: Collaborative Parallel Thinking for Efficient Test-Time Scaling](https://arxiv.org/abs/2605.27030)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2605.27030)
