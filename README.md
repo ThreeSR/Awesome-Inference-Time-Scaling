@@ -65,14 +65,14 @@ Optional flags: `--code <github-url>` adds an Official Code line, `--publisher-n
 Entries are grouped by topic; within each topic they are listed newest-first.
 
 - 🔁 [Self-Improvement and RSI](#self-improvement-and-rsi) (10)
-- 🤖 [Agentic Test-Time Scaling](#agentic-test-time-scaling) (23)
+- 🤖 [Agentic Test-Time Scaling](#agentic-test-time-scaling) (24)
 - 🌲 [Search and Verifiers](#search-and-verifiers) (35)
 - ⚡ [Parallel Scaling](#parallel-scaling) (10)
 - 🔄 [Sequential Refinement](#sequential-refinement) (5)
-- ⏱️ [Efficient Test-Time Scaling](#efficient-test-time-scaling) (25)
-- 🧠 [Test-Time Training and RL](#test-time-training-and-rl) (13)
+- ⏱️ [Efficient Test-Time Scaling](#efficient-test-time-scaling) (27)
+- 🧠 [Test-Time Training and RL](#test-time-training-and-rl) (14)
 - 🎨 [Generation and Diffusion](#generation-and-diffusion) (11)
-- 🧬 [Domain-Specific Applications](#domain-specific-applications) (16)
+- 🧬 [Domain-Specific Applications](#domain-specific-applications) (17)
 - 📊 [Benchmarks and Analysis](#benchmarks-and-analysis) (22)
 - 📚 [Surveys and Position](#surveys-and-position) (8)
 
@@ -260,6 +260,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     <details>
     <summary>Expand</summary>
     Deep research is emerging as a representative long-horizon task for large language model (LLM) agents. However, long trajectories in deep research often exceed model context limits, compressing token budgets for both evidence collection and report writing, and preventing effective test-time scaling. We introduce FS-Researcher, a file-system-based, dual-agent framework that scales deep research beyond the context window via a persistent workspace. Specifically, a Context Builder agent acts as a librarian which browses the internet, writes structured notes, and archives raw sources into a hierarchical knowledge base that can grow far beyond context length. A Report Writer agent then composes the final report section by section, treating the knowledge base as the source of facts. In this framework, the file system serves as a durable external memory and a shared coordination medium across agents and sessions, enabling iterative refinement beyond the context window. Experiments on two open-ended benchmarks (DeepResearch Bench and DeepConsult) show that FS-Researcher achieves state-of-the-art report quality across different backbone models. Further analyses demonstrate a positive correlation between final report quality and the computation allocated to the Context Builder, validating effective test-time scaling under the file-system paradigm. The code and data are open-sourced at https://github.com/Ignoramus0817/FS-Researcher.
+    </details>
+
+🔹 [Video-o3: Native Interleaved Clue Seeking for Long Video Multi-Hop Reasoning](https://arxiv.org/abs/2601.23224)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2601.23224)
+- 💻 **Official Code:** [Video-o3](https://github.com/MCG-NJU/Video-o3)
+- 👤 **Authors:** Xiangyu Zeng, Zhiqiu Zhang, Yuhan Zhu, Xinhao Li, Zikang Wang, Changlian Ma, Qingyu Zhang, Zizheng Huang, Kun Ouyang, Tianxiang Jiang, Ziang Yan, Yi Wang, Hongjie Zhang, Yali Wang, Limin Wang
+- 🗓️ **Date:** 2026-01-30
+- 📑 **Publisher:** [ICML 2026](https://proceedings.mlr.press/v306/zeng26y.html)
+- 💡 **TL;DR:** Interleaves thinking and VideoCrop tool calls to seek new visual clues before answering long-video multi-hop questions; trajectory-guided SFT/RL is performed before inference.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Existing multimodal large language models for long-video understanding predominantly rely on uniform sampling and single-turn inference, limiting their ability to identify sparse yet critical evidence amid extensive redundancy. We introduce Video-o3, a novel framework that supports iterative discovery of salient visual clues, fine-grained inspection of key segments, and adaptive termination once sufficient evidence is acquired. Technically, we address two core challenges in interleaved tool invocation. First, to mitigate attention dispersion induced by the heterogeneity of reasoning and tool-calling, we propose Task-Decoupled Attention Masking, which isolates per-step concentration while preserving shared global context. Second, to control context length growth in multi-turn interactions, we introduce a Verifiable Trajectory-Guided Reward that balances exploration coverage with reasoning efficiency. To support training at scale, we further develop a data synthesis pipeline and construct Seeker-173K, comprising 173K high-quality tool-interaction trajectories for effective supervised and reinforcement learning. Extensive experiments show that Video-o3 substantially outperforms state-of-the-art methods, achieving 72.1% accuracy on MLVU and 46.5% on Video-Holmes. These results demonstrate Video-o3's strong multi-hop evidence-seeking and reasoning capabilities, and validate the effectiveness of native tool invocation in long-video scenarios. Comments: 27 pages, 15 figures, 15 tables
     </details>
 
 🔹 [Timely Machine: Awareness of Time Makes Test-Time Scaling Agentic](https://arxiv.org/abs/2601.16486)
@@ -1361,6 +1374,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     While scaling test-time compute can substantially improve model performance, existing approaches either rely on static compute allocation or sample from fixed generation distributions. In this work, we introduce a test-time compute allocation framework that jointly adapts where computation is spent and how generation is performed. Our method begins with a warm-up phase that identifies easy queries and assembles an initial pool of question-response pairs from the test set itself. An adaptive phase then concentrates further computation on unresolved queries while reshaping their generation distributions through evolving in-context demonstrations—conditioning each generation on successful responses from semantically related queries rather than resampling from a fixed distribution. Experiments across math, coding, and reasoning benchmarks demonstrate that our approach consistently outperforms existing baselines while consuming substantially less inference-time compute.
     </details>
 
+🔹 [VideoChat3: Fully Open Video MLLM for Efficient and Generalist Video Understanding](https://arxiv.org/abs/2607.14935)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2607.14935)
+- 💻 **Official Code:** [VideoChat3](https://github.com/MCG-NJU/VideoChat3)
+- 👤 **Authors:** Xinhao Li, Yuhan Zhu, Xiangyu Zeng, Yuhao Dong, Haoning Wu, Zhiqiu Zhang, Yuandong Yang, Changlian Ma, Qingyu Zhang, Yansong Shi, Xinyu Chen, Haoran Chen, Zizheng Huang, Jun Zhang, Kun Ouyang, Lin Sui, Ziang Yan, Yicheng Xu, Chenting Wang, Yinan He, Hongjie Zhang, Yi Wang, Yu Qiao, Yali Wang, Ziwei Liu, Kai Chen, Limin Wang
+- 🗓️ **Date:** 2026-07-16
+- 📑 **Publisher:** arXiv 2026
+- 💡 **TL;DR:** Its streaming controller allocates the visual pixel/token budget using predicted response states, improving the efficiency of a generative video VLM.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Recent advances in video understanding have spanned motion, long video, and streaming interaction, driving this field toward real-world applications. Despite this progress, current open-source models remain limited in several ways. They often struggle to generalize across diverse video types, making them effective only in specific domains. High computational demands further restrict their efficiency and scalability. Moreover, most models are only partially open, with key components such as training code, strategy, or datasets unavailable, which hinders reproducibility and slows community-driven development. To address these issues, we introduce VideoChat3, a fully open, efficient, and generalist video-centric MLLM. VideoChat3 advances video understanding through two complementary designs. For efficiency, we introduce Inflated 3D Vision Transformer (I3D-ViT) and Adaptive Frame Resolution for Streaming Video Perception, which enables efficient spatiotemporal representation and reduces the cost of processing video inputs during training and inference. For effectiveness, we develop a scalable video data synthesis pipeline that curates three diverse, high-quality training datasets: VideoChat3-Academic2M, VideoChat3-LV116K, and VideoChat3-OL617K, covering general, long-form, and streaming video scenarios, improving the model's generalization across domains. By integrating these designs, VideoChat3 achieves a rare balance of broad generalization and computational efficiency. Experiments across general, long-form, and streaming benchmarks demonstrate that VideoChat3 surpasses prior open-source models with equal or larger parameter counts with only 4B parameters and higher efficiency.
+    </details>
+
 🔹 [Stop When Reasoning Converges: Semantic-Preserving Early Exit for Reasoning Models](https://arxiv.org/abs/2605.17672)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2605.17672)
 - 👤 **Authors:** Dehai Min, Giovanni Vaccarino, Huiyi Chen, Yongliang Wu, Gal Yona, Lu Cheng
@@ -1625,6 +1651,20 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     Post-training KV-Cache compression methods typically either sample a subset of effectual tokens or quantize the data into lower numerical bit width. However, these methods cannot exploit redundancy in the hidden dimension of the KV tensors. This paper presents a hidden dimension compression approach called Palu, a KV-Cache compression framework that utilizes low-rank projection to reduce inference-time LLM memory usage. Palu decomposes the linear layers into low-rank matrices, caches compressed intermediate states, and reconstructs the full keys and values on the fly. To improve accuracy, compression rate, and efficiency, Palu further encompasses (1) a medium-grained low-rank decomposition scheme, (2) an efficient rank search algorithm, (3) low-rank-aware quantization compatibility enhancements, and (4) optimized GPU kernels with operators fusion. Extensive experiments with popular LLMs show that Palu compresses KV-Cache by 50% while maintaining strong accuracy and delivering up to 1.89x on the RoPE-based attention module. When combined with quantization, Palu's inherent quantization-friendly design yields small to negligible extra accuracy degradation while saving additional memory than quantization-only methods and achieving up to 2.91x speedup for the RoPE-based attention. Moreover, it maintains comparable or even better accuracy (up to 1.19 lower perplexity) compared to quantization-only methods. These results demonstrate Palu's superior capability to effectively address the efficiency and memory challenges of LLM inference posed by KV-Cache. Our code is publicly available at: https://github.com/shadowpa0327/Palu
     </details>
 
+🔹 [AWT: Transferring Vision-Language Models via Augmentation, Weighting, and Transportation](https://arxiv.org/abs/2407.04603)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2407.04603)
+- 💻 **Official Code:** [AWT](https://github.com/MCG-NJU/AWT)
+- 👤 **Authors:** Yuhan Zhu, Yuyang Ji, Zhiyu Zhao, Gangshan Wu, Limin Wang
+- 🗓️ **Date:** 2024-07-05
+- 📑 **Publisher:** [NeurIPS 2024](https://proceedings.neurips.cc/paper_files/paper/2024/hash/2d4eaf042567f1c03c086103cc154c1f-Abstract-Conference.html)
+- 💡 **TL;DR:** Adapts CLIP zero-shot predictions with visual/text augmentation, entropy weighting and optimal transport; the inference component keeps parameters fixed.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Pre-trained vision-language models (VLMs) have shown impressive results in various visual classification tasks. However, we often fail to fully unleash their potential when adapting them for new concept understanding due to limited information on new classes. To address this limitation, we introduce a novel adaptation framework, AWT (Augment, Weight, then Transport). AWT comprises three key components: augmenting inputs with diverse visual perspectives and enriched class descriptions through image transformations and language models; dynamically weighting inputs based on the prediction entropy; and employing optimal transport to mine semantic correlations in the vision-language space. AWT can be seamlessly integrated into various VLMs, enhancing their zero-shot capabilities without additional training and facilitating few-shot learning through an integrated multimodal adapter module. We verify AWT in multiple challenging scenarios, including zero-shot and few-shot image classification, zero-shot video action recognition, and out-of-distribution generalization. AWT consistently outperforms the state-of-the-art methods in each setting. In addition, our extensive studies further demonstrate AWT’s effectiveness and adaptability across different VLMs, architectures, and scales.
+    </details>
+
+
 ### Test-Time Training and RL
 
 🔹 [TEMPO: Scaling Test-time Training for Large Reasoning Models](https://arxiv.org/abs/2604.19295)
@@ -1745,6 +1785,18 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     <details>
     <summary>Expand</summary>
     Recent efforts in fine-tuning language models often rely on automatic data selection, commonly using Nearest Neighbors retrieval from large datasets. However, we theoretically show that this approach tends to select redundant data, limiting its effectiveness or even hurting performance. To address this, we introduce SIFT, a data selection algorithm designed to reduce uncertainty about the model's response given a prompt, which unifies ideas from retrieval and active learning. Whereas Nearest Neighbor retrieval typically fails in the presence of information duplication, SIFT accounts for information duplication and optimizes the overall information gain of the selected examples. We focus our evaluations on fine-tuning at test-time for prompt-specific language modeling on the Pile dataset, and show that SIFT consistently outperforms Nearest Neighbor retrieval, with minimal computational overhead. Moreover, we show that our uncertainty estimates can predict the performance gain of test-time fine-tuning, and use this to develop an adaptive algorithm that invests test-time compute proportional to realized performance gains. We provide the $\texttt{activeft}$ (Active Fine-Tuning) library which can be used as a drop-in replacement for Nearest Neighbor retrieval.
+    </details>
+
+🔹 [Efficient Test-Time Prompt Tuning for Vision-Language Models](https://arxiv.org/abs/2408.05775)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2408.05775)
+- 👤 **Authors:** Yuhan Zhu, Guozhen Zhang, Chen Xu, Haocheng Shen, Xiaoxin Chen, Gangshan Wu, Limin Wang
+- 🗓️ **Date:** 2024-08-11
+- 📑 **Publisher:** [IJCV 2026](https://link.springer.com/article/10.1007/s11263-026-03019-3)
+- 💡 **TL;DR:** Self-supervised class-level adaptation of CLIP prompts through contrastive prompt tuning and gradient matching amortizes tuning across test images.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Vision-language models have showcased impressive zero-shot classification capabilities when equipped with suitable text prompts. Previous studies have shown the effectiveness of test-time prompt tuning; however, these methods typically require per-image prompt adaptation during inference, which incurs high computational budgets and limits scalability and practical deployment. To overcome this issue, we introduce Self-TPT, a novel framework leveraging Self-supervised learning for efficient Test-time Prompt Tuning. The key aspect of Self-TPT is that it turns to efficient predefined class adaptation via self-supervised learning, thus avoiding computation-heavy per-image adaptation at inference. Self-TPT begins by co-training the self-supervised and the classification task using source data, then applies the self-supervised task exclusively for test-time new class adaptation. Specifically, we propose Contrastive Prompt Learning (CPT) as the key task for self-supervision. CPT is designed to minimize the intra-class distances while enhancing inter-class distinguishability via contrastive learning. Furthermore, empirical evidence suggests that CPT could closely mimic back-propagated gradients of the classification task, offering a plausible explanation for its effectiveness. Motivated by this finding, we further introduce a gradient matching loss to explicitly enhance the gradient similarity. We evaluated Self-TPT across three challenging zero-shot benchmarks. The results consistently demonstrate that Self-TPT not only significantly reduces inference costs but also achieves state-of-the-art performance, effectively balancing the efficiency-efficacy trade-off.
     </details>
 
 🔹 [ReST-MCTS*: LLM Self-Training via Process Reward Guided Tree Search](https://arxiv.org/abs/2406.03816)
@@ -1941,6 +1993,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     <details>
     <summary>Expand</summary>
     Prompt injection attacks pose a pervasive threat to the security of Large Language Models (LLMs). State-of-the-art prevention-based defenses typically rely on fine-tuning an LLM to enhance its security, but they achieve limited effectiveness against strong attacks. In this work, we propose \emph{SecInfer}, a novel defense against prompt injection attacks built on \emph{inference-time scaling}, an emerging paradigm that boosts LLM capability by allocating more compute resources for reasoning during inference. SecInfer consists of two key steps: \emph{system-prompt-guided sampling}, which generates multiple responses for a given input by exploring diverse reasoning paths through a varied set of system prompts, and \emph{target-task-guided aggregation}, which selects the response most likely to accomplish the intended task. Extensive experiments show that, by leveraging additional compute at inference, SecInfer effectively mitigates both existing and adaptive prompt injection attacks, outperforming state-of-the-art defenses as well as existing inference-time scaling approaches.
+    </details>
+
+🔹 [FreeRet: MLLMs as Training-Free Retrievers](https://arxiv.org/abs/2509.24621)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2509.24621)
+- 💻 **Official Code:** [FreeRet](https://github.com/MCG-NJU/FreeRet)
+- 👤 **Authors:** Yuhan Zhu, Xiangyu Zeng, Chenting Wang, Xinhao Li, Chunxu Liu, Yicheng Xu, Ziang Yan, Yi Wang, Limin Wang
+- 🗓️ **Date:** 2025-09-29
+- 📑 **Publisher:** [ICML 2026](https://proceedings.mlr.press/v306/zhu26ba.html)
+- 💡 **TL;DR:** Uses frozen MLLM semantic readouts, one-word prior correction and neutral multiple-choice reranking for multimodal retrieval, without task-specific training.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Multimodal large language models (MLLMs) are emerging as versatile foundations for mixed-modality retrieval. Yet, they often require heavy post-hoc training to convert them into contrastive encoders for retrieval. This work asks: Can off-the-shelf MLLMs serve as powerful retrievers without additional training? We present FreeRet, a plug-and-play framework that turns any MLLM into a two-stage retriever. FreeRet first derives semantically grounded embeddings directly from the model for fast candidate search, and then exploits its reasoning ability for precise reranking. The framework contributes three advances: bypassing lexical alignment layers to obtain semantically faithful embeddings, conditioning representation generation with explicit priors, and mitigating framing effect in reranking via neutral choice framing. On the MMEB and MMEB-V2 benchmarks spanning 46 datasets, FreeRet substantially outperforms models trained on millions of pairs. Beyond benchmarks, FreeRet is model-agnostic and scales seamlessly across MLLM families and sizes, preserves their generative abilities, supports arbitrary modality combinations, and unifies retrieval, reranking, and generation into end-to-end RAG within a single model. Our findings demonstrate that pretrained MLLMs, when carefully harnessed, can serve as strong retrieval engines without training, closing a critical gap in their role as generalists. Comments: ICML 2026
     </details>
 
 🔹 [Test-Time Scaling Strategies for Generative Retrieval in Multimodal Conversational Recommendations](https://arxiv.org/abs/2508.18132)
