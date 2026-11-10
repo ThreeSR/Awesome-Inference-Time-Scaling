@@ -65,7 +65,7 @@ Optional flags: `--code <github-url>` adds an Official Code line, `--publisher-n
 Entries are grouped by topic; within each topic they are listed newest-first.
 
 - 🔁 [Self-Improvement and RSI](#self-improvement-and-rsi) (10)
-- 🤖 [Agentic Test-Time Scaling](#agentic-test-time-scaling) (24)
+- 🤖 [Agentic Test-Time Scaling](#agentic-test-time-scaling) (25)
 - 🌲 [Search and Verifiers](#search-and-verifiers) (35)
 - ⚡ [Parallel Scaling](#parallel-scaling) (10)
 - 🔄 [Sequential Refinement](#sequential-refinement) (5)
@@ -381,6 +381,18 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     <details>
     <summary>Expand</summary>
     We introduce RegionFocus, a visual test-time scaling approach for Vision Language Model Agents. Understanding webpages is challenging due to the visual complexity of GUI images and the large number of interface elements, making accurate action selection difficult. Our approach dynamically zooms in on relevant regions, reducing background clutter and improving grounding accuracy. To support this process, we propose an image-as-map mechanism that visualizes key landmarks at each step, providing a transparent action record and enables the agent to effectively choose among action candidates. Even with a simple region selection strategy, we observe significant performance gains of 28+\% on Screenspot-pro and 24+\% on WebVoyager benchmarks on top of two state-of-the-art open vision language model agents, UI-TARS and Qwen2.5-VL, highlighting the effectiveness of visual test-time scaling in interactive settings. We achieve a new state-of-the-art grounding performance of 61.6\% on the ScreenSpot-Pro benchmark by applying RegionFocus to a Qwen2.5-VL-72B model. Our code will be released publicly at https://github.com/tiangeluo/RegionFocus.
+    </details>
+
+🔹 [OptimAI: Optimization from Natural Language Using LLM-Powered AI Agents](https://arxiv.org/abs/2504.16918)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2504.16918)
+- 👤 **Authors:** Raghav Thind, Youran Sun, Ling Liang, Haizhao Yang
+- 🗓️ **Date:** 2025-04-23
+- 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** UCB-based debug scheduling switches between alternative plans from Formulator, Planner, Coder, and Code Critic agents for a further 3.3x productivity gain; reaches 88.1% on NLP4LP and 82.3% on Optibench.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Optimization plays a vital role in scientific research and practical applications. However, formulating a concrete optimization problem described in natural language into a mathematical form and selecting a suitable solver to solve the problem requires substantial domain expertise. We introduce OptimAI, a framework for solving Optimization problems described in natural language by leveraging LLM-powered AI agents, and achieve superior performance over current state-of-the-art methods. Our framework is built upon the following key roles: (1) a formulator that translates natural language problem descriptions into precise mathematical formulations; (2) a planner that constructs a high-level solution strategy prior to execution; and (3) a coder and a code critic capable of interacting with the environment and reflecting on outcomes to refine future actions. Ablation studies confirm that all roles are essential; removing the planner or code critic results in $5.8\times$ and $3.1\times$ drops in productivity, respectively. Furthermore, we introduce UCB-based debug scheduling to dynamically switch between alternative plans, yielding an additional $3.3\times$ productivity gain. Our design emphasizes multi-agent collaboration, and our experiments confirm that combining diverse models leads to performance gains. Our approach attains 88.1% accuracy on the NLP4LP dataset and 82.3% on the Optibench dataset, reducing error rates by 58% and 52%, respectively, over prior best results.
     </details>
 
 🔹 [Thinking Longer, Not Larger: Enhancing Software Engineering Agents via Scaling Test-Time Compute](https://arxiv.org/abs/2503.23803)
