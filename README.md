@@ -66,7 +66,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 
 - 🔁 [Self-Improvement and RSI](#self-improvement-and-rsi) (10)
 - 🤖 [Agentic Test-Time Scaling](#agentic-test-time-scaling) (25)
-- 🌲 [Search and Verifiers](#search-and-verifiers) (35)
+- 🌲 [Search and Verifiers](#search-and-verifiers) (36)
 - ⚡ [Parallel Scaling](#parallel-scaling) (10)
 - 🔄 [Sequential Refinement](#sequential-refinement) (5)
 - ⏱️ [Efficient Test-Time Scaling](#efficient-test-time-scaling) (27)
@@ -541,6 +541,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     <details>
     <summary>Expand</summary>
     We present MaxProof, a population-level test-time scaling framework for competition-level mathematical proof in the MiniMax-M3 series. M3 first trains three proof-oriented capabilities -- proof generation, proof verification, and critique-conditioned proof repair -- using a defense-in-depth generative verifier engineered for low false-positive rate. These capabilities are merged into a single released M3 model. At test time, MaxProof treats the model as a generator, verifier, refiner, and ranker, searches over a population of candidate proofs, and returns one final proof through tournament selection. With MaxProof test-time scaling, the M3 model reaches 35/42 on IMO 2025 and 36/42 on USAMO 2026, exceeding the human gold-medal threshold on both.
+    </details>
+
+🔹 [Think Twice, Act Once: Verifier-Guided Action Selection For Embodied Agents](https://arxiv.org/abs/2605.12620)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2605.12620)
+- 💻 **Official Code:** [vegas](https://github.com/nishadsinghi/vegas)
+- 👤 **Authors:** Nishad Singhi, Christian Bialas, Snehal Jauhri, Vignesh Prasad, Georgia Chalvatzaki, Marcus Rohrbach, Anna Rohrbach
+- 🗓️ **Date:** 2026-05-12
+- 📑 **Publisher:** arXiv.org; accepted to CVPR 2026 Findings
+- 💡 **TL;DR:** Test-time scaling for embodied agents: samples multiple candidate actions and picks one with a generative verifier trained on an LLM-synthesized curriculum of failure cases (an off-the-shelf MLLM verifier gives no gain); up to 36% relative improvement over CoT baselines on long-horizon Habitat and ALFRED tasks.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Building generalist embodied agents capable of solving complex real-world tasks remains a fundamental challenge in AI. Multimodal Large Language Models (MLLMs) have significantly advanced the reasoning capabilities of such agents through strong vision-language knowledge and chain-of-thought (CoT) reasoning, yet remain brittle when faced with challenging out-of-distribution scenarios. To address this, we propose Verifier-Guided Action Selection (VegAS), a test-time framework designed to improve the robustness of MLLM-based embodied agents through an explicit verification step. At inference time, rather than committing to a single decoded action, VeGAS samples an ensemble of candidate actions and uses a generative verifier to identify the most reliable choice, without modifying the underlying policy. Crucially, we find that using an MLLM off-the-shelf as a verifier yields no improvement, motivating our LLM-driven data synthesis strategy, which automatically constructs a diverse curriculum of failure cases to expose the verifier to a rich distribution of potential errors at training time. Across embodied reasoning benchmarks spanning the Habitat and ALFRED environments, VeGAS consistently improves generalization, achieving up to a 36% relative performance gain over strong CoT baselines on the most challenging multi-object, long-horizon tasks.
     </details>
 
 🔹 [DTS: Enhancing Large Reasoning Models via Decoding Tree Sketching](https://arxiv.org/abs/2511.00640)
