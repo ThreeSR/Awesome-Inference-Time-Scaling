@@ -72,8 +72,8 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - ⏱️ [Efficient Test-Time Scaling](#efficient-test-time-scaling) (27)
 - 🧠 [Test-Time Training and RL](#test-time-training-and-rl) (14)
 - 🎨 [Generation and Diffusion](#generation-and-diffusion) (11)
-- 🧬 [Domain-Specific Applications](#domain-specific-applications) (17)
-- 📊 [Benchmarks and Analysis](#benchmarks-and-analysis) (22)
+- 🧬 [Domain-Specific Applications](#domain-specific-applications) (18)
+- 📊 [Benchmarks and Analysis](#benchmarks-and-analysis) (23)
 - 📚 [Surveys and Position](#surveys-and-position) (8)
 
 ### Self-Improvement and RSI
@@ -1996,6 +1996,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 
 ### Domain-Specific Applications
 
+🔹 [AutoNumerics: An Autonomous, PDE-Agnostic Multi-Agent Pipeline for Scientific Computing](https://arxiv.org/abs/2602.17607)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.17607)
+- 💻 **Official Code:** [Autonumerics](https://github.com/Daviddjddu/Autonumerics)
+- 👤 **Authors:** Jianda Du, Youran Sun, Haizhao Yang
+- 🗓️ **Date:** 2026-02-19
+- 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Multi-agent pipeline writes classical PDE solvers from natural language and checks them with residual-based self-verification; on CodePDE its errors are about six orders of magnitude lower than baselines.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    PDEs are central to scientific and engineering modeling, yet designing accurate numerical solvers typically requires substantial mathematical expertise and manual tuning. Recent neural network-based approaches improve flexibility but often demand high computational cost and suffer from limited interpretability. We introduce \texttt{AutoNumerics}, a multi-agent framework that autonomously designs, implements, debugs, and verifies numerical solvers for general PDEs directly from natural language descriptions. Unlike black-box neural solvers, our framework generates transparent solvers grounded in classical numerical analysis. We introduce a coarse-to-fine execution strategy and a residual-based self-verification mechanism. Experiments on 24 canonical and real-world PDE problems demonstrate that \texttt{AutoNumerics} achieves competitive or superior accuracy compared to existing neural and LLM-based baselines, and correctly selects numerical schemes based on PDE structural properties, suggesting its viability as an accessible paradigm for automated PDE solving.
+    </details>
+
 🔹 [Test-time Generalization for Physics through Neural Operator Splitting](https://arxiv.org/abs/2602.00884)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2602.00884)
 - 👤 **Authors:** Louis Serrano, Jiequn Han, Edouard Oyallon, Shirley Ho, Rudy Morel
@@ -2202,6 +2215,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     </details>
 
 ### Benchmarks and Analysis
+
+🔹 [SciΠvot: Benchmarking Principal-Investigator Judgment at Pivotal Moments of Scientific AutoResearch Agents](https://arxiv.org/abs/2610.21082)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2610.21082)
+- 💻 **Official Code:** [SciPIvot](https://github.com/AutoResearch-Factory/SciPIvot)
+- 👤 **Authors:** Youran Sun, Xingyu Ren, Chugang Yi, Kejia Zhang, Di Wu, Yingkang Cao, Allen Zhou, Jianping Ye, Suying Liu, Jiaxuan Guo, Jianda Du, Weicheng Ye, Kecheng Liu, Hefan Zhang, Haixin Wang, Jie Xiao, Eric Yang, Haizhao Yang
+- 🗓️ **Date:** 2026-10-15
+- 📑 **Publisher:** arXiv.org
+- 💡 **TL;DR:** Benchmark of 248 research decisions that senior researchers corrected in agent-run projects; across reasoning-effort settings, the best model reaches 63.5% and fresh researchers reach 73.4%.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    Large language model (LLM) agents can keep scientific experiments running for months with little human supervision, but reliable autonomous research also requires scientific judgment. Evaluating scientific judgment is difficult because research decisions are open-ended and depend on project context. We construct Sci$\Pi$vot, a 248-case benchmark of scientific judgment based on human corrections. The benchmark draws on records from six months of research in which senior researchers ran LLM agents on 26 projects across six scientific fields and repeatedly intervened to correct the agents' research judgments. In each case, an agent chooses between the original LLM plan and the human-corrected alternative, using only the project record available before the correction as context. We compare LLM and human performance and examine the effects of reasoning effort, access to the project record, and reconsideration. At medium reasoning effort with the project record, models systematically prefer the original LLM plan over the human-corrected alternative. Four of five frontier models perform below chance on the selected cases. The highest accuracy in the project condition across the tested models and reasoning effort settings is 63.5%, compared with 73.4% for fresh researchers. At medium effort, every model achieves lower accuracy with the project record than without it, and reconsideration does not consistently improve overall accuracy. Even with a human-corrected alternative available, frontier models struggle with the selected research decisions, while Sci$\Pi$vot supports systematic evaluation of scientific judgment for LLM agents.
+    </details>
 
 🔹 [Test-Time Scaling Makes Overtraining Compute-Optimal](https://arxiv.org/abs/2604.01411)
 - 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2604.01411)
