@@ -67,7 +67,7 @@ Entries are grouped by topic; within each topic they are listed newest-first.
 - 🔁 [Self-Improvement and RSI](#self-improvement-and-rsi) (10)
 - 🤖 [Agentic Test-Time Scaling](#agentic-test-time-scaling) (25)
 - 🌲 [Search and Verifiers](#search-and-verifiers) (36)
-- ⚡ [Parallel Scaling](#parallel-scaling) (10)
+- ⚡ [Parallel Scaling](#parallel-scaling) (11)
 - 🔄 [Sequential Refinement](#sequential-refinement) (5)
 - ⏱️ [Efficient Test-Time Scaling](#efficient-test-time-scaling) (27)
 - 🧠 [Test-Time Training and RL](#test-time-training-and-rl) (14)
@@ -1295,6 +1295,19 @@ Entries are grouped by topic; within each topic they are listed newest-first.
     <details>
     <summary>Expand</summary>
     Scaling the amount of compute used to train language models has dramatically improved their capabilities. However, when it comes to inference, we often limit models to making only one attempt at a problem. Here, we explore inference compute as another axis for scaling, using the simple technique of repeatedly sampling candidate solutions from a model. Across multiple tasks and models, we observe that coverage -- the fraction of problems that are solved by any generated sample -- scales with the number of samples over four orders of magnitude. Interestingly, the relationship between coverage and the number of samples is often log-linear and can be modelled with an exponentiated power law, suggesting the existence of inference-time scaling laws. In domains like coding and formal proofs, where answers can be automatically verified, these increases in coverage directly translate into improved performance. When we apply repeated sampling to SWE-bench Lite, the fraction of issues solved with DeepSeek-Coder-V2-Instruct increases from 15.9% with one sample to 56% with 250 samples, outperforming the single-sample state-of-the-art of 43%. In domains without automatic verifiers, we find that common methods for picking from a sample collection (majority voting and reward models) plateau beyond several hundred samples and fail to fully scale with the sample budget.
+    </details>
+
+🔹 [More Agents Is All You Need](https://arxiv.org/abs/2402.05120)
+- 🔗 **arXiv PDF Link:** [Paper Link](https://arxiv.org/pdf/2402.05120)
+- 💻 **Official Code:** [AgentForest](https://github.com/MoreAgentsIsAllYouNeed/AgentForest)
+- 👤 **Authors:** Junyou Li, Qin Zhang, Yangbin Yu, Qiang Fu, Deheng Ye
+- 🗓️ **Date:** 2024-02-03
+- 📑 **Publisher:** arXiv.org; published in TMLR 2024
+- 💡 **TL;DR:** Shows that scaling the number of LLM agents via simple sampling-and-voting consistently improves performance across reasoning and generation benchmarks, orthogonally to prompting methods.
+- 📝 **Abstract:**
+    <details>
+    <summary>Expand</summary>
+    We find that, simply via a sampling-and-voting method, the performance of large language models (LLMs) scales with the number of agents instantiated. Also, this method, termed as Agent Forest, is orthogonal to existing complicated methods to further enhance LLMs, while the degree of enhancement is correlated to the task difficulty. We conduct comprehensive experiments on a wide range of LLM benchmarks to verify the presence of our finding, and to study the properties that can facilitate its occurrence. Our code is publicly available at https://github.com/MoreAgentsIsAllYouNeed/AgentForest.
     </details>
 
 ### Sequential Refinement
